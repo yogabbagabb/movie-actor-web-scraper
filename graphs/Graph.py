@@ -18,6 +18,10 @@ class Graph(object):
         return some_tuple[0]
 
     def __repr__(self):
+        """
+        :return: A string representation of movie records and actor records such that
+        movies are sorted alphabetically, and the set of movies connected to each movie is also sorted alphabetically.
+        """
 
         the_rep = ""
 
@@ -58,7 +62,7 @@ class Graph(object):
         We assume that both first_record and second_record are not of the same rec_type.
         :param first_record: Either an instance of MovieRecord or ActorRecord.
         :param second_record: If first_record is a MovieRecord, then second_record is an ActorRecord or vice vera
-        :return: Nothing
+        :return: Nothing.
         """
         if second_record is None:
             self.__add_node(first_record)
@@ -66,7 +70,27 @@ class Graph(object):
             self.__add_edge(first_record, second_record)
 
     def __add_node(self, first_record):
-        pass
+        """
+        Add a single node to the graph.
+        :param first_record: The node to add, either an actor or movie.
+        :return: Nothing.
+        """
+        first_is_actor = first_record.rec_type == Record.Type.ACTOR
+
+        # Check to see whether the first_record exists in the graph
+        if first_is_actor:
+            first_record_set = self.__actor_records.get(first_record.get_key())
+        else:
+            first_record_set = self.__movie_records.get(first_record.get_key())
+
+        # The first_record does not exist in the graph. We need to add it to the graph.
+        # If it does exist, then we do nothing.
+        if first_record_set is None:
+            new_set = set()
+            if first_is_actor:
+                self.__actor_records[first_record.get_key()] = new_set
+            else:
+                self.__movie_records[first_record.get_key()] = new_set
 
     def __add_edge(self, first_record, second_record):
 

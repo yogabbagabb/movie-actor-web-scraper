@@ -18,12 +18,16 @@ class Record(object):
     def __repr__(self):
         return "[" + repr(self.name) + ", " + repr(self.rec_type) + "]"
 
+    def __hash__(self):
+        return hash((self.name, self.rec_type))
+
+    def __eq__(self, other):
+        return self.name == other.name and self.rec_type == other.rec_type
 
 
 class Type(Enum):
     MOVIE = 1
     ACTOR = 2
-
 
 
 class MovieRecord(Record):
