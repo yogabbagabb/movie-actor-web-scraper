@@ -3,6 +3,8 @@ import urllib.request
 import logging
 import code
 
+from movie_actor_app.scraper.Scraper import Scraper
+
 
 def is_movie(tag):
     return tag.name == "a" and tag.parent.name == "i" and tag.has_attr("href") and tag.has_attr("title")
@@ -19,6 +21,12 @@ def is_filmography_section(tag):
 
 def has_starring_tag(tag):
     return tag.string == "Starring"
+
+
+def is_age_tag_lax2(tag):
+    return tag.has_attr("class") and tag.name == "span" and "noprint" in tag["class"]
+
+
 
 
 def get_movies_of_actor(num, actor_name):
@@ -58,9 +66,6 @@ def get_stars_of_movie(num, movie_name):
 if __name__ == "__main__":
     logging.basicConfig(filename='scraper.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
     logging.info("\n\n\nStarting\n\n\n")
-    logging.debug('This message should go to the log file')
-    logging.info('So should this')
-    logging.warning('And this, too')
 
     # page = "https://en.wikipedia.org/wiki/Matt_Damon_filmography"
     # page = "https://en.wikipedia.org/wiki/Matt_Damon"
@@ -71,5 +76,20 @@ if __name__ == "__main__":
     # soup = BeautifulSoup(html, 'lxml')
     # print(soup.find_all(is_movie))
     # code.interact(local=locals())
-    print(get_stars_of_movie(3, "Saving Private Ryan"))
-    print(get_movies_of_actor(3, "Matt Damon"))
+
+    # scraper = Scraper()
+    # print(scraper.get_stars_of_movie(3, "Mulan"))
+    # print(scraper.get_movies_of_actor(3, "Matt Damon"))
+
+    scraper = Scraper()
+    soup = scraper.get_soup_from_name("Matt Damon")
+    tag_list = soup.find_all(is_age_tag_lax2)
+    for tag in tag_list:
+        print(tag.string)
+        print("\n")
+    # tag_list = soup.find_all(is_age_tag_lax)
+    # for tag in tag_list:
+    #     print(tag)
+    #     print("\n")
+    # code.interact(local=locals())
+    # scraper.get_attributes(soup, is_actor=True)

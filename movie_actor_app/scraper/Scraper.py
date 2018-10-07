@@ -1,9 +1,19 @@
 from bs4 import BeautifulSoup
 from movie_actor_app.graphs.Graph import *
+from collections import namedtuple
 import urllib.request
 import logging
 import queue
 import code
+import re
+
+from movie_actor_app.graphs.Record import *
+
+ParseRecord = namedtuple("ParseRecord", "name parent_record times_accessed_in_past")
+
+logging.basicConfig(filename='scraper.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %('
+                                                                        'message)s')
+logging.info("\n\n\nStarting\n\n\n")
 
 
 class Utilities(object):
@@ -25,18 +35,24 @@ class Utilities(object):
     def has_starring_tag(tag):
         return tag.string == "Starring"
 
+    @staticmethod
+    def is_age_tag(tag):
+        return tag.has_attr("class") and tag.name == "span" and "noprint" in tag["class"]
+
 
 class Scraper(object):
 
-    def __init__(self):
+    def __init__(self, degree=3):
         self.graph = Graph()
         self.movie_num = 0
         self.actor_num = 0
+        self.degree = degree
         self.soup = None
-        self.link_queue = queue.Queue()
+        self.pending_nodes = queue.Queue()
+        logging.info("\n\n\nStarting\n\n\n")
 
     @staticmethod
-    def __get_soup_from_url(name, final_string=""):
+    def get_soup_from_name(name, final_string=""):
         """
         Get an instance of beautiful soup from the url corresponding to name
         :param name: The name of an actor or movie
@@ -63,15 +79,17 @@ class Scraper(object):
         """
         Get tags corresponding to movies in which an actor worked.
         :param num: A particular number of movie tags to scrape
-        :return: A list of num tags
+        :return: A list of num tags, or False if we were unsuccessful
         """
         logging.info("Getting Movies that {} played in".format(actor_name))
-        soup = self.__get_soup_from_url(actor_name, final_string="_filmography")
+        soup = self.get_soup_from_name(actor_name, final_string="_filmography")
         try:
             movies = soup.find_all(Utilities.is_movie)
         except:
-            logging.error("The actor's html structure did not meet our conventions")
-            return
+            logging.error("The actor's html structure did not meet our conventions if an error did not take place "
+                          "earlier")
+            return False
+
         if len(movies) < num:
             num = len(movies)
         return movies[0:num:1]
@@ -84,14 +102,16 @@ class Scraper(object):
         """
 
         logging.info("Getting Actors that played in {}".format(movie_name))
-        soup = self.__get_soup_from_url(movie_name, final_string="")
+        soup = self.get_soup_from_name(movie_name, final_string="")
         try:
             starring_tag = soup.find(Utilities.has_starring_tag)
             starring_parent_tag = starring_tag.parent
             stars = starring_parent_tag.findChildren("a")
         except:
-            logging.error("The movie's html structure did not meet our conventions")
-            return
+            logging.error("The movie's html structure did not meet our conventions if an error did not take place "
+                          "earlier")
+            return False
+
         if len(stars) < num:
             num = len(stars)
         return stars[0:num:1]
@@ -105,26 +125,71 @@ class Scraper(object):
         could not be scraped
         """
 
-    def add_to_queue(self, tag_list, parent_record):
+        return self.__get_actor_attributes(soup) if is_actor else self.__get_movie_attributes(soup)
+
+    @staticmethod
+    def __get_movie_attributes(soup):
+        # Get data somewhere near the Release date title
+        release_date_tag = soup.find("div", string="Release date")
+        parent_release_date_tag = release_date_tag.parent
+        sibling = parent_release_date_tag.next_sibling
+        release_date_tag = sibling.find(name="li")
+        release_date_year = release_date_tag.next_element
+        year = int(release_date_year.string[-4:])
+        logging.info("The movie was released on {}".format(year))
+
+        # Get data somewhere near the Box office title
+        box_office_tag = soup.find("th", string="Box office")
+        parent_box_office_tag = box_office_tag.parent
+        child = parent_box_office_tag.find_next(name="td")
+        child_string = str(child.next_element)
+
+        # Pattern match for numbers following '$' and before any whitespace
+        pattern_matcher = re.compile('\d\S*')
+        box_office_amount = pattern_matcher.search(child_string)
+
+        box_office_amount = float(box_office_amount.group())
+        logging.info("The movie earned {}".format(box_office_amount))
+
+        return {"year": year, "grossing_amt": box_office_amount}
+
+    @staticmethod
+    def __get_actor_attributes(soup):
+        age_tag = soup.find(Utilities.is_age_tag)
+        age_string = str(age_tag.string)
+        pattern_matcher = re.compile('\d\d')
+        age_data = (pattern_matcher.search(age_string).group())
+
+        return {"age": int(age_data)}
+
+    def add_to_queue(self, tag_list, parent_record, parent_is_actor):
         """
         Add each url inside tag list to the queue along with its parent record
         :param tag_list: A list of tags; the list either exclusively contains tags referring to movies or to actors;
         each tag has an attribute title that can be used to construct a url.
         :param parent_record: The record (of an actor or movie) corresponding to the url from which tag_list was scraped
+        :param parent_is_actor: Whether the parent_record is an ActorRecord
         :return: None
         """
+        for tag in tag_list:
+            title = tag["title"]
+            self.pending_nodes.put_nowait(ParseRecord(title, parent_record, 0))
 
-    def apportion_contracts(self, movie_record, star_actors, parent_actor_record):
+        if not parent_is_actor:
+            # If the parent is a movie, then after its actors have their fields instantiated, we
+            # we need to give them salaries
+            dummy_parent_record = Record("", Type.ACTOR)
+            self.pending_nodes.put_nowait(ParseRecord(parent_record.name, dummy_parent_record, 1))
+
+    def apportion_contracts(self, movie_record_name, parent_record):
         """
         Distribute the profit of the movie corresponding to movie_record to the actors that worked in the movie. Each
         actor will subsequently have a contract.
-        :param movie_record: The record of the movie whose profit is being split. We assume that movie_record has an
-        initialized grossing_amt field.
-        :param star_actors: A list of actors that worked in the movie corresponding to movie_record. We assume that
-        these actors have already been added to the graph and had their fields initialized
-        :param parent_actor_record: The record that, when scraped, led the scraper to progress to movie_record.
+        :param movie_record_name: The name of the movie record whose actors will be given contracts to
+        :param parent_record: The actor that, when scraped, led to the movie corresponding to movie_record_name
         :return: None
         """
+        pass
 
     def run(self, actor_limit, movie_limit):
         """
@@ -132,11 +197,58 @@ class Scraper(object):
         :return:
         """
 
-    def run_round(self):
+    def run_round(self, is_first_round, first_is_actor):
         """
         Take one element from the queue and scrape it.
+        :param is_first_round: Whether this is the first round being run
+        :param first_is_actor: Whether the first query corresponds to an actor
         :return: num_actors_scraped, num_movies_scraped
         """
+        current_record = self.pending_nodes.get_nowait()
+
+        if is_first_round:
+            parent_record = None
+            is_actor = first_is_actor
+        else:
+            # current_record is an actor iff its parent was not an actor
+            parent_record = current_record.parent_record
+            parent_is_actor = parent_record.rec_type == Type.ACTOR
+            is_actor = not parent_is_actor
+
+        if parent_is_actor and current_record.times_accessed_in_past > 0:
+            self.apportion_contracts(current_record.name, parent_record)
+            return 0, 0
+
+        # Get the attributes of the record that will be represented by the name
+        record_soup = self.get_soup_from_name(current_record.name, final_string=(lambda is_actor: "filmography", ""))
+        record_attr = self.get_attributes(record_soup, is_actor)
+
+        # Make a Record to add to the graph
+        if is_actor:
+            record_for_graph = MovieRecord(current_record.name, Type.MOVIEJ)
+        else:
+            record_for_graph = ActorRecord(current_record.name, Type.ACTOR)
+
+        # Update the attributes of the record represented by current_record for storage in a graph
+        for attr in record_attr:
+            setattr(record_for_graph, attr, record_attr[attr])
+        self.graph.add(record_for_graph, parent_record)
+
+        # Get the records (movies or actors) connected to teh current one
+        if is_actor:
+            tag_list = self.get_movies_of_actor(self.degree, current_record.name)
+        else:
+            tag_list = self.get_stars_of_movie(self.degree, current_record.name)
+
+        self.add_to_queue(tag_list, record_for_graph, is_actor)
+        logging.debug(
+            "tag list should have {} many entries; it actually has {} many entries".format(self.degree, len(tag_list)))
+
+        # Complete the round and go to run another one
+        if is_actor:
+            return 1, 0
+        else:
+            return 0, 1
 
     def query(self, query_string, is_actor, actor_limit, movie_limit):
         """
@@ -148,18 +260,4 @@ class Scraper(object):
 
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='scraper.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-    logging.info("\n\n\nStarting\n\n\n")
-
-    # page = "https://en.wikipedia.org/wiki/Matt_Damon_filmography"
-    # page = "https://en.wikipedia.org/wiki/Matt_Damon"
-    # page = "https://en.wikipedia.org/wiki/Morgan_Freeman"
-    # page = "https://en.wikipedia.org/wiki/Ryan_Reynolds"
-    # with urllib.request.urlopen(page) as url:
-    #     html = url.read()
-    # soup = BeautifulSoup(html, 'lxml')
-    # print(soup.find_all(is_movie))
-    # code.interact(local=locals())
-    scraper = Scraper()
-    print(scraper.get_stars_of_movie(3, "Mulan"))
-    print(scraper.get_movies_of_actor(3, "Matt Damon"))
+    pass
