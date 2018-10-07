@@ -206,6 +206,7 @@ class Graph(object):
     def __get_total_earnings(movie_set):
         total_earnings = 0
         for movie in movie_set:
+            # Get the actual movie (with data) from the dictionary
             total_earnings += movie.contract
         return total_earnings
 

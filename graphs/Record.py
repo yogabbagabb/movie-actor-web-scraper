@@ -45,3 +45,9 @@ class ActorRecord(Record):
         self.contract = contract
         self.total_earnings = total_earnings
 
+"""
+Note:
+We could make it a policy that each movie in the movie dictionary maps to Records (and not ActorRecords) whose types are set to actors.
+Then if we want to look up information about the actors in a movie, we just iterate over these Record objects and check out their fields
+in the actor dictionary
+"""
