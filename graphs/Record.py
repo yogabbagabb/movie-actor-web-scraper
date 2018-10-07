@@ -39,8 +39,9 @@ class MovieRecord(Record):
 
 
 class ActorRecord(Record):
-    def __init__(self, name, rec_type, age=0, contract=0):
+    def __init__(self, name, rec_type, age=0, contract=0, total_earnings=0):
         super(ActorRecord, self).__init__(name, rec_type)
         self.age = age
         self.contract = contract
+        self.total_earnings = total_earnings
 
