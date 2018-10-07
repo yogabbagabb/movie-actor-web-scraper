@@ -3,9 +3,10 @@ from enum import Enum
 
 class Record(object):
 
-    def __init__(self, name, rec_type):
+    def __init__(self, name, rec_type, contract=0):
         self.name = name
         self.rec_type = rec_type
+        self.contract = contract
 
     def get_key(self):
         """
@@ -32,17 +33,15 @@ class Type(Enum):
 
 class MovieRecord(Record):
     def __init__(self, name, rec_type, year=0, grossing_amt=0, contract=0):
-        super(MovieRecord, self).__init__(name, rec_type)
+        super(MovieRecord, self).__init__(name, rec_type, contract)
         self.year = year
         self.grossing_amt = grossing_amt
-        self.contract = contract
 
 
 class ActorRecord(Record):
     def __init__(self, name, rec_type, age=0, contract=0, total_earnings=0):
-        super(ActorRecord, self).__init__(name, rec_type)
+        super(ActorRecord, self).__init__(name, rec_type, contract)
         self.age = age
-        self.contract = contract
         self.total_earnings = total_earnings
 
 """

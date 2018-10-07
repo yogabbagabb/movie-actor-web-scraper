@@ -1,6 +1,6 @@
 from unittest import TestCase
-from graphs.Graph import *
-from graphs.Record import *
+from movie_actor_app.graphs.Graph import *
+from movie_actor_app.graphs.Record import *
 
 
 class TestGraph(TestCase):

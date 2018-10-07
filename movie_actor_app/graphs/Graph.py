@@ -206,7 +206,6 @@ class Graph(object):
     def __get_total_earnings(movie_set):
         total_earnings = 0
         for movie in movie_set:
-            # Get the actual movie (with data) from the dictionary
             total_earnings += movie.contract
         return total_earnings
 
@@ -240,4 +239,61 @@ class Graph(object):
             if actor.age == year:
                 actors_in_year.append(actor.name)
         return actors_in_year
+
+    def update_bio(self, record, update_attr):
+        """
+        Update a MovieRecord or ActorRecord's fields to have those field values
+        in update_attr
+        :param record: A record whose fields we wish to update inside the graph. Note that
+        record does not have to be in the graph, and this method will update the copy of record in the graph.
+        :param update_attr: The dictionary with new fields and values. We assume that contract is not a field in this dict.
+        :return: Nothing
+        """
+        is_actor = record.rec_type == Record.Type.ACTOR
+
+        if is_actor:
+            keys = self.__actor_records.keys()
+        else:
+            keys = self.__movie_records.keys()
+
+        # Find the key from the appropriate dictionary
+        for key in keys:
+            if record.__eq__(key):
+                # Update all the attributes common to record and update_attr to take
+                # new values in update_attr
+                for attr in update_attr:
+                    setattr(key, attr, update_attr[attr])
+                return
+
+    def update_contract(self, first_record, second_record, new_contract):
+        """
+        Update the contract between the first record and second record. We assume that first record is a movie
+        and second record an actor or vice versa. We assume that there is already a connection between first_record and
+        second_record. Note that first_record and second_record will be modified to have their contract fields
+        set to new_contract as a result of this call.
+        :param first_record: Either a MovieRecord or ActorRecord
+        :param second_record: Whatever first_record is not
+        :return: Nothing
+        """
+        first_is_actor = first_record.rec_type == Record.Type.ACTOR
+        if first_is_actor:
+            first_record_set = self.__actor_records[first_record]
+            second_record_set = self.__movie_records[second_record]
+        else:
+            first_record_set = self.__movie_records[first_record]
+            second_record_set = self.__actor_records[second_record]
+
+        # Change the contracts of the first and second records
+        first_record.contract = new_contract
+        second_record.contract = new_contract
+
+        # Update the sets to have those records with new contracts
+        first_record_set.remove(second_record)
+        first_record_set.add(second_record)
+
+        second_record_set.remove(first_record)
+        second_record_set.add(first_record)
+
+
+
 

@@ -1,6 +1,6 @@
 from unittest import TestCase
-from graphs.Graph import *
-from graphs.Record import *
+from movie_actor_app.graphs.Graph import *
+from movie_actor_app.graphs.Record import *
 
 
 class TestGraph(TestCase):
@@ -65,6 +65,8 @@ class TestGraph(TestCase):
         actual_output = graph.get_actors_of_movie(MovieRecord("Batman", Type.MOVIE))
         self.assertEqual(expected_output, repr(actual_output))
 
+    # Give custom salaries that each of 5 actors earned from each of 5 movies. Make sure that the calculations
+    # are done correctly
     def test_get_top_actors(self):
         graph = Graph()
 
@@ -122,6 +124,7 @@ class TestGraph(TestCase):
         expected_output = ["3"]
         self.assertEqual(expected_output, graph.get_top_actors(1))
 
+    # Self Explanatory
     def test_get_movies_year(self):
         graph = Graph()
         graph.add(MovieRecord("A", Type.MOVIE, year=2000))
@@ -132,14 +135,49 @@ class TestGraph(TestCase):
         expected_output = ["A", "C", "E"]
         self.assertEqual(expected_output, graph.get_movies_year(2000))
 
-    def test_get_movies_year(self):
+    # Self Explanatory
+    def test_get_actors_year(self):
         graph = Graph()
-        graph.add(MovieRecord("A", Type.MOVIE, year=20))
-        graph.add(MovieRecord("B", Type.MOVIE, year=20))
-        graph.add(MovieRecord("C", Type.MOVIE, year=20))
-        graph.add(MovieRecord("D", Type.MOVIE, year=21))
-        graph.add(MovieRecord("E", Type.MOVIE, year=20))
+        graph.add(ActorRecord("A", Type.ACTOR, age=20))
+        graph.add(ActorRecord("B", Type.ACTOR, age=20))
+        graph.add(ActorRecord("C", Type.ACTOR, age=20))
+        graph.add(ActorRecord("D", Type.ACTOR, age=21))
+        graph.add(ActorRecord("E", Type.ACTOR, age=20))
         expected_output = ["A", "B", "C", "E"]
+        self.assertEqual(expected_output, graph.get_actors_year(20))
+
+    # Self Explanatory
+    def test_update_bio(self):
+        graph = Graph()
+        graph.add(MovieRecord("A", Type.MOVIE, year=20), Record("Actor 1", Type.ACTOR, 0))
+        graph.update_bio(MovieRecord("A", Type.MOVIE), {"year": 30})
+        expected_output = []
+        self.assertEqual(expected_output, graph.get_movies_year(20))
+        expected_output = ["A"]
+        self.assertEqual(expected_output, graph.get_movies_year(30))
+        expected_output = []
         self.assertEqual(expected_output, graph.get_movies_year(20))
 
+    # Self Explanatory
+    def test_update_contract(self):
+        graph = Graph()
+        graph.add(MovieRecord("A", Type.MOVIE, year=20,contract=50), Record("1", Type.ACTOR, contract=50))
+        graph.add(MovieRecord("A", Type.MOVIE, year=20,contract=50), Record("2", Type.ACTOR, contract=50))
+        graph.add(MovieRecord("A", Type.MOVIE, year=20,contract=50), Record("3", Type.ACTOR, contract=50))
+        graph.add(MovieRecord("A", Type.MOVIE, year=20,contract=50), Record("4", Type.ACTOR, contract=50))
 
+        graph.update_contract(MovieRecord("A", Type.MOVIE), Record("1", Type.ACTOR), new_contract=100)
+        graph.update_contract(MovieRecord("A", Type.MOVIE), Record("2", Type.ACTOR), new_contract=-50)
+        graph.update_contract(MovieRecord("A", Type.MOVIE), Record("3", Type.ACTOR), new_contract=60)
+
+        expected_output = ["1", "3", "4", "2"]
+        self.assertEqual(expected_output, graph.get_top_actors(4))
+
+        expected_output = ["1", "3", "4"]
+        self.assertEqual(expected_output, graph.get_top_actors(3))
+
+        expected_output = ["1", "3"]
+        self.assertEqual(expected_output, graph.get_top_actors(2))
+
+        expected_output = ["1"]
+        self.assertEqual(expected_output, graph.get_top_actors(1))
