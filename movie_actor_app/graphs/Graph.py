@@ -294,6 +294,18 @@ class Graph(object):
         second_record_set.remove(first_record)
         second_record_set.add(first_record)
 
+    def contains(self, record):
+        """
+        Checks whether record is already part of the graph
+        :param record: A record referring to either an actor or movie
+        :return: Whether record is part of the graph or not
+        """
+
+        if record.rec_type == Record.Type.ACTOR:
+            return record in self.__actor_records
+        else:
+            return record in self.__movie_records
+
 
 
 

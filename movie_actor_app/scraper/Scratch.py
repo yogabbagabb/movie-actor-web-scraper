@@ -81,7 +81,7 @@ if __name__ == "__main__":
     # print(scraper.get_stars_of_movie(3, "Mulan"))
     # print(scraper.get_movies_of_actor(3, "Matt Damon"))
 
-    scraper = Scraper()
-    scraper.query("Matt Damon", is_actor=True, actor_limit=30, movie_limit=30)
+    scraper = Scraper(degree=10)
+    scraper.query("Matt Damon", is_actor=True, actor_limit=251, movie_limit=126)
 
 

@@ -87,7 +87,9 @@ class Scraper(object):
         if old_soup is None:
             soup = self.get_soup_from_name(actor_name, final_string="_filmography")
             if not soup:
-                return False
+                soup = self.get_soup_from_name(actor_name, final_string="#Filmography")
+                if not soup:
+                    return False
         else:
             soup = old_soup
         try:
@@ -193,10 +195,13 @@ class Scraper(object):
         :param parent_is_actor: Whether the parent_record is an ActorRecord
         :return: None
         """
-        for tag in tag_list:
-            title = tag["title"]
-            logging.info("{} added {} to the queue".format(parent_record.name, title))
-            self.pending_nodes.put_nowait(ParseRecord(title, parent_record, 0))
+        try:
+            for tag in tag_list:
+                title = tag["title"]
+                logging.info("{} added {} to the queue".format(parent_record.name, title))
+                self.pending_nodes.put_nowait(ParseRecord(title, parent_record, 0))
+        except:
+            logging.error("Some tags do not have title in them as an attribute")
 
         if not parent_is_actor:
             # If the parent is a movie, then after its actors have their fields instantiated, we
@@ -227,6 +232,14 @@ class Scraper(object):
             self.actor_num += actors_added
             self.movie_num += movies_added
 
+    def contains(self, record_name, is_actor):
+        if is_actor:
+            dummy_record = Record(record_name, Type.ACTOR)
+        else:
+            dummy_record = Record(record_name, Type.MOVIE)
+
+        return self.graph.contains(dummy_record)
+
     def run_round(self, is_first_round=False, first_is_actor=False):
         """
         Take one element from the queue and scrape it.
@@ -254,6 +267,8 @@ class Scraper(object):
             return 0, 0
 
         # Check to see whether the current record has already been added to the graph
+        if self.contains(current_record.name, is_actor):
+            return 0, 0
 
         # Get the attributes of the record that will be represented by the name
         final_string = "" if is_actor else ""
@@ -294,6 +309,9 @@ class Scraper(object):
         self.add_to_queue(tag_list, record_for_graph, is_actor)
         logging.debug(
             "tag list should have {} many entries; it actually has {} many entries".format(self.degree, len(tag_list)))
+        logging.info("If it has fewer entries than it should have, this means that we tried parsing more records than "
+                     "the "
+                     "webpage allowed for")
 
         # Complete the round and go to run another one
         if is_actor:
