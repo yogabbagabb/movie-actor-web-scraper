@@ -1,0 +1,1772 @@
+2018-10-07 17:57:15,623 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:57:15,623 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:57:15,623 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:58:39,613 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:58:39,613 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:58:39,613 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:58:39,613 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 17:59:53,821 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:59:53,821 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:59:53,821 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 17:59:53,821 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:00:52,984 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:00:52,986 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:00:52,987 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:00:52,988 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:03:28,320 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:03:28,320 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:03:28,320 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:03:28,320 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:03:28,924 - INFO - Getting Movies that Matt Damon played in
+2018-10-07 18:03:28,925 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:03:29,507 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:03:29,507 - INFO - Getting Soup From URL for The Martian (film)
+2018-10-07 18:04:32,098 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:04:32,100 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:04:32,101 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:05:18,387 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:06:04,403 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:06:04,403 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:06:04,404 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:06:04,404 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:06:05,053 - INFO - Getting Movies that Matt Damon played in
+2018-10-07 18:06:05,053 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:06:05,588 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:06:05,588 - INFO - Getting Soup From URL for The Martian (film)
+2018-10-07 18:06:18,610 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:06:18,610 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:06:18,610 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:06:18,610 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:06:19,235 - INFO - Getting Movies that Matt Damon played in
+2018-10-07 18:06:19,235 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:06:19,726 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:06:19,726 - INFO - Getting Soup From URL for The Martian (film)
+2018-10-07 18:08:19,953 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:08:19,955 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:08:19,955 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:08:19,955 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:08:47,847 - INFO - Getting Movies that Matt Damon played in
+2018-10-07 18:08:47,883 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:09:03,779 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:09:50,798 - INFO - Getting Soup From URL for The Martian (film)
+2018-10-07 18:09:55,375 - INFO - The movie was released on 2015
+2018-10-07 18:09:55,467 - INFO - The movie earned 630.2
+2018-10-07 18:10:23,861 - INFO - Getting Actors that played in The Martian (film)
+2018-10-07 18:10:23,862 - INFO - Getting Soup From URL for The Martian (film)
+2018-10-07 18:10:28,305 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:10:33,006 - INFO - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:10:33,542 - INFO - The movie was released on 1988
+2018-10-07 18:10:33,578 - INFO - The movie earned 12.8
+2018-10-07 18:10:33,579 - INFO - Getting Actors that played in Mystic Pizza
+2018-10-07 18:10:33,579 - INFO - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:10:34,112 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:10:38,558 - INFO - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:10:39,256 - INFO - The movie was released on 1997
+2018-10-07 18:10:39,284 - INFO - The movie earned 45.9
+2018-10-07 18:10:39,284 - INFO - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:10:39,285 - INFO - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:10:39,989 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:10:42,991 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:11:56,260 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:11:56,260 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:11:56,260 - INFO - 
+
+
+Starting
+
+
+
+2018-10-07 18:11:56,260 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:11:56,952 - INFO - Getting Movies that Matt Damon played in
+2018-10-07 18:11:56,952 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:11:57,542 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:11:57,543 - INFO - Getting Soup From URL for The Martian (film)
+2018-10-07 18:11:58,100 - INFO - The movie was released on 2015
+2018-10-07 18:11:58,102 - INFO - The movie earned 630.2
+2018-10-07 18:11:58,102 - INFO - Getting Actors that played in The Martian (film)
+2018-10-07 18:11:58,102 - INFO - Getting Soup From URL for The Martian (film)
+2018-10-07 18:11:58,650 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:11:58,651 - INFO - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:11:58,973 - INFO - The movie was released on 1988
+2018-10-07 18:11:58,976 - INFO - The movie earned 12.8
+2018-10-07 18:11:58,976 - INFO - Getting Actors that played in Mystic Pizza
+2018-10-07 18:11:58,976 - INFO - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:11:59,254 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:11:59,254 - INFO - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:11:59,585 - INFO - The movie was released on 1997
+2018-10-07 18:11:59,587 - INFO - The movie earned 45.9
+2018-10-07 18:11:59,587 - INFO - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:11:59,587 - INFO - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:11:59,919 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:11:59,919 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:12:00,562 - INFO - Getting Movies that Matt Damon played in
+2018-10-07 18:12:00,563 - INFO - Getting Soup From URL for Matt Damon
+2018-10-07 18:12:01,065 - DEBUG - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:12:01,065 - INFO - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:12:01,681 - INFO - Getting Movies that Jessica Chastain played in
+2018-10-07 18:12:01,682 - INFO - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:12:02,097 - ERROR - Connection to Jessica_Chastain failed
+2018-10-07 18:12:02,102 - ERROR - The actor's html structure did not meet our conventions if an error did not take place earlier
+2018-10-07 18:14:55,494 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:14:55,495 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:14:55,495 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:14:55,495 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:14:56,130 - INFO - 84 - Getting Movies that Matt Damon played in
+2018-10-07 18:14:56,130 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:14:56,673 - DEBUG - 254 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:14:56,673 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:14:57,223 - INFO - 139 - The movie was released on 2015
+2018-10-07 18:14:57,225 - INFO - 152 - The movie earned 630.2
+2018-10-07 18:14:57,225 - INFO - 104 - Getting Actors that played in The Martian (film)
+2018-10-07 18:14:57,225 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:14:57,753 - DEBUG - 254 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:14:57,754 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:14:58,055 - INFO - 139 - The movie was released on 1988
+2018-10-07 18:14:58,057 - INFO - 152 - The movie earned 12.8
+2018-10-07 18:14:58,058 - INFO - 104 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:14:58,058 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:14:58,333 - DEBUG - 254 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:14:58,333 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:14:58,620 - INFO - 139 - The movie was released on 1997
+2018-10-07 18:14:58,622 - INFO - 152 - The movie earned 45.9
+2018-10-07 18:14:58,622 - INFO - 104 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:14:58,622 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:14:58,941 - DEBUG - 254 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:14:58,942 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:14:59,531 - INFO - 84 - Getting Movies that Matt Damon played in
+2018-10-07 18:14:59,532 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:15:00,052 - DEBUG - 254 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:15:00,052 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:15:00,768 - INFO - 84 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:15:00,768 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:15:00,927 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:15:00,932 - ERROR - 89 - The actor's html structure did not meet our conventions if an error did not take place earlier
+2018-10-07 18:18:31,760 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:18:36,565 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:18:36,565 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:18:36,565 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:18:36,565 - INFO - 214 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:18:36,565 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:18:37,260 - INFO - 84 - Getting Movies that Matt Damon played in
+2018-10-07 18:18:37,260 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:18:37,829 - DEBUG - 255 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:18:37,830 - INFO - 214 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:18:37,830 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:18:38,419 - INFO - 139 - The movie was released on 2015
+2018-10-07 18:18:38,421 - INFO - 152 - The movie earned 630.2
+2018-10-07 18:18:38,422 - INFO - 104 - Getting Actors that played in The Martian (film)
+2018-10-07 18:18:38,422 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:18:38,970 - DEBUG - 255 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:18:38,970 - INFO - 214 - Now beginning a round where 1 actors have been added and 1 movies
+2018-10-07 18:18:38,970 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:18:39,237 - INFO - 139 - The movie was released on 1988
+2018-10-07 18:18:39,239 - INFO - 152 - The movie earned 12.8
+2018-10-07 18:18:39,239 - INFO - 104 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:18:39,239 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:18:39,534 - DEBUG - 255 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:18:39,534 - INFO - 214 - Now beginning a round where 1 actors have been added and 2 movies
+2018-10-07 18:18:39,534 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:18:39,842 - INFO - 139 - The movie was released on 1997
+2018-10-07 18:18:39,844 - INFO - 152 - The movie earned 45.9
+2018-10-07 18:18:39,844 - INFO - 104 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:18:39,844 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:18:40,175 - DEBUG - 255 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:18:40,175 - INFO - 214 - Now beginning a round where 1 actors have been added and 3 movies
+2018-10-07 18:18:40,175 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:18:40,906 - INFO - 84 - Getting Movies that Matt Damon played in
+2018-10-07 18:18:40,906 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:18:41,423 - DEBUG - 255 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:18:41,423 - INFO - 214 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:18:41,423 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:18:42,071 - INFO - 84 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:18:42,071 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:18:42,237 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:18:42,242 - ERROR - 89 - The actor's html structure did not meet our conventions if an error did not take place earlier
+2018-10-07 18:25:58,539 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:25:58,539 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:25:58,539 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:25:58,539 - INFO - 224 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:25:58,539 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:25:59,166 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:25:59,166 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:25:59,746 - DEBUG - 265 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:25:59,746 - INFO - 224 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:25:59,747 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:26:00,322 - INFO - 149 - The movie was released on 2015
+2018-10-07 18:26:00,324 - INFO - 162 - The movie earned 630.2
+2018-10-07 18:26:00,324 - INFO - 110 - Getting Actors that played in The Martian (film)
+2018-10-07 18:26:00,324 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:26:00,926 - DEBUG - 265 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:26:00,927 - INFO - 224 - Now beginning a round where 1 actors have been added and 1 movies
+2018-10-07 18:26:00,927 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:26:01,216 - INFO - 149 - The movie was released on 1988
+2018-10-07 18:26:01,218 - INFO - 162 - The movie earned 12.8
+2018-10-07 18:26:01,218 - INFO - 110 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:26:01,218 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:26:01,484 - DEBUG - 265 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:26:01,484 - INFO - 224 - Now beginning a round where 1 actors have been added and 2 movies
+2018-10-07 18:26:01,484 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:26:01,791 - INFO - 149 - The movie was released on 1997
+2018-10-07 18:26:01,793 - INFO - 162 - The movie earned 45.9
+2018-10-07 18:26:01,793 - INFO - 110 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:26:01,793 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:26:02,090 - DEBUG - 265 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:26:02,090 - INFO - 224 - Now beginning a round where 1 actors have been added and 3 movies
+2018-10-07 18:26:02,090 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:26:02,768 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:26:02,769 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:26:03,283 - DEBUG - 265 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:26:03,284 - INFO - 224 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:26:03,284 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:26:04,010 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:26:04,010 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:26:04,159 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:26:04,165 - ERROR - 94 - The actor's html structure did not meet our conventions if an error did not take place earlier
+2018-10-07 18:27:15,526 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:27:15,527 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:27:15,527 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:27:15,527 - INFO - 224 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:27:15,527 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:27:16,142 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:27:16,190 - DEBUG - 265 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:27:16,190 - INFO - 224 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:27:16,190 - INFO - 63 - Getting Soup From URL for The Film Programme
+2018-10-07 18:34:58,853 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:34:58,854 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:34:58,854 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:34:58,854 - INFO - 225 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:34:58,854 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:34:59,567 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:34:59,619 - INFO - 186 - Matt Damon added The Film Programme to the queue
+2018-10-07 18:34:59,619 - INFO - 186 - Matt Damon added Forbes to the queue
+2018-10-07 18:34:59,619 - INFO - 186 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:34:59,619 - DEBUG - 266 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:34:59,619 - INFO - 225 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:34:59,620 - INFO - 63 - Getting Soup From URL for The Film Programme
+2018-10-07 18:36:51,516 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:36:51,517 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:36:51,517 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:36:51,517 - INFO - 225 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:36:51,517 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:36:52,226 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:36:52,226 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:36:52,791 - INFO - 186 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:36:52,792 - INFO - 186 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:36:52,792 - INFO - 186 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:36:52,792 - DEBUG - 266 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:36:52,793 - INFO - 225 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:36:52,793 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:36:53,337 - INFO - 149 - The movie was released on 2015
+2018-10-07 18:36:53,339 - INFO - 162 - The movie earned 630.2
+2018-10-07 18:36:53,339 - INFO - 110 - Getting Actors that played in The Martian (film)
+2018-10-07 18:36:53,340 - INFO - 186 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:36:53,340 - INFO - 186 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:36:53,340 - INFO - 186 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:36:53,340 - DEBUG - 266 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:36:53,340 - INFO - 225 - Now beginning a round where 1 actors have been added and 1 movies
+2018-10-07 18:36:53,340 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:36:53,635 - INFO - 149 - The movie was released on 1988
+2018-10-07 18:36:53,638 - INFO - 162 - The movie earned 12.8
+2018-10-07 18:36:53,639 - INFO - 110 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:36:53,640 - INFO - 186 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:36:53,640 - INFO - 186 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:36:53,640 - INFO - 186 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:36:53,640 - DEBUG - 266 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:36:53,641 - INFO - 225 - Now beginning a round where 1 actors have been added and 2 movies
+2018-10-07 18:36:53,641 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:36:54,002 - INFO - 149 - The movie was released on 1997
+2018-10-07 18:36:54,004 - INFO - 162 - The movie earned 45.9
+2018-10-07 18:36:54,004 - INFO - 110 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:36:54,004 - INFO - 186 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:36:54,005 - INFO - 186 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:36:54,005 - INFO - 186 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:36:54,005 - DEBUG - 266 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:36:54,005 - INFO - 225 - Now beginning a round where 1 actors have been added and 3 movies
+2018-10-07 18:36:54,005 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:36:54,620 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:36:54,620 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:36:55,156 - INFO - 186 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:36:55,156 - INFO - 186 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:36:55,156 - INFO - 186 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:36:55,156 - DEBUG - 266 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:36:55,156 - INFO - 225 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:36:55,157 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:36:55,826 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:36:55,826 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:36:55,991 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:36:55,998 - ERROR - 94 - The actor's html structure did not meet our conventions if an error did not take place earlier
+2018-10-07 18:43:41,644 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:43:41,645 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:43:41,646 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:43:41,646 - INFO - 230 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:43:41,646 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:43:42,257 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:43:42,257 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:43:42,759 - INFO - 190 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:43:42,759 - INFO - 190 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:43:42,759 - INFO - 190 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:43:42,759 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:43:42,760 - INFO - 230 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:43:42,760 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:43:43,339 - INFO - 153 - The movie was released on 2015
+2018-10-07 18:43:43,342 - INFO - 166 - The movie earned 630.2
+2018-10-07 18:43:43,342 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:43:43,343 - INFO - 190 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:43:43,344 - INFO - 190 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:43:43,344 - INFO - 190 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:43:43,344 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:43:43,344 - INFO - 230 - Now beginning a round where 1 actors have been added and 1 movies
+2018-10-07 18:43:43,344 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:43:43,637 - INFO - 153 - The movie was released on 1988
+2018-10-07 18:43:43,638 - INFO - 166 - The movie earned 12.8
+2018-10-07 18:43:43,638 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:43:43,639 - INFO - 190 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:43:43,639 - INFO - 190 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:43:43,639 - INFO - 190 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:43:43,639 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:43:43,639 - INFO - 230 - Now beginning a round where 1 actors have been added and 2 movies
+2018-10-07 18:43:43,639 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:43:43,929 - INFO - 153 - The movie was released on 1997
+2018-10-07 18:43:43,932 - INFO - 166 - The movie earned 45.9
+2018-10-07 18:43:43,932 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:43:43,933 - INFO - 190 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:43:43,933 - INFO - 190 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:43:43,933 - INFO - 190 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:43:43,933 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:43:43,933 - INFO - 230 - Now beginning a round where 1 actors have been added and 3 movies
+2018-10-07 18:43:43,933 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:43:44,578 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:43:44,579 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:43:45,129 - INFO - 190 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:43:45,130 - INFO - 190 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:43:45,130 - INFO - 190 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:43:45,130 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:43:45,130 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:43:45,130 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:43:45,785 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:43:45,785 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:43:45,948 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:45:22,872 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:45:22,872 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:45:22,872 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:45:22,872 - INFO - 230 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:45:22,872 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:45:23,552 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:45:23,552 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:45:24,098 - INFO - 190 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:45:24,098 - INFO - 190 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:45:24,099 - INFO - 190 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:45:24,099 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:45:24,099 - INFO - 230 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:45:24,099 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:45:24,781 - INFO - 153 - The movie was released on 2015
+2018-10-07 18:45:24,784 - INFO - 166 - The movie earned 630.2
+2018-10-07 18:45:24,784 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:45:24,786 - INFO - 190 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:45:24,786 - INFO - 190 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:45:24,786 - INFO - 190 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:45:24,786 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:45:24,786 - INFO - 230 - Now beginning a round where 1 actors have been added and 1 movies
+2018-10-07 18:45:24,786 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:45:25,064 - INFO - 153 - The movie was released on 1988
+2018-10-07 18:45:25,065 - INFO - 166 - The movie earned 12.8
+2018-10-07 18:45:25,065 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:45:25,066 - INFO - 190 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:45:25,066 - INFO - 190 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:45:25,066 - INFO - 190 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:45:25,066 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:45:25,066 - INFO - 230 - Now beginning a round where 1 actors have been added and 2 movies
+2018-10-07 18:45:25,066 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:45:25,374 - INFO - 153 - The movie was released on 1997
+2018-10-07 18:45:25,376 - INFO - 166 - The movie earned 45.9
+2018-10-07 18:45:25,376 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:45:25,377 - INFO - 190 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:45:25,377 - INFO - 190 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:45:25,377 - INFO - 190 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:45:25,377 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:45:25,377 - INFO - 230 - Now beginning a round where 1 actors have been added and 3 movies
+2018-10-07 18:45:25,377 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:45:25,993 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:45:25,993 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:45:26,572 - INFO - 190 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:45:26,572 - INFO - 190 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:45:26,573 - INFO - 190 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:45:26,573 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:45:26,573 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:45:26,573 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:45:27,199 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:45:27,199 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:45:27,356 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:45:27,361 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:45:27,361 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:45:27,800 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:45:27,800 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:45:28,415 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:45:28,420 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:45:28,420 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:45:28,420 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:45:28,781 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:45:28,782 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:45:29,439 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:45:29,445 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:45:29,446 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:45:30,050 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:45:30,050 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:45:30,527 - INFO - 190 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:45:30,527 - INFO - 190 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:45:30,527 - INFO - 190 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:45:30,527 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:17,190 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:47:17,192 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:47:17,192 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:47:17,192 - INFO - 230 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:47:17,192 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:47:17,824 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:47:17,825 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:47:18,399 - INFO - 190 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:47:18,400 - INFO - 190 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:47:18,400 - INFO - 190 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:47:18,400 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:18,400 - INFO - 230 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:47:18,400 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:47:19,017 - INFO - 153 - The movie was released on 2015
+2018-10-07 18:47:19,019 - INFO - 166 - The movie earned 630.2
+2018-10-07 18:47:19,019 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:47:19,020 - INFO - 190 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:47:19,020 - INFO - 190 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:47:19,020 - INFO - 190 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:47:19,020 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:19,020 - INFO - 230 - Now beginning a round where 1 actors have been added and 1 movies
+2018-10-07 18:47:19,020 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:47:19,339 - INFO - 153 - The movie was released on 1988
+2018-10-07 18:47:19,343 - INFO - 166 - The movie earned 12.8
+2018-10-07 18:47:19,343 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:47:19,344 - INFO - 190 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:47:19,344 - INFO - 190 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:47:19,344 - INFO - 190 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:47:19,345 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:19,345 - INFO - 230 - Now beginning a round where 1 actors have been added and 2 movies
+2018-10-07 18:47:19,345 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:47:19,679 - INFO - 153 - The movie was released on 1997
+2018-10-07 18:47:19,681 - INFO - 166 - The movie earned 45.9
+2018-10-07 18:47:19,681 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:47:19,682 - INFO - 190 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:47:19,682 - INFO - 190 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:47:19,682 - INFO - 190 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:47:19,682 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:19,682 - INFO - 230 - Now beginning a round where 1 actors have been added and 3 movies
+2018-10-07 18:47:19,682 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:47:20,268 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:47:20,268 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:47:20,795 - INFO - 190 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:47:20,796 - INFO - 190 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:47:20,796 - INFO - 190 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:47:20,796 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:20,796 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:47:20,796 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:47:21,545 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:47:21,545 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:47:21,709 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:47:21,714 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:47:21,714 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:47:22,129 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:47:22,129 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:47:22,300 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:47:22,305 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:47:22,306 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:47:22,306 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:47:22,666 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:47:22,666 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:47:22,839 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:47:22,844 - INFO - 230 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:47:22,845 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:47:23,438 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:47:23,439 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:47:23,899 - INFO - 190 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:47:23,899 - INFO - 190 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:47:23,899 - INFO - 190 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:47:23,899 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:23,899 - INFO - 230 - Now beginning a round where 3 actors have been added and 3 movies
+2018-10-07 18:47:23,900 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:47:24,241 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:47:24,241 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:47:24,641 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:47:24,646 - INFO - 230 - Now beginning a round where 3 actors have been added and 3 movies
+2018-10-07 18:47:24,646 - INFO - 230 - Now beginning a round where 3 actors have been added and 3 movies
+2018-10-07 18:47:24,646 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:47:25,290 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:47:25,290 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:47:25,892 - INFO - 190 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:47:25,892 - INFO - 190 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:47:25,892 - INFO - 190 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:47:25,893 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:25,893 - INFO - 230 - Now beginning a round where 4 actors have been added and 3 movies
+2018-10-07 18:47:25,893 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:47:26,401 - INFO - 85 - Getting Movies that Claire Danes played in
+2018-10-07 18:47:26,402 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:47:27,070 - INFO - 190 - Claire Danes added Time (magazine) to the queue
+2018-10-07 18:47:27,070 - INFO - 190 - Claire Danes added My So-Called Life to the queue
+2018-10-07 18:47:27,070 - INFO - 190 - Claire Danes added Little Women (1994 film) to the queue
+2018-10-07 18:47:27,070 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:27,070 - INFO - 230 - Now beginning a round where 5 actors have been added and 3 movies
+2018-10-07 18:47:27,070 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:47:27,648 - INFO - 85 - Getting Movies that Jon Voight played in
+2018-10-07 18:47:27,648 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:47:28,180 - ERROR - 74 - Connection to Jon_Voight failed
+2018-10-07 18:47:28,185 - INFO - 230 - Now beginning a round where 5 actors have been added and 3 movies
+2018-10-07 18:47:28,185 - INFO - 230 - Now beginning a round where 5 actors have been added and 3 movies
+2018-10-07 18:47:28,186 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:47:28,763 - INFO - 153 - The movie was released on 2015
+2018-10-07 18:47:28,765 - INFO - 166 - The movie earned 630.2
+2018-10-07 18:47:28,765 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:47:28,766 - INFO - 190 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:47:28,766 - INFO - 190 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:47:28,766 - INFO - 190 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:47:28,766 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:28,766 - INFO - 230 - Now beginning a round where 5 actors have been added and 4 movies
+2018-10-07 18:47:28,766 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:47:29,049 - INFO - 153 - The movie was released on 1988
+2018-10-07 18:47:29,051 - INFO - 166 - The movie earned 12.8
+2018-10-07 18:47:29,051 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:47:29,051 - INFO - 190 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:47:29,052 - INFO - 190 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:47:29,052 - INFO - 190 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:47:29,052 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:29,052 - INFO - 230 - Now beginning a round where 5 actors have been added and 5 movies
+2018-10-07 18:47:29,052 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:47:29,356 - INFO - 153 - The movie was released on 1997
+2018-10-07 18:47:29,359 - INFO - 166 - The movie earned 45.9
+2018-10-07 18:47:29,359 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:47:29,359 - INFO - 190 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:47:29,359 - INFO - 190 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:47:29,360 - INFO - 190 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:47:29,360 - DEBUG - 281 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:47:29,360 - INFO - 230 - Now beginning a round where 5 actors have been added and 6 movies
+2018-10-07 18:47:29,360 - INFO - 63 - Getting Soup From URL for Homecoming (TV series)
+2018-10-07 18:52:04,984 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-07 18:52:04,985 - INFO - 68 - 
+
+
+Starting
+
+
+
+2018-10-07 18:52:04,985 - INFO - 52 - 
+
+
+Starting
+
+
+
+2018-10-07 18:52:04,985 - INFO - 238 - Now beginning a round where 0 actors have been added and 0 movies
+2018-10-07 18:52:04,985 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:05,586 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:05,587 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:06,176 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:06,176 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:06,176 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:06,176 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:06,176 - INFO - 238 - Now beginning a round where 1 actors have been added and 0 movies
+2018-10-07 18:52:06,176 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:52:06,725 - INFO - 154 - The movie was released on 2015
+2018-10-07 18:52:06,727 - INFO - 167 - The movie earned 630.2
+2018-10-07 18:52:06,728 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:52:06,729 - INFO - 198 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:52:06,730 - INFO - 198 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:52:06,730 - INFO - 198 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:52:06,730 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:06,730 - INFO - 238 - Now beginning a round where 1 actors have been added and 1 movies
+2018-10-07 18:52:06,730 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:07,004 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:07,006 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:07,007 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:07,007 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:07,007 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:07,008 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:07,008 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:07,008 - INFO - 238 - Now beginning a round where 1 actors have been added and 2 movies
+2018-10-07 18:52:07,008 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:52:07,319 - INFO - 154 - The movie was released on 1997
+2018-10-07 18:52:07,324 - INFO - 167 - The movie earned 45.9
+2018-10-07 18:52:07,324 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:52:07,325 - INFO - 198 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:52:07,325 - INFO - 198 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:52:07,325 - INFO - 198 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:52:07,325 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:07,325 - INFO - 238 - Now beginning a round where 1 actors have been added and 3 movies
+2018-10-07 18:52:07,325 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:07,975 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:07,975 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:08,507 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:08,507 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:08,507 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:08,507 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:08,507 - INFO - 238 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:52:08,508 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:52:09,119 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:52:09,119 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:52:09,285 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:52:09,291 - INFO - 238 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:52:09,291 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:52:09,733 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:52:09,733 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:52:09,920 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:52:09,927 - INFO - 238 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:52:09,927 - INFO - 238 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:52:09,928 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:10,254 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:52:10,254 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:10,407 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:52:10,412 - INFO - 238 - Now beginning a round where 2 actors have been added and 3 movies
+2018-10-07 18:52:10,412 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:11,061 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:52:11,061 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:11,570 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:52:11,570 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:52:11,570 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:52:11,570 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:11,570 - INFO - 238 - Now beginning a round where 3 actors have been added and 3 movies
+2018-10-07 18:52:11,571 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:11,941 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:52:11,941 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:12,095 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:52:12,101 - INFO - 238 - Now beginning a round where 3 actors have been added and 3 movies
+2018-10-07 18:52:12,101 - INFO - 238 - Now beginning a round where 3 actors have been added and 3 movies
+2018-10-07 18:52:12,102 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:12,703 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:12,703 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:13,281 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:13,281 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:13,281 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:13,281 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:13,281 - INFO - 238 - Now beginning a round where 4 actors have been added and 3 movies
+2018-10-07 18:52:13,281 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:52:13,786 - INFO - 85 - Getting Movies that Claire Danes played in
+2018-10-07 18:52:13,786 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:52:14,403 - INFO - 198 - Claire Danes added Time (magazine) to the queue
+2018-10-07 18:52:14,403 - INFO - 198 - Claire Danes added My So-Called Life to the queue
+2018-10-07 18:52:14,404 - INFO - 198 - Claire Danes added Little Women (1994 film) to the queue
+2018-10-07 18:52:14,404 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:14,404 - INFO - 238 - Now beginning a round where 5 actors have been added and 3 movies
+2018-10-07 18:52:14,404 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:52:14,934 - INFO - 85 - Getting Movies that Jon Voight played in
+2018-10-07 18:52:14,934 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:52:15,100 - ERROR - 74 - Connection to Jon_Voight failed
+2018-10-07 18:52:15,105 - INFO - 238 - Now beginning a round where 5 actors have been added and 3 movies
+2018-10-07 18:52:15,106 - INFO - 238 - Now beginning a round where 5 actors have been added and 3 movies
+2018-10-07 18:52:15,106 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:52:15,767 - INFO - 154 - The movie was released on 2015
+2018-10-07 18:52:15,771 - INFO - 167 - The movie earned 630.2
+2018-10-07 18:52:15,771 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:52:15,772 - INFO - 198 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:52:15,773 - INFO - 198 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:52:15,773 - INFO - 198 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:52:15,773 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:15,773 - INFO - 238 - Now beginning a round where 5 actors have been added and 4 movies
+2018-10-07 18:52:15,773 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:16,079 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:16,081 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:16,081 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:16,082 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:16,082 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:16,082 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:16,082 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:16,082 - INFO - 238 - Now beginning a round where 5 actors have been added and 5 movies
+2018-10-07 18:52:16,083 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:52:16,424 - INFO - 154 - The movie was released on 1997
+2018-10-07 18:52:16,427 - INFO - 167 - The movie earned 45.9
+2018-10-07 18:52:16,427 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:52:16,427 - INFO - 198 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:52:16,427 - INFO - 198 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:52:16,428 - INFO - 198 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:52:16,428 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:16,428 - INFO - 238 - Now beginning a round where 5 actors have been added and 6 movies
+2018-10-07 18:52:16,428 - INFO - 63 - Getting Soup From URL for Homecoming (TV series)
+2018-10-07 18:52:16,761 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:16,761 - INFO - 238 - Now beginning a round where 5 actors have been added and 6 movies
+2018-10-07 18:52:16,761 - INFO - 63 - Getting Soup From URL for Firehouse (1987 film)
+2018-10-07 18:52:16,982 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:16,982 - INFO - 238 - Now beginning a round where 5 actors have been added and 6 movies
+2018-10-07 18:52:16,982 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:17,264 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:17,267 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:17,268 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:17,269 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:17,269 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:17,269 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:17,269 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:17,269 - INFO - 238 - Now beginning a round where 5 actors have been added and 7 movies
+2018-10-07 18:52:17,269 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:52:17,902 - INFO - 154 - The movie was released on 2015
+2018-10-07 18:52:17,904 - INFO - 167 - The movie earned 630.2
+2018-10-07 18:52:17,904 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:52:17,905 - INFO - 198 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:52:17,905 - INFO - 198 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:52:17,905 - INFO - 198 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:52:17,905 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:17,905 - INFO - 238 - Now beginning a round where 5 actors have been added and 8 movies
+2018-10-07 18:52:17,905 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:18,201 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:18,204 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:18,204 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:18,205 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:18,205 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:18,205 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:18,205 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:18,205 - INFO - 238 - Now beginning a round where 5 actors have been added and 9 movies
+2018-10-07 18:52:18,205 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:52:18,506 - INFO - 154 - The movie was released on 1997
+2018-10-07 18:52:18,510 - INFO - 167 - The movie earned 45.9
+2018-10-07 18:52:18,510 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:52:18,512 - INFO - 198 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:52:18,512 - INFO - 198 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:52:18,513 - INFO - 198 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:52:18,513 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:18,513 - INFO - 238 - Now beginning a round where 5 actors have been added and 10 movies
+2018-10-07 18:52:18,513 - INFO - 63 - Getting Soup From URL for Time (magazine)
+2018-10-07 18:52:18,985 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:18,986 - INFO - 238 - Now beginning a round where 5 actors have been added and 10 movies
+2018-10-07 18:52:18,986 - INFO - 63 - Getting Soup From URL for My So-Called Life
+2018-10-07 18:52:19,555 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:19,555 - INFO - 238 - Now beginning a round where 5 actors have been added and 10 movies
+2018-10-07 18:52:19,555 - INFO - 63 - Getting Soup From URL for Little Women (1994 film)
+2018-10-07 18:52:19,895 - INFO - 154 - The movie was released on 1994
+2018-10-07 18:52:19,896 - INFO - 167 - The movie earned 50.1
+2018-10-07 18:52:19,896 - INFO - 112 - Getting Actors that played in Little Women (1994 film)
+2018-10-07 18:52:19,897 - INFO - 198 - Little Women (1994 film) added Winona Ryder to the queue
+2018-10-07 18:52:19,897 - INFO - 198 - Little Women (1994 film) added Gabriel Byrne to the queue
+2018-10-07 18:52:19,897 - INFO - 198 - Little Women (1994 film) added Trini Alvarado to the queue
+2018-10-07 18:52:19,897 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:19,897 - INFO - 238 - Now beginning a round where 5 actors have been added and 11 movies
+2018-10-07 18:52:19,898 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:20,506 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:20,506 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:21,008 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:21,008 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:21,008 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:21,009 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:21,009 - INFO - 238 - Now beginning a round where 6 actors have been added and 11 movies
+2018-10-07 18:52:21,009 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:52:21,687 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:52:21,687 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:52:21,868 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:52:21,872 - INFO - 238 - Now beginning a round where 6 actors have been added and 11 movies
+2018-10-07 18:52:21,872 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:52:22,329 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:52:22,329 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:52:22,490 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:52:22,495 - INFO - 238 - Now beginning a round where 6 actors have been added and 11 movies
+2018-10-07 18:52:22,496 - INFO - 238 - Now beginning a round where 6 actors have been added and 11 movies
+2018-10-07 18:52:22,496 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:22,829 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:52:22,829 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:22,978 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:52:22,985 - INFO - 238 - Now beginning a round where 6 actors have been added and 11 movies
+2018-10-07 18:52:22,985 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:23,626 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:52:23,626 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:24,057 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:52:24,057 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:52:24,057 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:52:24,057 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:24,057 - INFO - 238 - Now beginning a round where 7 actors have been added and 11 movies
+2018-10-07 18:52:24,058 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:24,427 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:52:24,427 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:24,575 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:52:24,581 - INFO - 238 - Now beginning a round where 7 actors have been added and 11 movies
+2018-10-07 18:52:24,581 - INFO - 238 - Now beginning a round where 7 actors have been added and 11 movies
+2018-10-07 18:52:24,581 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:25,224 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:25,225 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:25,815 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:25,815 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:25,815 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:25,815 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:25,815 - INFO - 238 - Now beginning a round where 8 actors have been added and 11 movies
+2018-10-07 18:52:25,815 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:52:26,345 - INFO - 85 - Getting Movies that Claire Danes played in
+2018-10-07 18:52:26,345 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:52:26,906 - INFO - 198 - Claire Danes added Time (magazine) to the queue
+2018-10-07 18:52:26,906 - INFO - 198 - Claire Danes added My So-Called Life to the queue
+2018-10-07 18:52:26,906 - INFO - 198 - Claire Danes added Little Women (1994 film) to the queue
+2018-10-07 18:52:26,906 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:26,906 - INFO - 238 - Now beginning a round where 9 actors have been added and 11 movies
+2018-10-07 18:52:26,906 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:52:27,468 - INFO - 85 - Getting Movies that Jon Voight played in
+2018-10-07 18:52:27,468 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:52:27,651 - ERROR - 74 - Connection to Jon_Voight failed
+2018-10-07 18:52:27,659 - INFO - 238 - Now beginning a round where 9 actors have been added and 11 movies
+2018-10-07 18:52:27,659 - INFO - 238 - Now beginning a round where 9 actors have been added and 11 movies
+2018-10-07 18:52:27,660 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:27,985 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:52:27,985 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:28,146 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:52:28,151 - INFO - 238 - Now beginning a round where 9 actors have been added and 11 movies
+2018-10-07 18:52:28,152 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:28,744 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:52:28,745 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:29,197 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:52:29,198 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:52:29,198 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:52:29,198 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:29,199 - INFO - 238 - Now beginning a round where 10 actors have been added and 11 movies
+2018-10-07 18:52:29,199 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:29,600 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:52:29,600 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:29,761 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:52:29,767 - INFO - 238 - Now beginning a round where 10 actors have been added and 11 movies
+2018-10-07 18:52:29,768 - INFO - 238 - Now beginning a round where 10 actors have been added and 11 movies
+2018-10-07 18:52:29,768 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:30,499 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:30,499 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:31,028 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:31,028 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:31,029 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:31,029 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:31,029 - INFO - 238 - Now beginning a round where 11 actors have been added and 11 movies
+2018-10-07 18:52:31,029 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:52:31,809 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:52:31,809 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:52:31,981 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:52:31,987 - INFO - 238 - Now beginning a round where 11 actors have been added and 11 movies
+2018-10-07 18:52:31,987 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:52:32,434 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:52:32,434 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:52:32,639 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:52:32,645 - INFO - 238 - Now beginning a round where 11 actors have been added and 11 movies
+2018-10-07 18:52:32,646 - INFO - 238 - Now beginning a round where 11 actors have been added and 11 movies
+2018-10-07 18:52:32,646 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:33,022 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:52:33,022 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:33,196 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:52:33,206 - INFO - 238 - Now beginning a round where 11 actors have been added and 11 movies
+2018-10-07 18:52:33,206 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:33,832 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:52:33,832 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:34,300 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:52:34,300 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:52:34,300 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:52:34,300 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:34,300 - INFO - 238 - Now beginning a round where 12 actors have been added and 11 movies
+2018-10-07 18:52:34,300 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:34,640 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:52:34,640 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:34,787 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:52:34,792 - INFO - 238 - Now beginning a round where 12 actors have been added and 11 movies
+2018-10-07 18:52:34,793 - INFO - 238 - Now beginning a round where 12 actors have been added and 11 movies
+2018-10-07 18:52:34,793 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:35,469 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:35,469 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:36,044 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:36,044 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:36,045 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:36,045 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:36,045 - INFO - 238 - Now beginning a round where 13 actors have been added and 11 movies
+2018-10-07 18:52:36,045 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:52:36,588 - INFO - 85 - Getting Movies that Claire Danes played in
+2018-10-07 18:52:36,588 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:52:37,134 - INFO - 198 - Claire Danes added Time (magazine) to the queue
+2018-10-07 18:52:37,134 - INFO - 198 - Claire Danes added My So-Called Life to the queue
+2018-10-07 18:52:37,134 - INFO - 198 - Claire Danes added Little Women (1994 film) to the queue
+2018-10-07 18:52:37,134 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:37,134 - INFO - 238 - Now beginning a round where 14 actors have been added and 11 movies
+2018-10-07 18:52:37,134 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:52:37,652 - INFO - 85 - Getting Movies that Jon Voight played in
+2018-10-07 18:52:37,652 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:52:37,873 - ERROR - 74 - Connection to Jon_Voight failed
+2018-10-07 18:52:37,879 - INFO - 238 - Now beginning a round where 14 actors have been added and 11 movies
+2018-10-07 18:52:37,879 - INFO - 238 - Now beginning a round where 14 actors have been added and 11 movies
+2018-10-07 18:52:37,880 - INFO - 63 - Getting Soup From URL for Winona Ryder
+2018-10-07 18:52:38,494 - INFO - 85 - Getting Movies that Winona Ryder played in
+2018-10-07 18:52:38,494 - INFO - 63 - Getting Soup From URL for Winona Ryder
+2018-10-07 18:52:38,904 - ERROR - 74 - Connection to Winona_Ryder failed
+2018-10-07 18:52:38,910 - INFO - 238 - Now beginning a round where 14 actors have been added and 11 movies
+2018-10-07 18:52:38,910 - INFO - 63 - Getting Soup From URL for Gabriel Byrne
+2018-10-07 18:52:39,321 - INFO - 85 - Getting Movies that Gabriel Byrne played in
+2018-10-07 18:52:39,321 - INFO - 63 - Getting Soup From URL for Gabriel Byrne
+2018-10-07 18:52:39,733 - ERROR - 74 - Connection to Gabriel_Byrne failed
+2018-10-07 18:52:39,742 - INFO - 238 - Now beginning a round where 14 actors have been added and 11 movies
+2018-10-07 18:52:39,743 - INFO - 63 - Getting Soup From URL for Trini Alvarado
+2018-10-07 18:52:40,085 - INFO - 85 - Getting Movies that Trini Alvarado played in
+2018-10-07 18:52:40,085 - INFO - 63 - Getting Soup From URL for Trini Alvarado
+2018-10-07 18:52:40,595 - ERROR - 74 - Connection to Trini_Alvarado failed
+2018-10-07 18:52:40,602 - INFO - 238 - Now beginning a round where 14 actors have been added and 11 movies
+2018-10-07 18:52:40,602 - INFO - 238 - Now beginning a round where 14 actors have been added and 11 movies
+2018-10-07 18:52:40,602 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:52:41,100 - INFO - 154 - The movie was released on 2015
+2018-10-07 18:52:41,103 - INFO - 167 - The movie earned 630.2
+2018-10-07 18:52:41,103 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:52:41,103 - INFO - 198 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:52:41,104 - INFO - 198 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:52:41,104 - INFO - 198 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:52:41,104 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:41,104 - INFO - 238 - Now beginning a round where 14 actors have been added and 12 movies
+2018-10-07 18:52:41,104 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:41,390 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:41,393 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:41,393 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:41,395 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:41,395 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:41,395 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:41,396 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:41,396 - INFO - 238 - Now beginning a round where 14 actors have been added and 13 movies
+2018-10-07 18:52:41,396 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:52:41,693 - INFO - 154 - The movie was released on 1997
+2018-10-07 18:52:41,696 - INFO - 167 - The movie earned 45.9
+2018-10-07 18:52:41,697 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:52:41,698 - INFO - 198 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:52:41,698 - INFO - 198 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:52:41,698 - INFO - 198 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:52:41,698 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:41,698 - INFO - 238 - Now beginning a round where 14 actors have been added and 14 movies
+2018-10-07 18:52:41,698 - INFO - 63 - Getting Soup From URL for Homecoming (TV series)
+2018-10-07 18:52:42,063 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:42,063 - INFO - 238 - Now beginning a round where 14 actors have been added and 14 movies
+2018-10-07 18:52:42,063 - INFO - 63 - Getting Soup From URL for Firehouse (1987 film)
+2018-10-07 18:52:42,313 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:42,313 - INFO - 238 - Now beginning a round where 14 actors have been added and 14 movies
+2018-10-07 18:52:42,313 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:42,633 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:42,636 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:42,636 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:42,637 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:42,637 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:42,637 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:42,637 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:42,637 - INFO - 238 - Now beginning a round where 14 actors have been added and 15 movies
+2018-10-07 18:52:42,638 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:52:43,210 - INFO - 154 - The movie was released on 2015
+2018-10-07 18:52:43,213 - INFO - 167 - The movie earned 630.2
+2018-10-07 18:52:43,213 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:52:43,215 - INFO - 198 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:52:43,215 - INFO - 198 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:52:43,215 - INFO - 198 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:52:43,215 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:43,215 - INFO - 238 - Now beginning a round where 14 actors have been added and 16 movies
+2018-10-07 18:52:43,215 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:43,505 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:43,507 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:43,507 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:43,508 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:43,508 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:43,508 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:43,508 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:43,508 - INFO - 238 - Now beginning a round where 14 actors have been added and 17 movies
+2018-10-07 18:52:43,508 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:52:43,811 - INFO - 154 - The movie was released on 1997
+2018-10-07 18:52:43,814 - INFO - 167 - The movie earned 45.9
+2018-10-07 18:52:43,814 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:52:43,815 - INFO - 198 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:52:43,815 - INFO - 198 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:52:43,815 - INFO - 198 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:52:43,815 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:43,815 - INFO - 238 - Now beginning a round where 14 actors have been added and 18 movies
+2018-10-07 18:52:43,815 - INFO - 63 - Getting Soup From URL for Time (magazine)
+2018-10-07 18:52:44,243 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:44,244 - INFO - 238 - Now beginning a round where 14 actors have been added and 18 movies
+2018-10-07 18:52:44,244 - INFO - 63 - Getting Soup From URL for My So-Called Life
+2018-10-07 18:52:44,631 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:44,631 - INFO - 238 - Now beginning a round where 14 actors have been added and 18 movies
+2018-10-07 18:52:44,631 - INFO - 63 - Getting Soup From URL for Little Women (1994 film)
+2018-10-07 18:52:44,988 - INFO - 154 - The movie was released on 1994
+2018-10-07 18:52:44,991 - INFO - 167 - The movie earned 50.1
+2018-10-07 18:52:44,991 - INFO - 112 - Getting Actors that played in Little Women (1994 film)
+2018-10-07 18:52:44,993 - INFO - 198 - Little Women (1994 film) added Winona Ryder to the queue
+2018-10-07 18:52:44,994 - INFO - 198 - Little Women (1994 film) added Gabriel Byrne to the queue
+2018-10-07 18:52:44,994 - INFO - 198 - Little Women (1994 film) added Trini Alvarado to the queue
+2018-10-07 18:52:44,995 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:44,995 - INFO - 238 - Now beginning a round where 14 actors have been added and 19 movies
+2018-10-07 18:52:44,995 - INFO - 63 - Getting Soup From URL for Homecoming (TV series)
+2018-10-07 18:52:45,349 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:45,349 - INFO - 238 - Now beginning a round where 14 actors have been added and 19 movies
+2018-10-07 18:52:45,350 - INFO - 63 - Getting Soup From URL for Firehouse (1987 film)
+2018-10-07 18:52:45,573 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:45,573 - INFO - 238 - Now beginning a round where 14 actors have been added and 19 movies
+2018-10-07 18:52:45,573 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:45,833 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:45,836 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:45,836 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:45,837 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:45,837 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:45,837 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:45,837 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:45,837 - INFO - 238 - Now beginning a round where 14 actors have been added and 20 movies
+2018-10-07 18:52:45,837 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:52:46,384 - INFO - 154 - The movie was released on 2015
+2018-10-07 18:52:46,387 - INFO - 167 - The movie earned 630.2
+2018-10-07 18:52:46,387 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:52:46,388 - INFO - 198 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:52:46,388 - INFO - 198 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:52:46,389 - INFO - 198 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:52:46,389 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:46,389 - INFO - 238 - Now beginning a round where 14 actors have been added and 21 movies
+2018-10-07 18:52:46,389 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:46,686 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:46,688 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:46,688 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:46,689 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:46,691 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:46,691 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:46,691 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:46,691 - INFO - 238 - Now beginning a round where 14 actors have been added and 22 movies
+2018-10-07 18:52:46,692 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:52:47,100 - INFO - 154 - The movie was released on 1997
+2018-10-07 18:52:47,102 - INFO - 167 - The movie earned 45.9
+2018-10-07 18:52:47,102 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:52:47,103 - INFO - 198 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:52:47,103 - INFO - 198 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:52:47,103 - INFO - 198 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:52:47,103 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:47,103 - INFO - 238 - Now beginning a round where 14 actors have been added and 23 movies
+2018-10-07 18:52:47,103 - INFO - 63 - Getting Soup From URL for Homecoming (TV series)
+2018-10-07 18:52:47,458 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:47,458 - INFO - 238 - Now beginning a round where 14 actors have been added and 23 movies
+2018-10-07 18:52:47,459 - INFO - 63 - Getting Soup From URL for Firehouse (1987 film)
+2018-10-07 18:52:47,721 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:47,722 - INFO - 238 - Now beginning a round where 14 actors have been added and 23 movies
+2018-10-07 18:52:47,722 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:48,021 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:48,023 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:48,023 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:48,024 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:48,024 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:48,024 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:48,024 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:48,024 - INFO - 238 - Now beginning a round where 14 actors have been added and 24 movies
+2018-10-07 18:52:48,024 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:52:48,637 - INFO - 154 - The movie was released on 2015
+2018-10-07 18:52:48,642 - INFO - 167 - The movie earned 630.2
+2018-10-07 18:52:48,642 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:52:48,644 - INFO - 198 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:52:48,644 - INFO - 198 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:52:48,644 - INFO - 198 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:52:48,644 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:48,645 - INFO - 238 - Now beginning a round where 14 actors have been added and 25 movies
+2018-10-07 18:52:48,645 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:52:48,936 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:52:48,938 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:52:48,938 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:52:48,939 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:52:48,939 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:52:48,940 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:52:48,940 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:48,940 - INFO - 238 - Now beginning a round where 14 actors have been added and 26 movies
+2018-10-07 18:52:48,940 - INFO - 63 - Getting Soup From URL for The Rainmaker (1997 film)
+2018-10-07 18:52:49,271 - INFO - 154 - The movie was released on 1997
+2018-10-07 18:52:49,274 - INFO - 167 - The movie earned 45.9
+2018-10-07 18:52:49,274 - INFO - 112 - Getting Actors that played in The Rainmaker (1997 film)
+2018-10-07 18:52:49,275 - INFO - 198 - The Rainmaker (1997 film) added Matt Damon to the queue
+2018-10-07 18:52:49,276 - INFO - 198 - The Rainmaker (1997 film) added Claire Danes to the queue
+2018-10-07 18:52:49,276 - INFO - 198 - The Rainmaker (1997 film) added Jon Voight to the queue
+2018-10-07 18:52:49,276 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:49,276 - INFO - 238 - Now beginning a round where 14 actors have been added and 27 movies
+2018-10-07 18:52:49,276 - INFO - 63 - Getting Soup From URL for Time (magazine)
+2018-10-07 18:52:49,718 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:49,718 - INFO - 238 - Now beginning a round where 14 actors have been added and 27 movies
+2018-10-07 18:52:49,718 - INFO - 63 - Getting Soup From URL for My So-Called Life
+2018-10-07 18:52:50,147 - ERROR - 169 - We could not parse the movie's attributes
+2018-10-07 18:52:50,147 - INFO - 238 - Now beginning a round where 14 actors have been added and 27 movies
+2018-10-07 18:52:50,147 - INFO - 63 - Getting Soup From URL for Little Women (1994 film)
+2018-10-07 18:52:50,511 - INFO - 154 - The movie was released on 1994
+2018-10-07 18:52:50,514 - INFO - 167 - The movie earned 50.1
+2018-10-07 18:52:50,514 - INFO - 112 - Getting Actors that played in Little Women (1994 film)
+2018-10-07 18:52:50,515 - INFO - 198 - Little Women (1994 film) added Winona Ryder to the queue
+2018-10-07 18:52:50,515 - INFO - 198 - Little Women (1994 film) added Gabriel Byrne to the queue
+2018-10-07 18:52:50,515 - INFO - 198 - Little Women (1994 film) added Trini Alvarado to the queue
+2018-10-07 18:52:50,515 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:50,515 - INFO - 238 - Now beginning a round where 14 actors have been added and 28 movies
+2018-10-07 18:52:50,515 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:51,106 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:51,107 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:51,632 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:51,632 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:51,632 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:51,632 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:51,632 - INFO - 238 - Now beginning a round where 15 actors have been added and 28 movies
+2018-10-07 18:52:51,632 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:52:52,358 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:52:52,358 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:52:52,513 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:52:52,518 - INFO - 238 - Now beginning a round where 15 actors have been added and 28 movies
+2018-10-07 18:52:52,519 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:52:52,912 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:52:52,912 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:52:53,062 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:52:53,067 - INFO - 238 - Now beginning a round where 15 actors have been added and 28 movies
+2018-10-07 18:52:53,067 - INFO - 238 - Now beginning a round where 15 actors have been added and 28 movies
+2018-10-07 18:52:53,067 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:53,390 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:52:53,390 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:53,589 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:52:53,594 - INFO - 238 - Now beginning a round where 15 actors have been added and 28 movies
+2018-10-07 18:52:53,594 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:54,230 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:52:54,230 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:54,729 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:52:54,729 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:52:54,730 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:52:54,730 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:54,730 - INFO - 238 - Now beginning a round where 16 actors have been added and 28 movies
+2018-10-07 18:52:54,730 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:55,183 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:52:55,183 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:52:55,358 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:52:55,362 - INFO - 238 - Now beginning a round where 16 actors have been added and 28 movies
+2018-10-07 18:52:55,362 - INFO - 238 - Now beginning a round where 16 actors have been added and 28 movies
+2018-10-07 18:52:55,363 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:55,969 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:52:55,969 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:52:56,538 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:52:56,538 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:52:56,539 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:52:56,539 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:56,539 - INFO - 238 - Now beginning a round where 17 actors have been added and 28 movies
+2018-10-07 18:52:56,539 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:52:57,153 - INFO - 85 - Getting Movies that Claire Danes played in
+2018-10-07 18:52:57,153 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:52:57,729 - INFO - 198 - Claire Danes added Time (magazine) to the queue
+2018-10-07 18:52:57,729 - INFO - 198 - Claire Danes added My So-Called Life to the queue
+2018-10-07 18:52:57,729 - INFO - 198 - Claire Danes added Little Women (1994 film) to the queue
+2018-10-07 18:52:57,730 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:52:57,730 - INFO - 238 - Now beginning a round where 18 actors have been added and 28 movies
+2018-10-07 18:52:57,730 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:52:58,215 - INFO - 85 - Getting Movies that Jon Voight played in
+2018-10-07 18:52:58,215 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:52:58,394 - ERROR - 74 - Connection to Jon_Voight failed
+2018-10-07 18:52:58,399 - INFO - 238 - Now beginning a round where 18 actors have been added and 28 movies
+2018-10-07 18:52:58,399 - INFO - 238 - Now beginning a round where 18 actors have been added and 28 movies
+2018-10-07 18:52:58,399 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:58,744 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:52:58,744 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:52:58,908 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:52:58,914 - INFO - 238 - Now beginning a round where 18 actors have been added and 28 movies
+2018-10-07 18:52:58,914 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:52:59,671 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:52:59,671 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:00,154 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:53:00,154 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:53:00,155 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:53:00,155 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:00,155 - INFO - 238 - Now beginning a round where 19 actors have been added and 28 movies
+2018-10-07 18:53:00,155 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:00,563 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:53:00,563 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:00,734 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:53:00,745 - INFO - 238 - Now beginning a round where 19 actors have been added and 28 movies
+2018-10-07 18:53:00,745 - INFO - 238 - Now beginning a round where 19 actors have been added and 28 movies
+2018-10-07 18:53:00,745 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:01,416 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:53:01,416 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:01,952 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:53:01,953 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:53:01,953 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:53:01,953 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:01,953 - INFO - 238 - Now beginning a round where 20 actors have been added and 28 movies
+2018-10-07 18:53:01,953 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:53:02,626 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:53:02,626 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:53:02,789 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:53:02,796 - INFO - 238 - Now beginning a round where 20 actors have been added and 28 movies
+2018-10-07 18:53:02,796 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:53:03,229 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:53:03,230 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:53:03,413 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:53:03,417 - INFO - 238 - Now beginning a round where 20 actors have been added and 28 movies
+2018-10-07 18:53:03,417 - INFO - 238 - Now beginning a round where 20 actors have been added and 28 movies
+2018-10-07 18:53:03,417 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:03,710 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:53:03,710 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:03,874 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:53:03,878 - INFO - 238 - Now beginning a round where 20 actors have been added and 28 movies
+2018-10-07 18:53:03,878 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:04,505 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:53:04,505 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:05,002 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:53:05,002 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:53:05,003 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:53:05,003 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:05,003 - INFO - 238 - Now beginning a round where 21 actors have been added and 28 movies
+2018-10-07 18:53:05,003 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:05,391 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:53:05,391 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:05,570 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:53:05,575 - INFO - 238 - Now beginning a round where 21 actors have been added and 28 movies
+2018-10-07 18:53:05,576 - INFO - 238 - Now beginning a round where 21 actors have been added and 28 movies
+2018-10-07 18:53:05,576 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:06,177 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:53:06,177 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:06,760 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:53:06,760 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:53:06,760 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:53:06,760 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:06,760 - INFO - 238 - Now beginning a round where 22 actors have been added and 28 movies
+2018-10-07 18:53:06,760 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:53:07,317 - INFO - 85 - Getting Movies that Claire Danes played in
+2018-10-07 18:53:07,317 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:53:07,813 - INFO - 198 - Claire Danes added Time (magazine) to the queue
+2018-10-07 18:53:07,813 - INFO - 198 - Claire Danes added My So-Called Life to the queue
+2018-10-07 18:53:07,813 - INFO - 198 - Claire Danes added Little Women (1994 film) to the queue
+2018-10-07 18:53:07,814 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:07,814 - INFO - 238 - Now beginning a round where 23 actors have been added and 28 movies
+2018-10-07 18:53:07,814 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:53:08,378 - INFO - 85 - Getting Movies that Jon Voight played in
+2018-10-07 18:53:08,378 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:53:08,571 - ERROR - 74 - Connection to Jon_Voight failed
+2018-10-07 18:53:08,577 - INFO - 238 - Now beginning a round where 23 actors have been added and 28 movies
+2018-10-07 18:53:08,577 - INFO - 238 - Now beginning a round where 23 actors have been added and 28 movies
+2018-10-07 18:53:08,577 - INFO - 63 - Getting Soup From URL for Winona Ryder
+2018-10-07 18:53:09,077 - INFO - 85 - Getting Movies that Winona Ryder played in
+2018-10-07 18:53:09,077 - INFO - 63 - Getting Soup From URL for Winona Ryder
+2018-10-07 18:53:09,247 - ERROR - 74 - Connection to Winona_Ryder failed
+2018-10-07 18:53:09,253 - INFO - 238 - Now beginning a round where 23 actors have been added and 28 movies
+2018-10-07 18:53:09,253 - INFO - 63 - Getting Soup From URL for Gabriel Byrne
+2018-10-07 18:53:09,705 - INFO - 85 - Getting Movies that Gabriel Byrne played in
+2018-10-07 18:53:09,705 - INFO - 63 - Getting Soup From URL for Gabriel Byrne
+2018-10-07 18:53:09,878 - ERROR - 74 - Connection to Gabriel_Byrne failed
+2018-10-07 18:53:09,884 - INFO - 238 - Now beginning a round where 23 actors have been added and 28 movies
+2018-10-07 18:53:09,884 - INFO - 63 - Getting Soup From URL for Trini Alvarado
+2018-10-07 18:53:10,153 - INFO - 85 - Getting Movies that Trini Alvarado played in
+2018-10-07 18:53:10,153 - INFO - 63 - Getting Soup From URL for Trini Alvarado
+2018-10-07 18:53:10,313 - ERROR - 74 - Connection to Trini_Alvarado failed
+2018-10-07 18:53:10,319 - INFO - 238 - Now beginning a round where 23 actors have been added and 28 movies
+2018-10-07 18:53:10,319 - INFO - 238 - Now beginning a round where 23 actors have been added and 28 movies
+2018-10-07 18:53:10,319 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:10,664 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:53:10,664 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:10,827 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:53:10,834 - INFO - 238 - Now beginning a round where 23 actors have been added and 28 movies
+2018-10-07 18:53:10,834 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:11,492 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:53:11,492 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:12,088 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:53:12,089 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:53:12,089 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:53:12,089 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:12,089 - INFO - 238 - Now beginning a round where 24 actors have been added and 28 movies
+2018-10-07 18:53:12,089 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:12,524 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:53:12,525 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:12,703 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:53:12,706 - INFO - 238 - Now beginning a round where 24 actors have been added and 28 movies
+2018-10-07 18:53:12,707 - INFO - 238 - Now beginning a round where 24 actors have been added and 28 movies
+2018-10-07 18:53:12,707 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:13,437 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:53:13,438 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:13,954 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:53:13,954 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:53:13,954 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:53:13,954 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:13,954 - INFO - 238 - Now beginning a round where 25 actors have been added and 28 movies
+2018-10-07 18:53:13,954 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:53:14,677 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:53:14,678 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:53:14,902 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:53:14,905 - INFO - 238 - Now beginning a round where 25 actors have been added and 28 movies
+2018-10-07 18:53:14,905 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:53:15,294 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:53:15,294 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:53:15,455 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:53:15,460 - INFO - 238 - Now beginning a round where 25 actors have been added and 28 movies
+2018-10-07 18:53:15,461 - INFO - 238 - Now beginning a round where 25 actors have been added and 28 movies
+2018-10-07 18:53:15,461 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:15,767 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:53:15,767 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:15,937 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:53:15,943 - INFO - 238 - Now beginning a round where 25 actors have been added and 28 movies
+2018-10-07 18:53:15,944 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:16,610 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:53:16,611 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:17,096 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:53:17,096 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:53:17,096 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:53:17,096 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:17,096 - INFO - 238 - Now beginning a round where 26 actors have been added and 28 movies
+2018-10-07 18:53:17,096 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:17,436 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:53:17,436 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:17,602 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:53:17,608 - INFO - 238 - Now beginning a round where 26 actors have been added and 28 movies
+2018-10-07 18:53:17,608 - INFO - 238 - Now beginning a round where 26 actors have been added and 28 movies
+2018-10-07 18:53:17,608 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:18,193 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:53:18,193 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:18,836 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:53:18,836 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:53:18,837 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:53:18,838 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:18,838 - INFO - 238 - Now beginning a round where 27 actors have been added and 28 movies
+2018-10-07 18:53:18,838 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:53:19,394 - INFO - 85 - Getting Movies that Claire Danes played in
+2018-10-07 18:53:19,395 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:53:19,945 - INFO - 198 - Claire Danes added Time (magazine) to the queue
+2018-10-07 18:53:19,945 - INFO - 198 - Claire Danes added My So-Called Life to the queue
+2018-10-07 18:53:19,945 - INFO - 198 - Claire Danes added Little Women (1994 film) to the queue
+2018-10-07 18:53:19,945 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:19,945 - INFO - 238 - Now beginning a round where 28 actors have been added and 28 movies
+2018-10-07 18:53:19,945 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:53:20,444 - INFO - 85 - Getting Movies that Jon Voight played in
+2018-10-07 18:53:20,444 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:53:20,623 - ERROR - 74 - Connection to Jon_Voight failed
+2018-10-07 18:53:20,629 - INFO - 238 - Now beginning a round where 28 actors have been added and 28 movies
+2018-10-07 18:53:20,629 - INFO - 238 - Now beginning a round where 28 actors have been added and 28 movies
+2018-10-07 18:53:20,629 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:21,026 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:53:21,026 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:21,193 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:53:21,201 - INFO - 238 - Now beginning a round where 28 actors have been added and 28 movies
+2018-10-07 18:53:21,201 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:21,809 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:53:21,809 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:22,246 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:53:22,246 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:53:22,247 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:53:22,247 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:22,247 - INFO - 238 - Now beginning a round where 29 actors have been added and 28 movies
+2018-10-07 18:53:22,247 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:22,579 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:53:22,579 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:22,740 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:53:22,745 - INFO - 238 - Now beginning a round where 29 actors have been added and 28 movies
+2018-10-07 18:53:22,746 - INFO - 238 - Now beginning a round where 29 actors have been added and 28 movies
+2018-10-07 18:53:22,746 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:23,336 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:53:23,336 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:23,932 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:53:23,932 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:53:23,932 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:53:23,932 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:23,932 - INFO - 238 - Now beginning a round where 30 actors have been added and 28 movies
+2018-10-07 18:53:23,933 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:53:24,575 - INFO - 85 - Getting Movies that Jessica Chastain played in
+2018-10-07 18:53:24,575 - INFO - 63 - Getting Soup From URL for Jessica Chastain
+2018-10-07 18:53:24,721 - ERROR - 74 - Connection to Jessica_Chastain failed
+2018-10-07 18:53:24,727 - INFO - 238 - Now beginning a round where 30 actors have been added and 28 movies
+2018-10-07 18:53:24,727 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:53:25,124 - INFO - 85 - Getting Movies that Kristen Wiig played in
+2018-10-07 18:53:25,124 - INFO - 63 - Getting Soup From URL for Kristen Wiig
+2018-10-07 18:53:25,305 - ERROR - 74 - Connection to Kristen_Wiig failed
+2018-10-07 18:53:25,310 - INFO - 238 - Now beginning a round where 30 actors have been added and 28 movies
+2018-10-07 18:53:25,310 - INFO - 238 - Now beginning a round where 30 actors have been added and 28 movies
+2018-10-07 18:53:25,311 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:25,693 - INFO - 85 - Getting Movies that Annabeth Gish played in
+2018-10-07 18:53:25,693 - INFO - 63 - Getting Soup From URL for Annabeth Gish
+2018-10-07 18:53:25,873 - ERROR - 74 - Connection to Annabeth_Gish failed
+2018-10-07 18:53:25,881 - INFO - 238 - Now beginning a round where 30 actors have been added and 28 movies
+2018-10-07 18:53:25,881 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:26,443 - INFO - 85 - Getting Movies that Julia Roberts played in
+2018-10-07 18:53:26,443 - INFO - 63 - Getting Soup From URL for Julia Roberts
+2018-10-07 18:53:27,028 - INFO - 198 - Julia Roberts added Homecoming (TV series) to the queue
+2018-10-07 18:53:27,029 - INFO - 198 - Julia Roberts added Firehouse (1987 film) to the queue
+2018-10-07 18:53:27,029 - INFO - 198 - Julia Roberts added Mystic Pizza to the queue
+2018-10-07 18:53:27,029 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:27,029 - INFO - 238 - Now beginning a round where 31 actors have been added and 28 movies
+2018-10-07 18:53:27,029 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:27,391 - INFO - 85 - Getting Movies that Lili Taylor played in
+2018-10-07 18:53:27,391 - INFO - 63 - Getting Soup From URL for Lili Taylor
+2018-10-07 18:53:27,576 - ERROR - 74 - Connection to Lili_Taylor failed
+2018-10-07 18:53:27,584 - INFO - 238 - Now beginning a round where 31 actors have been added and 28 movies
+2018-10-07 18:53:27,584 - INFO - 238 - Now beginning a round where 31 actors have been added and 28 movies
+2018-10-07 18:53:27,584 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:28,257 - INFO - 85 - Getting Movies that Matt Damon played in
+2018-10-07 18:53:28,257 - INFO - 63 - Getting Soup From URL for Matt Damon
+2018-10-07 18:53:28,798 - INFO - 198 - Matt Damon added The Martian (film) to the queue
+2018-10-07 18:53:28,798 - INFO - 198 - Matt Damon added Mystic Pizza to the queue
+2018-10-07 18:53:28,798 - INFO - 198 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-07 18:53:28,798 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:28,798 - INFO - 238 - Now beginning a round where 32 actors have been added and 28 movies
+2018-10-07 18:53:28,798 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:53:29,316 - INFO - 85 - Getting Movies that Claire Danes played in
+2018-10-07 18:53:29,316 - INFO - 63 - Getting Soup From URL for Claire Danes
+2018-10-07 18:53:29,971 - INFO - 198 - Claire Danes added Time (magazine) to the queue
+2018-10-07 18:53:29,972 - INFO - 198 - Claire Danes added My So-Called Life to the queue
+2018-10-07 18:53:29,972 - INFO - 198 - Claire Danes added Little Women (1994 film) to the queue
+2018-10-07 18:53:29,972 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:29,972 - INFO - 238 - Now beginning a round where 33 actors have been added and 28 movies
+2018-10-07 18:53:29,972 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:53:30,534 - INFO - 85 - Getting Movies that Jon Voight played in
+2018-10-07 18:53:30,535 - INFO - 63 - Getting Soup From URL for Jon Voight
+2018-10-07 18:53:30,701 - ERROR - 74 - Connection to Jon_Voight failed
+2018-10-07 18:53:30,707 - INFO - 238 - Now beginning a round where 33 actors have been added and 28 movies
+2018-10-07 18:53:30,707 - INFO - 238 - Now beginning a round where 33 actors have been added and 28 movies
+2018-10-07 18:53:30,707 - INFO - 63 - Getting Soup From URL for Winona Ryder
+2018-10-07 18:53:31,249 - INFO - 85 - Getting Movies that Winona Ryder played in
+2018-10-07 18:53:31,249 - INFO - 63 - Getting Soup From URL for Winona Ryder
+2018-10-07 18:53:31,411 - ERROR - 74 - Connection to Winona_Ryder failed
+2018-10-07 18:53:31,415 - INFO - 238 - Now beginning a round where 33 actors have been added and 28 movies
+2018-10-07 18:53:31,416 - INFO - 63 - Getting Soup From URL for Gabriel Byrne
+2018-10-07 18:53:31,847 - INFO - 85 - Getting Movies that Gabriel Byrne played in
+2018-10-07 18:53:31,847 - INFO - 63 - Getting Soup From URL for Gabriel Byrne
+2018-10-07 18:53:32,021 - ERROR - 74 - Connection to Gabriel_Byrne failed
+2018-10-07 18:53:32,027 - INFO - 238 - Now beginning a round where 33 actors have been added and 28 movies
+2018-10-07 18:53:32,027 - INFO - 63 - Getting Soup From URL for Trini Alvarado
+2018-10-07 18:53:32,350 - INFO - 85 - Getting Movies that Trini Alvarado played in
+2018-10-07 18:53:32,350 - INFO - 63 - Getting Soup From URL for Trini Alvarado
+2018-10-07 18:53:32,514 - ERROR - 74 - Connection to Trini_Alvarado failed
+2018-10-07 18:53:32,517 - INFO - 238 - Now beginning a round where 33 actors have been added and 28 movies
+2018-10-07 18:53:32,518 - INFO - 238 - Now beginning a round where 33 actors have been added and 28 movies
+2018-10-07 18:53:32,518 - INFO - 63 - Getting Soup From URL for The Martian (film)
+2018-10-07 18:53:33,128 - INFO - 154 - The movie was released on 2015
+2018-10-07 18:53:33,132 - INFO - 167 - The movie earned 630.2
+2018-10-07 18:53:33,132 - INFO - 112 - Getting Actors that played in The Martian (film)
+2018-10-07 18:53:33,133 - INFO - 198 - The Martian (film) added Matt Damon to the queue
+2018-10-07 18:53:33,133 - INFO - 198 - The Martian (film) added Jessica Chastain to the queue
+2018-10-07 18:53:33,133 - INFO - 198 - The Martian (film) added Kristen Wiig to the queue
+2018-10-07 18:53:33,133 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries
+2018-10-07 18:53:33,133 - INFO - 238 - Now beginning a round where 33 actors have been added and 29 movies
+2018-10-07 18:53:33,133 - INFO - 63 - Getting Soup From URL for Mystic Pizza
+2018-10-07 18:53:33,454 - INFO - 154 - The movie was released on 1988
+2018-10-07 18:53:33,456 - INFO - 167 - The movie earned 12.8
+2018-10-07 18:53:33,456 - INFO - 112 - Getting Actors that played in Mystic Pizza
+2018-10-07 18:53:33,457 - INFO - 198 - Mystic Pizza added Annabeth Gish to the queue
+2018-10-07 18:53:33,457 - INFO - 198 - Mystic Pizza added Julia Roberts to the queue
+2018-10-07 18:53:33,457 - INFO - 198 - Mystic Pizza added Lili Taylor to the queue
+2018-10-07 18:53:33,457 - DEBUG - 292 - tag list should have 3 many entries; it actually has 3 many entries

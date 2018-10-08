@@ -47,5 +47,5 @@ class TestScraper(TestCase):
         while not scraper.pending_nodes.empty():
             print(scraper.pending_nodes.get_nowait())
 
-    def test_apportion_contracts(self):
-        self.fail()
+    # def test_apportion_contracts(self):
+    #     self.fail()

@@ -82,14 +82,6 @@ if __name__ == "__main__":
     # print(scraper.get_movies_of_actor(3, "Matt Damon"))
 
     scraper = Scraper()
-    soup = scraper.get_soup_from_name("Matt Damon")
-    tag_list = soup.find_all(is_age_tag_lax2)
-    for tag in tag_list:
-        print(tag.string)
-        print("\n")
-    # tag_list = soup.find_all(is_age_tag_lax)
-    # for tag in tag_list:
-    #     print(tag)
-    #     print("\n")
-    # code.interact(local=locals())
-    # scraper.get_attributes(soup, is_actor=True)
+    scraper.query("Matt Damon", is_actor=True, actor_limit=30, movie_limit=30)
+
+
