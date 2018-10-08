@@ -334,17 +334,37 @@ class Scraper(object):
         self.run(actor_limit, movie_limit, is_actor)
 
     def get_actors_in_movie_ui(self, movie_name):
+        """
+        Get the actors in the movie whose title is movie_name
+        :param movie_name: A movie name
+        :return:
+        """
         movie_record = MovieRecord(movie_name, Type.MOVIE)
         return self.graph.get_actors_of_movie(movie_record)
 
     def get_movies_of_actor_ui(self, actor_name):
+        """
+        Get the movies that an actor played in.
+        :param actor_name: The actor for whom we wish to query movies.
+        :return:
+        """
         actor_record = ActorRecord(actor_name, Type.ACTOR)
         return self.graph.get_movies_of_actor(actor_record)
 
     def get_top_actors(self, num):
+        """
+        Get the num highest paid actors
+        :param num: an integer.
+        :return: A list of the higest paid actors. The first actor is the highest paid one.
+        """
         return self.graph.get_top_actors(num)
 
     def get_grossing_amount(self, movie_name):
+        """
+        Get the amount that the movie earned
+        :param movie_name: The movie to query
+        :return:
+        """
         movie_record = MovieRecord(movie_name, Type.MOVIE)
         return self.graph.get_movie_gross(movie_record) + " Million"
 
@@ -355,6 +375,11 @@ class Scraper(object):
         return self.graph.get_movies_year(year)
 
     def get_oldest_actors(self, num):
+        """
+        Get num oldest actors
+        :param num: How many actors to get
+        :return: A list of the oldest actors; the first actor in the list is the oldest
+        """
         return self.graph.get_oldest_actors(num)
 
     def get_all_movies(self):
@@ -368,6 +393,11 @@ class Scraper(object):
             print(actor.name)
 
     def get_billing_distribution(self, movie_name):
+        """
+        Get the distribution of salaries for the actors that worked in a movie
+        :param movie_name: The movie actors worked in
+        :return: Notne
+        """
         movie_record = MovieRecord(movie_name, Type.MOVIE)
         all_movies = self.graph.get_movies()
         actors_in_movie = all_movies[movie_record]
