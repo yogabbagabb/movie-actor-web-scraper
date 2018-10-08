@@ -42,11 +42,12 @@ class Utilities(object):
 
 class Scraper(object):
 
-    def __init__(self, degree=3):
+    def __init__(self, movie_degree=3, actor_degree=3):
         self.graph = Graph()
         self.movie_num = 0
         self.actor_num = 0
-        self.degree = degree
+        self.movie_degree = movie_degree
+        self.actor_degree = actor_degree
         self.soup = None
         self.pending_nodes = queue.Queue()
         logging.info("\n\n\nStarting\n\n\n")
@@ -85,8 +86,10 @@ class Scraper(object):
         logging.info("Getting Movies that {} played in".format(actor_name))
 
         if old_soup is None:
+            logging.info("Trying to get soup using the _filmography suffix for {}".format(actor_name))
             soup = self.get_soup_from_name(actor_name, final_string="_filmography")
             if not soup:
+                logging.info("Trying to get soup using the #filmography suffix for {}".format(actor_name))
                 soup = self.get_soup_from_name(actor_name, final_string="#Filmography")
                 if not soup:
                     return False
@@ -272,6 +275,7 @@ class Scraper(object):
 
         # Get the attributes of the record that will be represented by the name
         final_string = "" if is_actor else ""
+        logging.info("Getting soup to parse attributes for {}".format(current_record.name))
         record_soup = self.get_soup_from_name(current_record.name, final_string=final_string)
 
         # If there was an error earlier in the code, skip this record
@@ -296,9 +300,9 @@ class Scraper(object):
 
         # Get the records (movies or actors) connected to teh current one
         if is_actor:
-            tag_list = self.get_movies_of_actor(self.degree, current_record.name)
+            tag_list = self.get_movies_of_actor(self.movie_degree, current_record.name)
         else:
-            tag_list = self.get_stars_of_movie(self.degree, current_record.name, old_soup=record_soup)
+            tag_list = self.get_stars_of_movie(self.actor_degree, current_record.name, old_soup=record_soup)
 
         # If there was an error earlier in the code, skip this record
         if not tag_list:
@@ -310,7 +314,7 @@ class Scraper(object):
         # Add the nodes connected to the current record to the queue
         self.add_to_queue(tag_list, record_for_graph, is_actor)
         logging.debug(
-            "tag list should have {} many entries; it actually has {} many entries".format(self.degree, len(tag_list)))
+            "tag list should have {} many entries; it actually has {} many entries".format(self.movie_degree if is_actor else self.actor_degree, len(tag_list)))
         logging.info("If it has fewer entries than it should have, this means that we tried parsing more records than "
                      "the "
                      "webpage allowed for")

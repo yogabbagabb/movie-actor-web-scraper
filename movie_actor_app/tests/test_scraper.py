@@ -31,7 +31,7 @@ class TestScraper(TestCase):
 
         scraper = Scraper()
         soup = scraper.get_soup_from_name("Matt Damon", "")
-        expected_output = {'age': 47}
+        expected_output = {'age': 48}
         self.assertEqual(expected_output, scraper.get_attributes(soup, is_actor=True))
 
     def test_add_to_queue(self):
