@@ -157,3 +157,17 @@ class TestGraph(TestCase):
 
         actual_string = repr(graph)
         self.assertEqual(expected_string, actual_string)
+
+    def test_apportion_contracts(self):
+        graph = Graph()
+        graph.add(MovieRecord("Batman", Type.MOVIE,grossing_amt=1000), ActorRecord("1", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("8", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("4", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("3", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("5", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("6", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("7", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("2", Type.ACTOR))
+        graph.apportion_contracts(Record("Batman", Type.MOVIE))
+        expected_result = ['1', '8', '4', '3', '5', '6', '2', '7']
+        self.assertEquals(expected_result, graph.get_top_actors(8))

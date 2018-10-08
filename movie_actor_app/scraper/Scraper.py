@@ -209,7 +209,7 @@ class Scraper(object):
             dummy_parent_record = Record("", Type.ACTOR)
             self.pending_nodes.put_nowait(ParseRecord(parent_record.name, dummy_parent_record, 1))
 
-    def apportion_contracts(self, movie_record_name, parent_record):
+    def apportion_contracts(self, movie_record_name):
         """
         Distribute the profit of the movie corresponding to movie_record to the actors that worked in the movie. Each
         actor will subsequently have a contract.
@@ -217,7 +217,7 @@ class Scraper(object):
         :param parent_record: The actor that, when scraped, led to the movie corresponding to movie_record_name
         :return: None
         """
-        pass
+        self.graph.apportion_contracts(Record(movie_record_name, Type.MOVIE))
 
     def run(self, actor_limit, movie_limit, first_is_actor):
         """
@@ -263,7 +263,7 @@ class Scraper(object):
         # Check to see whether the current record is a movie and, if so, whether we can allot salaries to its stars
         is_movie = not is_actor
         if is_movie and current_record.times_accessed_in_past > 0:
-            self.apportion_contracts(current_record.name, parent_record)
+            self.apportion_contracts(current_record.name)
             return 0, 0
 
         # Check to see whether the current record has already been added to the graph
@@ -293,7 +293,6 @@ class Scraper(object):
         # Update the attributes of the record represented by current_record for storage in a graph
         for attr in record_attr:
             setattr(record_for_graph, attr, record_attr[attr])
-        self.graph.add(record_for_graph, parent_record)
 
         # Get the records (movies or actors) connected to teh current one
         if is_actor:
@@ -304,6 +303,9 @@ class Scraper(object):
         # If there was an error earlier in the code, skip this record
         if not tag_list:
             return 0, 0
+
+        # The current record's fields have been successfully obtained. Add it to the graph.
+        self.graph.add(record_for_graph, parent_record)
 
         # Add the nodes connected to the current record to the queue
         self.add_to_queue(tag_list, record_for_graph, is_actor)

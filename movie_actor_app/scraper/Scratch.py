@@ -1,3 +1,5 @@
+import time
+
 from bs4 import BeautifulSoup
 import urllib.request
 import logging
@@ -81,7 +83,9 @@ if __name__ == "__main__":
     # print(scraper.get_stars_of_movie(3, "Mulan"))
     # print(scraper.get_movies_of_actor(3, "Matt Damon"))
 
+    t0 = time.time()
     scraper = Scraper(degree=10)
     scraper.query("Matt Damon", is_actor=True, actor_limit=251, movie_limit=126)
+    print(time.time() - t0)
 
 

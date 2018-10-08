@@ -1,4 +1,5 @@
 from . import Record
+import orderedset
 
 
 class Graph(object):
@@ -117,7 +118,7 @@ class Graph(object):
         # The first_record does not exist in the graph. We need to add it to the graph and then connect
         # it to the second record.
         if first_record_set is None:
-            new_set = set()
+            new_set = orderedset.OrderedSet()
             if first_is_actor:
                 self.__actor_records[first_record] = new_set
             else:
@@ -131,7 +132,7 @@ class Graph(object):
         # The second_record does not exist in the graph. We need to add it to the graph and then connect
         # it to the first record.
         if second_record_set is None:
-            new_set = set()
+            new_set = orderedset.OrderedSet()
             if first_is_actor:
                 self.__movie_records[second_record] = new_set
             else:
@@ -143,17 +144,17 @@ class Graph(object):
         else:
             second_record_set.add(first_record)
 
-    def remove(self, record):
-        pass
-
-    def replace(self, record):
-        pass
-
-    def union(self, other_graph):
-        pass
-
-    def intersection(self, other_graph):
-        pass
+    # def remove(self, record):
+    #     pass
+    #
+    # def replace(self, record):
+    #     pass
+    #
+    # def union(self, other_graph):
+    #     pass
+    #
+    # def intersection(self, other_graph):
+    #     pass
 
     def get_movie_gross(self, record):
         """
@@ -306,6 +307,36 @@ class Graph(object):
         else:
             return record in self.__movie_records
 
+    def apportion_contracts(self, movie_record):
 
+        # Get the movie within the graph that equals movie_record
+        # Recall that two records are equal iff they have the same name and type
+        movie_keys = self.__movie_records.keys()
+        for key in movie_keys:
+            if key.__eq__(movie_record):
+                movie_record = key
+                break
 
+        # Get the number of actors connected to the movie and the movie's grossing amount
+        actors_in_movie = self.__movie_records[movie_record]
+        number_actors = len(actors_in_movie)
+        contract_amounts = [None] * number_actors
+        grossing_amt = movie_record.grossing_amt
+        original_grossing_amt = grossing_amt
 
+        # Split the grossing amount over the actors
+        ratio = 0.5
+        total_apportioned = 0
+        for i in range(0, number_actors - 1, 1):
+            grossing_amt *= ratio
+            total_apportioned += grossing_amt
+            contract_amounts[i] = grossing_amt
+
+        # Give whatever remains to the last actor
+        contract_amounts[number_actors - 1] = original_grossing_amt - total_apportioned
+
+        # Update the records in the graph to have correct contract amounts
+        actors_in_movie_list = list(actors_in_movie)
+        for i in range(0, number_actors):
+            new_movie_record = Record.Record(movie_record.name, Record.Type.MOVIE)
+            self.update_contract(actors_in_movie_list[i], new_movie_record,  contract_amounts[i])

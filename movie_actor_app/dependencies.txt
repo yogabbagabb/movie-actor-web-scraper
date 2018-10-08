@@ -1,0 +1,5 @@
+Dependencies:
+
+At least Python 3.6
+OrderedSet
+https://pypi.org/project/orderedset/
