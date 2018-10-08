@@ -10,6 +10,12 @@ class Graph(object):
         # A dictionary that maps the key associated with a particular actor to a set of movies connected to the actor
         self.__actor_records = dict()
 
+    def get_movies(self):
+        return self.__movie_records
+
+    def get_actors(self):
+        return self.__actor_records
+
     @staticmethod
     def get_name(some_record):
         return some_record.name
@@ -339,4 +345,5 @@ class Graph(object):
         actors_in_movie_list = list(actors_in_movie)
         for i in range(0, number_actors):
             new_movie_record = Record.Record(movie_record.name, Record.Type.MOVIE)
-            self.update_contract(actors_in_movie_list[i], new_movie_record,  contract_amounts[i])
+            new_actor_record = Record.Record(actors_in_movie_list[i].name, Record.Type.ACTOR)
+            self.update_contract(new_actor_record, new_movie_record,  contract_amounts[i])

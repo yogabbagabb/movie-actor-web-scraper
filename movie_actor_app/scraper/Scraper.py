@@ -333,6 +333,47 @@ class Scraper(object):
         self.pending_nodes.put(ParseRecord(query_string, None, 0))
         self.run(actor_limit, movie_limit, is_actor)
 
+    def get_actors_in_movie_ui(self, movie_name):
+        movie_record = MovieRecord(movie_name, Type.MOVIE)
+        return self.graph.get_actors_of_movie(movie_record)
+
+    def get_movies_of_actor_ui(self, actor_name):
+        actor_record = ActorRecord(actor_name, Type.ACTOR)
+        return self.graph.get_movies_of_actor(actor_record)
+
+    def get_top_actors(self, num):
+        return self.graph.get_top_actors(num)
+
+    def get_grossing_amount(self, movie_name):
+        movie_record = MovieRecord(movie_name, Type.MOVIE)
+        return self.graph.get_movie_gross(movie_record) + " Million"
+
+    def get_actors_in_year(self, year):
+        return self.graph.get_actors_year(year)
+
+    def get_movies_in_year(self, year):
+        return self.graph.get_movies_year(year)
+
+    def get_oldest_actors(self, num):
+        return self.graph.get_oldest_actors(num)
+
+    def get_all_movies(self):
+        all_movies = self.graph.get_movies()
+        for movie in all_movies:
+            print(movie.name)
+
+    def get_all_actors(self):
+        all_actors = self.graph.get_actors()
+        for actor in all_actors:
+            print(actor.name)
+
+    def get_billing_distribution(self, movie_name):
+        movie_record = MovieRecord(movie_name, Type.MOVIE)
+        all_movies = self.graph.get_movies()
+        actors_in_movie = all_movies[movie_record]
+        for actor in actors_in_movie:
+            print(actor.name, actor.contract)
+
 
 if __name__ == "__main__":
     pass
