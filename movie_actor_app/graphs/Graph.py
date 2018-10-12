@@ -1,14 +1,17 @@
 from . import Record
+from . import Edge
 import orderedset
 
 
 class Graph(object):
+    contract_string = "contract"
 
     def __init__(self):
         # A dictionary that maps the key associated with a particular movie to a set of actors connected to the movie
         self.__movie_records = dict()
         # A dictionary that maps the key associated with a particular actor to a set of movies connected to the actor
         self.__actor_records = dict()
+        self.__edges = dict()
 
     def get_movies(self):
         return self.__movie_records
@@ -74,7 +77,7 @@ class Graph(object):
         if second_record is None:
             self.__add_node(first_record)
         else:
-            self.__add_edge(first_record, second_record)
+            self.__add_two_nodes(first_record, second_record)
 
     def __add_node(self, first_record):
         """
@@ -93,13 +96,13 @@ class Graph(object):
         # The first_record does not exist in the graph. We need to add it to the graph.
         # If it does exist, then we do nothing.
         if first_record_set is None:
-            new_set = set()
+            new_set = orderedset.OrderedSet()
             if first_is_actor:
                 self.__actor_records[first_record] = new_set
             else:
                 self.__movie_records[first_record] = new_set
 
-    def __add_edge(self, first_record, second_record):
+    def __add_two_nodes(self, first_record, second_record):
 
         """
         Add first_record to the graph if it does not already exist.
@@ -149,6 +152,13 @@ class Graph(object):
         # The second record does exist in the graph. We need to connect it to the first record.
         else:
             second_record_set.add(first_record)
+
+        # Now update the edges if the passed in records have a contract
+        if first_record.contract is not None and second_record.contract is not None:
+            if first_record.contract == second_record.contract:
+                edge = Edge.Edge(first_record.name, second_record.name) if first_is_actor else Edge.Edge(second_record.name, first_record.name)
+                self.__edges[edge] = {Graph.contract_string: first_record.contract}
+
 
     # def remove(self, record):
     #     pass
@@ -204,16 +214,17 @@ class Graph(object):
 
         all_actors = self.__actor_records.keys()
         for actor in all_actors:
-            actor.total_earnings = self.__get_total_earnings(self.__actor_records[actor])
+            actor.total_earnings = self.__get_total_earnings(actor, self.__actor_records[actor])
 
         all_actors_list = sorted(all_actors, key=(lambda an_actor: an_actor.total_earnings))
         return self.__get_top_of_attr(all_actors_list, num)
 
-    @staticmethod
-    def __get_total_earnings(movie_set):
+    def __get_total_earnings(self, actor, movie_set):
         total_earnings = 0
         for movie in movie_set:
-            total_earnings += movie.contract
+            edge = Edge.Edge(actor.name, movie.name)
+            edge_dict = self.__edges[edge]
+            total_earnings += 0 if edge_dict.get(Graph.contract_string) is None else edge_dict.get(Graph.contract_string)
         return total_earnings
 
     def get_oldest_actors(self, num):
@@ -278,28 +289,36 @@ class Graph(object):
         and second record an actor or vice versa. We assume that there is already a connection between first_record and
         second_record. Note that first_record and second_record will be modified to have their contract fields
         set to new_contract as a result of this call.
+        :param new_contract: The amount that the first record paid or earned from the second record
         :param first_record: Either a MovieRecord or ActorRecord
         :param second_record: Whatever first_record is not
         :return: Nothing
         """
+        # first_is_actor = first_record.rec_type == Record.Type.ACTOR
+        # if first_is_actor:
+        #     first_record_set = self.__actor_records[first_record]
+        #     second_record_set = self.__movie_records[second_record]
+        # else:
+        #     first_record_set = self.__movie_records[first_record]
+        #     second_record_set = self.__actor_records[second_record]
+        #
+        # # Change the contracts of the first and second records
+        # first_record.contract = new_contract
+        # second_record.contract = new_contract
+        #
+        # # Update the sets to have those records with new contracts
+        # first_record_set.remove(second_record)
+        # first_record_set.add(second_record)
+        #
+        # second_record_set.remove(first_record)
+        # second_record_set.add(first_record)
+
         first_is_actor = first_record.rec_type == Record.Type.ACTOR
         if first_is_actor:
-            first_record_set = self.__actor_records[first_record]
-            second_record_set = self.__movie_records[second_record]
+            edge = Edge.Edge(first_record.name, second_record.name)
         else:
-            first_record_set = self.__movie_records[first_record]
-            second_record_set = self.__actor_records[second_record]
-
-        # Change the contracts of the first and second records
-        first_record.contract = new_contract
-        second_record.contract = new_contract
-
-        # Update the sets to have those records with new contracts
-        first_record_set.remove(second_record)
-        first_record_set.add(second_record)
-
-        second_record_set.remove(first_record)
-        second_record_set.add(first_record)
+            edge = Edge.Edge(second_record.name, first_record.name)
+        self.__edges[edge][Graph.contract_string] = new_contract
 
     def contains(self, record):
         """
@@ -344,6 +363,5 @@ class Graph(object):
         # Update the records in the graph to have correct contract amounts
         actors_in_movie_list = list(actors_in_movie)
         for i in range(0, number_actors):
-            new_movie_record = Record.Record(movie_record.name, Record.Type.MOVIE)
-            new_actor_record = Record.Record(actors_in_movie_list[i].name, Record.Type.ACTOR)
-            self.update_contract(new_actor_record, new_movie_record,  contract_amounts[i])
+            edge = Edge.Edge(actors_in_movie_list[i].name, movie_record.name)
+            self.__edges[edge] = {Graph.contract_string: contract_amounts[i]}

@@ -1,0 +1,32 @@
+A route:
+	An abstraction describing the binding of a function (a handler) to an address
+	
+
+Proposed Improvements:
+	Add a dictionary which maps a string (either an actor or movie's name) to the
+	record in the actor list or movie list that contains the actor's information
+
+
+
+
+Steps involved in parsing data.json assuming we stick with our Current Implementation
+	For each actor
+		Get all attributes. Create a complete actor record node with these attributes.
+		Create movie nodes and connect them to the actor
+	For each movie, 
+		Update the movie's attributes using update bio
+		Connect it to each actor
+	Apportion Contracts for the movie
+
+
+
+
+
+
+
+Steps involved in parsing data.json assuming we modify our graph:
+
+
+
+
+

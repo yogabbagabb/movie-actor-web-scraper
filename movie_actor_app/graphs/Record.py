@@ -3,7 +3,7 @@ from enum import Enum
 
 class Record(object):
 
-    def __init__(self, name, rec_type, contract=0):
+    def __init__(self, name, rec_type, contract=None):
         self.name = name
         self.rec_type = rec_type
         self.contract = contract
