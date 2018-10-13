@@ -1,6 +1,7 @@
 from . import Record
 from .Record import Type
 from .Contract import Contract
+import json
 import orderedset
 
 
@@ -184,9 +185,9 @@ class Graph(object):
         # Now update the edges if the passed in records have a contract
         if first_record.contract is not None and second_record.contract is not None:
             if first_record.contract == second_record.contract:
-                edge = Contract(first_record.name, second_record.name) if first_is_actor else Contract(second_record.name, first_record.name)
+                edge = Contract(first_record.name, second_record.name) if first_is_actor else Contract(
+                    second_record.name, first_record.name)
                 self.__contracts[edge] = {Graph.contract_string: first_record.contract}
-
 
     # def remove(self, record):
     #     pass
@@ -250,7 +251,8 @@ class Graph(object):
         for movie in movie_set:
             edge = Contract(actor.name, movie.name)
             edge_dict = self.__contracts[edge]
-            total_earnings += 0 if edge_dict.get(Graph.contract_string) is None else edge_dict.get(Graph.contract_string)
+            total_earnings += 0 if edge_dict.get(Graph.contract_string) is None else edge_dict.get(
+                Graph.contract_string)
         return total_earnings
 
     def get_oldest_actors(self, num):
@@ -369,3 +371,112 @@ class Graph(object):
         for i in range(0, number_actors):
             edge = Contract(actors_in_movie_list[i].name, movie_record.name)
             self.__contracts[edge] = {Graph.contract_string: contract_amounts[i]}
+
+    def get_actor_json(self, name, actor=None):
+        """
+        Gets the attributes of actor `name`; these attributes are returned as a json.
+        :param name: The name of an actor
+        :return: A json with the attributes of the actor
+        """
+
+        if actor is None:
+            actor = self.__lookup_table[(name, Type.ACTOR)]
+
+        movies_of_actor = [movie.name for movie in self.__actor_records[actor]]
+        actor_dict = {
+            "json_class": "Actor",
+            "name": name,
+            "age": actor.age,
+            "total_gross": actor.total_earnings,
+            "movies": movies_of_actor
+        }
+
+        return json.dumps(actor_dict)
+
+    def get_movie_json(self, name, movie=None):
+        """
+        Gets the attributes of movie `name`; these attributes are returned as a json.
+        :param name: The name of an movie
+        :return: A json with the attributes of the movie
+        """
+        if movie is None:
+            movie = self.__lookup_table[(name, Type.MOVIE)]
+
+        actors_in_movie = [actor.name for actor in self.__movie_records[movie]]
+
+        movie_dict = {
+            "json_class": "Movie",
+            "name": name,
+            "wiki_page": movie.wiki_page,
+            "box_office": movie.grossing_amt,
+            "year": movie.year,
+            "actors": actors_in_movie
+        }
+
+        return json.dumps(movie_dict)
+
+    def query(self, record_type, query_dict):
+        """
+        Get all the records with attributes taht match those in query_dict
+        :param record_type: The category of record (ActorRecord or MovieRecord) that we are trying to find matches in
+        :param query_dict: The dictionary of attributes to match against.
+        :return: A json satisfying the query
+        """
+        if record_type == Type.ACTOR:
+            return self.query_portion(self.__actor_records, Graph.get_actor_json, query_dict)
+        else:
+            return self.query_portion(self.__movie_records, Graph.get_movie_json, query_dict)
+
+    def query_portion(self, record_list, lookup_function, query_dict):
+        """
+        Return a json object containing those entries in record-list whose attributes match those in query_dict.
+        :param record_list: A list of actor records or movie records
+        :param lookup_function: A function to obtain a json for any entry in record_list
+        :param query_dict: The dictionary with attributes to match against
+        :return: A json satisfying the query
+        """
+
+        match_dict = dict()
+
+        for record in record_list:
+            for key in query_dict:
+                attr_match = Graph.match(getattr(record, key), query_dict[key])
+                if not attr_match:
+                    break
+            match_dict.update({record.name: lookup_function(record.name, record)})
+
+        return json.dumps(match_dict)
+
+
+    @staticmethod
+    def match(candidate, standard):
+        if type(candidate) == str:
+            return candidate in standard
+        else:
+            return candidate == standard
+
+
+    # def to_json(self, filename):
+    #     """
+    #     Convert the graph to a json
+    #     :type filename: A file to write the json to
+    #     :return: None
+    #     """
+    #
+    #     with open(filename, "w") as fd:
+    #         json.dump(self.__dict__, fd)
+    #
+    #     return filename
+    #
+    #
+    # @staticmethod
+    # def from_json(filename):
+    #     """
+    #     Construct from a json file that was serialized
+    #     :param filename:
+    #     :return: None
+    #     """
+    #
+    #     graph = Graph()
+    #     graph.__dict__ = json.load(filename)
+    #     return graph

@@ -1,0 +1,50 @@
+[
+  {
+    "Bruce Willis": {
+      "json_class": "Actor",
+      "name": "Bruce Willis",
+      "age": 61,
+      "total_gross": 562709189,
+      "movies": [
+        "The First Deadly Sin",
+        "The Verdict"
+      ]
+    },
+    "Faye Dunaway": {
+      "json_class": "Actor",
+      "name": "Faye Dunaway",
+      "age": 76,
+      "total_gross": 515893034,
+      "movies": [
+        "The First Deadly Sin"
+      ]
+    }
+  },
+  {
+    "The First Deadly Sin": {
+      "json_class": "Movie",
+      "name": "The First Deadly Sin",
+      "wiki_page": "https://en.wikipedia.org/wiki/The_First_Deadly_Sin",
+      "box_office": 0,
+      "year": 1980,
+      "actors": [
+        "Bruce Willis",
+        "Faye Dunaway"
+      ]
+    },
+    "The Verdict": {
+      "json_class": "Movie",
+      "name": "The Verdict",
+      "wiki_page": "https://en.wikipedia.org/wiki/The_Verdict",
+      "box_office": 53977250,
+      "year": 1982,
+      "actors": [
+        "Paul Newman",
+        "Charlotte Rampling",
+        "Jack Warden",
+        "James Mason",
+        "Milo O'Shea"
+      ]
+    }
+  }
+]

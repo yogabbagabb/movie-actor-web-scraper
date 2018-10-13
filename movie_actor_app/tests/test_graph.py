@@ -211,5 +211,44 @@ class TestGraph(TestCase):
         expected_str = "[['2', <Type.ACTOR: 2>], ['3', <Type.ACTOR: 2>]]"
         self.assertEquals(expected_str, graph.get_actors_of_movie(MovieRecord("Batman", Type.MOVIE)).__repr__())
 
+    # Test that we can get a single actor
+    def test_actor_json(self):
+        graph = Graph()
+        graph.add(ActorRecord("Bruce Wayne", Type.ACTOR, 30, 0, 0, None))
+        graph.add(ActorRecord("Bruce Wayne", Type.ACTOR), MovieRecord("Batman", Type.MOVIE))
+        expected_str = "{\"json_class\": \"Actor\", \"name\": \"Bruce Wayne\", \"age\": 30, " \
+                       "\"total_gross\": 0, \"movies\": [\"Batman\"]}"
+        self.assertEquals(expected_str, graph.get_actor_json("Bruce Wayne"))
+
+    # Test that we can get a single movie
+    def test_movie_json(self):
+        graph = Graph()
+        graph.add(ActorRecord("Bruce Wayne", Type.ACTOR, 30, 0, 0, None))
+        graph.add(ActorRecord("Bruce Wayne", Type.ACTOR), MovieRecord("Batman", Type.MOVIE, 0, 0, 0, None))
+        expected_str = "{\"json_class\": \"Movie\", \"name\": \"Batman\", \"wiki_page\": null, " \
+                       "\"box_office\": 0, \"year\": 0, \"actors\": [\"Bruce Wayne\"]}"
+        self.assertEquals(expected_str, graph.get_movie_json("Batman"))
+
+    # Test that we can query actors or movies
+    def test_query(self):
+        graph = Graph()
+        graph.add(ActorRecord("Bruce Wayne", Type.ACTOR, 30, 0, 0, None))
+        graph.add(ActorRecord("Bruce Doggy", Type.ACTOR, 31, 0, 0, None))
+        graph.add(ActorRecord("Bruce Yo", Type.ACTOR, 32, 0, 0, None))
+        graph.add(ActorRecord("Bruce Ma", Type.ACTOR, 33, 0, 0, None))
+        graph.add(ActorRecord("Bruce dog", Type.ACTOR, 30, 0, 0, None))
+        graph.add(ActorRecord("Bruce my", Type.ACTOR, 35, 0, 0, None))
+
+        graph.add(ActorRecord("Bruce Wayne", Type.ACTOR), MovieRecord("Batman", Type.MOVIE, 0, 0, 0, None))
+
+        expected_str = "{\"json_class\": \"Actor\", \"name\": \"Bruce Wayne\", \"age\": 30, " \
+                       "\"total_gross\": 0, \"movies\": [\"Batman\"]}"
+        query_dict = {"age":30, "name": "Wayne"}
+        self.assertEquals(expected_str, graph.query(Type.MOVIE, query_dict))
+
+    def test_match(self):
+
+
+
 
 

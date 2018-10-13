@@ -9,8 +9,8 @@ def get_type(id_string):
     return Type.ACTOR if id_string.__eq__("Actor") else Type.MOVIE
 
 
-def parse_data():
-    with open("data.json", "r") as file_name:
+def parse_data(file_name):
+    with open(file_name, "r") as file_name:
         data = json.load(file_name)
 
     graph = Graph()
@@ -24,28 +24,26 @@ def parse_data():
                                    total_earnings=actors[actor]['total_gross'])
         graph.add(actor_record)
 
-
     movies = data[movie_index]
     for movie in movies:
         movie_record = MovieRecord(movies[movie]['name'], get_type(movies[movie]['json_class']), movies[movie]['year'],
                                    grossing_amt=movies[movie]['box_office'], wiki_page=movies[movie]['wiki_page'])
         graph.add(movie_record)
 
-
     for actor_name in actors:
         movies_of_actor = actors[actor_name]['movies']
         for movie_name in movies_of_actor:
-            if graph.contains_by_name(movie_name):
+            if graph.contains_by_name(movie_name, Type.MOVIE):
                 graph.connect_by_name(actor_name, movie_name)
 
     for movie_name in movies:
         actors_in_movie = movies[movie_name]['actors']
         for actor_name in actors_in_movie:
-            if graph.contains_by_name(actor_name):
+            if graph.contains_by_name(actor_name, Type.ACTOR):
                 graph.connect_by_name(actor_name, movie_name)
 
-    print(graph)
+    return graph
 
 
 if __name__ == "__main__":
-    parse_data()
+    print(parse_data("data.json"))
