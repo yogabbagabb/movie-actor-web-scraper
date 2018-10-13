@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16883730-baae-409c-a0ed-ddd6383da84a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie_actor_app/graphs/Edge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_actor_app/graphs/ParseData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.notes.otl.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_actor_app/graphs/Edge.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_actor_app/graphs/Contract.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie_actor_app/graphs/Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_actor_app/graphs/Graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie_actor_app/graphs/Record.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_actor_app/graphs/Record.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie_actor_app/scraper/UserInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_actor_app/scraper/UserInterface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie_actor_app/scraper/scraper.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/movie_actor_app/tests/scraper.log" beforeDir="false" afterPath="$PROJECT_DIR$/movie_actor_app/tests/scraper.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +22,7 @@
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$Scratch.coverage" NAME="Scratch Coverage Results" MODIFIED="1539032209905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/scraper" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$Scraper.coverage" NAME="Scraper Coverage Results" MODIFIED="1539031538762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/scraper" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$Unittests_for_test_query_operations_TestGraph_test_update_contract.coverage" NAME="Unittests for test_query_operations.TestGraph.test_update_contract Coverage Results" MODIFIED="1539375464991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
-    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1539386632656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1539390263664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="472" />
@@ -44,7 +45,7 @@
         <counts>
           <entry key="log" value="19" />
           <entry key="md" value="1" />
-          <entry key="py" value="39" />
+          <entry key="py" value="41" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -53,7 +54,7 @@
           <entry key="Log" value="11" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="39" />
+          <entry key="Python" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -61,7 +62,7 @@
           <entry key="dummy" value="30" />
           <entry key="log" value="185" />
           <entry key="md" value="685" />
-          <entry key="py" value="80518" />
+          <entry key="py" value="85032" />
           <entry key="txt" value="72" />
         </counts>
       </usages-collector>
@@ -70,7 +71,7 @@
           <entry key="Log" value="174" />
           <entry key="Markdown" value="685" />
           <entry key="PLAIN_TEXT" value="113" />
-          <entry key="Python" value="80518" />
+          <entry key="Python" value="85032" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -78,82 +79,95 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/scraper/UserInterface.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/scraper.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="12360">
-              <caret line="824" selection-start-line="824" selection-end-line="824" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/scraper/Scraper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1259">
-              <caret line="245" column="43" selection-start-line="245" selection-start-column="43" selection-end-line="245" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_graph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="173" selection-start-line="173" selection-end-line="173" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_query_operations.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Graph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3842">
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Edge.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Record.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_graph.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="363">
+                  <caret line="173" selection-start-line="173" selection-end-line="173" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_query_operations.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="164">
+                  <caret line="116" selection-start-line="116" selection-end-line="116" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Graph.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-476">
+                  <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#0#20#0" expanded="true" />
+                    <marker date="1539390225000" expanded="true" signature="2850:3183" ph="..." />
+                    <marker date="1539390225000" expanded="true" signature="3231:3240" ph="..." />
+                    <marker date="1539390225000" expanded="true" signature="14773:14835" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/ParseData.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="363">
+                  <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                    <marker date="1539390249000" expanded="true" signature="179:248" ph="..." />
+                    <marker date="1539390249000" expanded="true" signature="265:270" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Contract.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="14" selection-start-column="14" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Record.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="266">
+                  <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Graph.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#0#20#0" expanded="true" />
+                    <marker date="1539390225000" expanded="true" signature="2850:3183" ph="..." />
+                    <marker date="1539390225000" expanded="true" signature="3231:3240" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -202,6 +216,8 @@
         <option value="$PROJECT_DIR$/movie_actor_app/scraper/UserInterface.py" />
         <option value="$PROJECT_DIR$/movie_actor_app/graphs/Edge.py" />
         <option value="$PROJECT_DIR$/movie_actor_app/graphs/Record.py" />
+        <option value="$PROJECT_DIR$/movie_actor_app/graphs/Contract.py" />
+        <option value="$PROJECT_DIR$/movie_actor_app/graphs/ParseData.py" />
         <option value="$PROJECT_DIR$/movie_actor_app/graphs/Graph.py" />
       </list>
     </option>
@@ -421,21 +437,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_query_operations_TestGraph_test_update_contract - 2018.10.12 at 15h 17m 46s.xml">
-      <configuration name="Unittests for test_query_operations.TestGraph.test_update_contract" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_query_operations_TestGraph_test_update_bio - 2018.10.12 at 15h 17m 52s.xml">
-      <configuration name="Unittests for test_query_operations.TestGraph.test_update_bio" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_tests - 2018.10.12 at 17h 48m 14s.xml">
-      <configuration name="Unittests in tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_tests - 2018.10.12 at 18h 06m 22s.xml">
-      <configuration name="Unittests in tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_tests - 2018.10.12 at 18h 09m 11s.xml">
-      <configuration name="Unittests in tests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_tests - 2018.10.12 at 18h 09m 40s.xml">
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
@@ -449,6 +450,21 @@
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_tests - 2018.10.12 at 18h 23m 56s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.10.12 at 18h 30m 12s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.10.12 at 18h 54m 54s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.10.12 at 19h 04m 13s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.10.12 at 19h 24m 13s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.10.12 at 19h 24m 26s.xml">
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
   </component>
@@ -543,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/scraper/UserInterface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -560,24 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movie_actor_app/scraper/Scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1259">
           <caret line="245" column="43" selection-start-line="245" selection-start-column="43" selection-end-line="245" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Record.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -588,19 +583,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Graph.py">
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Record.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3842">
+        <state relative-caret-position="266">
+          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/scraper/UserInterface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Contract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/ParseData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1539390249000" expanded="true" signature="179:248" ph="..." />
+            <marker date="1539390249000" expanded="true" signature="265:270" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Edge.py">
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="-476">
+          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1539390225000" expanded="true" signature="2850:3183" ph="..." />
+            <marker date="1539390225000" expanded="true" signature="3231:3240" ph="..." />
+            <marker date="1539390225000" expanded="true" signature="14773:14835" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

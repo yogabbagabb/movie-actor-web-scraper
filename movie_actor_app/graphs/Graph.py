@@ -1,5 +1,5 @@
 from . import Record
-from . import Edge
+from .Contract import Contract
 import orderedset
 
 
@@ -11,7 +11,11 @@ class Graph(object):
         self.__movie_records = dict()
         # A dictionary that maps the key associated with a particular actor to a set of movies connected to the actor
         self.__actor_records = dict()
-        self.__edges = dict()
+        # A dictionary that maps a Contract (an actor's name, a movie's name) to a float (the actual contract between
+        #  the corresponding actor and movie)
+        self.__contracts = dict()
+        # A dictionary that looks up an ActorRecord or MovieRecord using the name of the object
+        self.__lookup_table = dict()
 
     def get_movies(self):
         return self.__movie_records
@@ -66,6 +70,26 @@ class Graph(object):
     def get_actor_records(self):
         return self.__actor_records
 
+    def connect_by_name(self, actor_name, movie_name):
+        """
+        We assume that actor_name and movie_name correspond
+        to an actor and movie that already exist in the graph.
+        :param actor_name: The name of an actor whose record
+        exists in the graph
+        :param movie_name: The name of an movie whose record
+        exists in the graph
+        :return: Nothing
+        """
+
+        actor_record = self.__lookup_table.get(actor_name)
+        movie_record = self.__lookup_table.get(movie_name)
+
+        movies_of_actor = self.__actor_records[actor_record]
+        actors_in_movie = self.__movie_records[movie_record]
+
+        movies_of_actor.add(movie_record)
+        actors_in_movie.add(actor_record)
+
     def add(self, first_record, second_record=None):
         """
     Add an actor to a movie node or a movie to an actor node. We assume that first_record is not None.
@@ -83,7 +107,7 @@ class Graph(object):
         """
         Add a single node to the graph.
         :param first_record: The node to add, either an actor or movie.
-        :return: Nothing.
+        :return: None
         """
         first_is_actor = first_record.rec_type == Record.Type.ACTOR
 
@@ -101,6 +125,7 @@ class Graph(object):
                 self.__actor_records[first_record] = new_set
             else:
                 self.__movie_records[first_record] = new_set
+            self.__lookup_table[first_record.name] = first_record
 
     def __add_two_nodes(self, first_record, second_record):
 
@@ -134,6 +159,7 @@ class Graph(object):
                 self.__movie_records[first_record] = new_set
 
             new_set.add(second_record)
+            self.__lookup_table[first_record.name] = first_record
         # The first record does exist in the graph. We need to connect it to the second record.
         else:
             first_record_set.add(second_record)
@@ -148,6 +174,7 @@ class Graph(object):
                 self.__actor_records[second_record] = new_set
 
             new_set.add(first_record)
+            self.__lookup_table[second_record.name] = second_record
 
         # The second record does exist in the graph. We need to connect it to the first record.
         else:
@@ -156,8 +183,8 @@ class Graph(object):
         # Now update the edges if the passed in records have a contract
         if first_record.contract is not None and second_record.contract is not None:
             if first_record.contract == second_record.contract:
-                edge = Edge.Edge(first_record.name, second_record.name) if first_is_actor else Edge.Edge(second_record.name, first_record.name)
-                self.__edges[edge] = {Graph.contract_string: first_record.contract}
+                edge = Contract(first_record.name, second_record.name) if first_is_actor else Contract(second_record.name, first_record.name)
+                self.__contracts[edge] = {Graph.contract_string: first_record.contract}
 
 
     # def remove(self, record):
@@ -222,8 +249,8 @@ class Graph(object):
     def __get_total_earnings(self, actor, movie_set):
         total_earnings = 0
         for movie in movie_set:
-            edge = Edge.Edge(actor.name, movie.name)
-            edge_dict = self.__edges[edge]
+            edge = Contract(actor.name, movie.name)
+            edge_dict = self.__contracts[edge]
             total_earnings += 0 if edge_dict.get(Graph.contract_string) is None else edge_dict.get(Graph.contract_string)
         return total_earnings
 
@@ -315,10 +342,10 @@ class Graph(object):
 
         first_is_actor = first_record.rec_type == Record.Type.ACTOR
         if first_is_actor:
-            edge = Edge.Edge(first_record.name, second_record.name)
+            edge = Contract(first_record.name, second_record.name)
         else:
-            edge = Edge.Edge(second_record.name, first_record.name)
-        self.__edges[edge][Graph.contract_string] = new_contract
+            edge = Contract(second_record.name, first_record.name)
+        self.__contracts[edge][Graph.contract_string] = new_contract
 
     def contains(self, record):
         """
@@ -331,6 +358,14 @@ class Graph(object):
             return record in self.__actor_records
         else:
             return record in self.__movie_records
+
+    def contains_by_name(self, name):
+        """
+        Checks whether the name of an actor or movie maps to record that exists in the graph
+        :param name: The name of the actor or movie to check
+        :return: A boolean (true indicates that an actor or movie does exist in the graph; false otherwise)
+        """
+        return self.__lookup_table.get(name) is not None
 
     def apportion_contracts(self, movie_record):
 
@@ -363,5 +398,5 @@ class Graph(object):
         # Update the records in the graph to have correct contract amounts
         actors_in_movie_list = list(actors_in_movie)
         for i in range(0, number_actors):
-            edge = Edge.Edge(actors_in_movie_list[i].name, movie_record.name)
-            self.__edges[edge] = {Graph.contract_string: contract_amounts[i]}
+            edge = Contract(actors_in_movie_list[i].name, movie_record.name)
+            self.__contracts[edge] = {Graph.contract_string: contract_amounts[i]}
