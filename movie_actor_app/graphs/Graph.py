@@ -1,4 +1,5 @@
 from . import Record
+from .Record import Type
 from .Contract import Contract
 import orderedset
 
@@ -81,8 +82,8 @@ class Graph(object):
         :return: Nothing
         """
 
-        actor_record = self.__lookup_table.get(actor_name)
-        movie_record = self.__lookup_table.get(movie_name)
+        actor_record = self.__lookup_table.get((actor_name, Type.ACTOR))
+        movie_record = self.__lookup_table.get((movie_name, Type.MOVIE))
 
         movies_of_actor = self.__actor_records[actor_record]
         actors_in_movie = self.__movie_records[movie_record]
@@ -125,7 +126,7 @@ class Graph(object):
                 self.__actor_records[first_record] = new_set
             else:
                 self.__movie_records[first_record] = new_set
-            self.__lookup_table[first_record.name] = first_record
+            self.__lookup_table[(first_record.name, first_record.rec_type)] = first_record
 
     def __add_two_nodes(self, first_record, second_record):
 
@@ -159,7 +160,7 @@ class Graph(object):
                 self.__movie_records[first_record] = new_set
 
             new_set.add(second_record)
-            self.__lookup_table[first_record.name] = first_record
+            self.__lookup_table[(first_record.name, first_record.rec_type)] = first_record
         # The first record does exist in the graph. We need to connect it to the second record.
         else:
             first_record_set.add(second_record)
@@ -174,7 +175,7 @@ class Graph(object):
                 self.__actor_records[second_record] = new_set
 
             new_set.add(first_record)
-            self.__lookup_table[second_record.name] = second_record
+            self.__lookup_table[(second_record.name, second_record.rec_type)] = second_record
 
         # The second record does exist in the graph. We need to connect it to the first record.
         else:
@@ -205,10 +206,8 @@ class Graph(object):
         :param record: The movie whose gross earnings are sought.
         :return: Gross earnings (a float).
         """
-        movie_keys = self.__movie_records.keys()
-        for movie in movie_keys:
-            if movie.__eq__(record):
-                return movie.grossing_amt
+        movie_record = self.__lookup_table.get((record.name, Type.MOVIE))
+        return movie_record.grossing_amt
 
     def get_movies_of_actor(self, record):
         """
@@ -294,21 +293,9 @@ class Graph(object):
         :param update_attr: The dictionary with new fields and values. We assume that contract is not a field in this dict.
         :return: Nothing
         """
-        is_actor = record.rec_type == Record.Type.ACTOR
-
-        if is_actor:
-            keys = self.__actor_records.keys()
-        else:
-            keys = self.__movie_records.keys()
-
-        # Find the key from the appropriate dictionary
-        for key in keys:
-            if record.__eq__(key):
-                # Update all the attributes common to record and update_attr to take
-                # new values in update_attr
-                for attr in update_attr:
-                    setattr(key, attr, update_attr[attr])
-                return
+        key = self.__lookup_table[(record.name, record.rec_type)]
+        for attr in update_attr:
+            setattr(key, attr, update_attr[attr])
 
     def update_contract(self, first_record, second_record, new_contract):
         """
@@ -321,24 +308,6 @@ class Graph(object):
         :param second_record: Whatever first_record is not
         :return: Nothing
         """
-        # first_is_actor = first_record.rec_type == Record.Type.ACTOR
-        # if first_is_actor:
-        #     first_record_set = self.__actor_records[first_record]
-        #     second_record_set = self.__movie_records[second_record]
-        # else:
-        #     first_record_set = self.__movie_records[first_record]
-        #     second_record_set = self.__actor_records[second_record]
-        #
-        # # Change the contracts of the first and second records
-        # first_record.contract = new_contract
-        # second_record.contract = new_contract
-        #
-        # # Update the sets to have those records with new contracts
-        # first_record_set.remove(second_record)
-        # first_record_set.add(second_record)
-        #
-        # second_record_set.remove(first_record)
-        # second_record_set.add(first_record)
 
         first_is_actor = first_record.rec_type == Record.Type.ACTOR
         if first_is_actor:
@@ -359,13 +328,13 @@ class Graph(object):
         else:
             return record in self.__movie_records
 
-    def contains_by_name(self, name):
+    def contains_by_name(self, name, type):
         """
         Checks whether the name of an actor or movie maps to record that exists in the graph
         :param name: The name of the actor or movie to check
         :return: A boolean (true indicates that an actor or movie does exist in the graph; false otherwise)
         """
-        return self.__lookup_table.get(name) is not None
+        return self.__lookup_table.get((name, type)) is not None
 
     def apportion_contracts(self, movie_record):
 

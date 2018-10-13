@@ -170,4 +170,46 @@ class TestGraph(TestCase):
         graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("2", Type.ACTOR))
         graph.apportion_contracts(Record("Batman", Type.MOVIE))
         expected_result = ['1', '8', '4', '3', '5', '6', '2', '7']
-        self.assertEquals(expected_result, graph.get_top_actors(8))
+        self.assertEqual(expected_result, graph.get_top_actors(8))
+
+    def test_contains_by_name(self):
+        graph = Graph()
+        graph.add(MovieRecord("Batman", Type.MOVIE, grossing_amt=1000), ActorRecord("1", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("8", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("4", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("3", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("5", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("6", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("7", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("2", Type.ACTOR))
+        graph.add(MovieRecord("Superman", Type.MOVIE))
+
+        self.assertEqual(True, graph.contains_by_name("8", Type.ACTOR))
+        self.assertEqual(True, graph.contains_by_name("Batman", Type.MOVIE))
+        self.assertEqual(True, graph.contains_by_name("Superman", Type.MOVIE))
+        self.assertEqual(False, graph.contains_by_name("10", Type.ACTOR))
+        self.assertEqual(False, graph.contains_by_name("Antman", Type.MOVIE))
+
+    def test_connect_by_name(self):
+        graph = Graph()
+        graph.add(MovieRecord("Batman", Type.MOVIE))
+        graph.add(ActorRecord("2", Type.ACTOR))
+        graph.connect_by_name("2", "Batman")
+        # Test that we can retrieve the movie that is connected to an actor
+        expected_str = "[['Batman', <Type.MOVIE: 1>]]"
+        self.assertEquals(expected_str, graph.get_movies_of_actor(ActorRecord("2", Type.ACTOR)).__repr__())
+        # Test that we can retrieve the actor that is connected to an movie
+        expected_str = "[['2', <Type.ACTOR: 2>]]"
+        self.assertEquals(expected_str, graph.get_actors_of_movie(MovieRecord("Batman", Type.MOVIE)).__repr__())
+        # Test that by connecting one movie to another actor, an actor connected to
+        # the movie's information is not compromised
+        graph.add(ActorRecord("3", Type.ACTOR))
+        graph.connect_by_name("3", "Batman")
+        expected_str = "[['Batman', <Type.MOVIE: 1>]]"
+        self.assertEquals(expected_str, graph.get_movies_of_actor(ActorRecord("2", Type.ACTOR)).__repr__())
+        # Test that the movie's actors are attributed after we connected it by name
+        expected_str = "[['2', <Type.ACTOR: 2>], ['3', <Type.ACTOR: 2>]]"
+        self.assertEquals(expected_str, graph.get_actors_of_movie(MovieRecord("Batman", Type.MOVIE)).__repr__())
+
+
+
