@@ -130,23 +130,78 @@ def test_perform_complex_query_actors(loaded_client):
                          'movies': ['The First Deadly Sin']}}
     assert expected_dict.__eq__(actor_json)
 
-def test_post_actors_movies(sample_client):
-    sample_client.post('/actors', data=json.dumps({"name": "Bruce Wayne"}), headers={"Content-Type":"application/json"})
+
+def test_simple_post(sample_client):
+    # Test that we can add an actor
+    sample_client.post('/actors', data=json.dumps({"name": "Bruce Wayne"}),
+                       headers={"Content-Type": "application/json"})
     actor_details = sample_client.get('/actors/Bruce Wayne')
     actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
     expected_dict = {'json_class': 'Actor', 'name': 'Bruce Wayne', 'age': 0, 'total_gross': 0, 'movies': []}
     assert expected_dict.__eq__(actor_dict)
 
-    # actor_json = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
-    # print(actor_json)
+    # Test that if we mis-spell a field, then we don't crash
+    sample_client.post('/actors', data=json.dumps({"name": "Bruce Wayne", "aged": 40, "total_earnings": 50}),
+                       headers={"Content-Type": "application/json"})
+    actor_details = sample_client.get('/actors/Bruce Wayne')
+    actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {'json_class': 'Actor', 'name': 'Bruce Wayne', 'age': 0, 'total_gross': 50, 'movies': []}
+    assert expected_dict.__eq__(actor_dict)
+
+    # Test that we can specify multiple fields
+    sample_client.post('/actors', data=json.dumps({"name": "Bruce Wayne", "age": 40, "total_earnings": 50}),
+                       headers={"Content-Type": "application/json"})
+    actor_details = sample_client.get('/actors/Bruce Wayne')
+    actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {'json_class': 'Actor', 'name': 'Bruce Wayne', 'age': 40, 'total_gross': 50, 'movies': []}
+    assert expected_dict.__eq__(actor_dict)
 
 
+def test_complex_post(sample_client):
+    sample_client.post('/movies', data=json.dumps({"name": "Batman"}), headers={"Content-Type": "application/json"})
+    sample_client.post('/movies', data=json.dumps({"name": "Robin"}), headers={"Content-Type": "application/json"})
+    sample_client.post('/actors', data=json.dumps(
+        {"name": "Bruce Wayne", "age": 40, "total_earnings": 50, "movies": ["Batman", "Robin"]}),
+                       headers={"Content-Type": "application/json"})
+
+    actor_details = sample_client.get('/actors/Bruce Wayne')
+    actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {'json_class': 'Actor', 'name': 'Bruce Wayne', 'age': 40, 'total_gross': 50,
+                     'movies': ["Batman", "Robin"]}
+    assert expected_dict.__eq__(actor_dict)
+
+    movie_details = sample_client.get('/movies/Batman')
+    movie_dict = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {'json_class': 'Movie', 'name': 'Batman', 'wiki_page': None, 'box_office': 0, 'year': 0,
+                     'actors': ['Bruce Wayne']}
+    assert expected_dict.__eq__(movie_dict)
+
+
+def test_simple_post_movie(sample_client):
+    sample_client.post('/movies', data=json.dumps({"name": "Batman"}), headers={"Content-Type": "application/json"})
+    actor_details = sample_client.get('/movies/Batman')
+    actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {'json_class': 'Movie', 'name': 'Batman', 'wiki_page': None, 'box_office': 0, 'year': 0,
+                     'actors': []}
+    assert expected_dict.__eq__(actor_dict)
+
+# def test_simple_put_movie(sample_client):
+#     sample_client.post('/movies', data=json.dumps({"name": "Batman"}), headers={"Content-Type": "application/json"})
+#     actor_details = sample_client.get('/movies/Batman')
+#     actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+#     expected_dict = {'json_class': 'Movie', 'name': 'Batman', 'wiki_page': None, 'box_office': 400, 'year': 0,
+#                      'actors': []}
+#     assert expected_dict.__eq__(actor_dict)
+#
+#     sample_client.post('/actors', data=json.dumps({"name": "Bruce Wayne"}), headers={"Content-Type": "application/json"})
+#     sample_client.put('/movies/m/Batman', data=json.dumps({"actors": ["Bruce Wayne"]}),
+#                       headers={"Content-Type": "application/json"})
 
 
 def test_parse_operator():
     query = "name=Aahan&age=21"
     output_array = ['name=Aahan', 'age=21']
-    assert output_array.__eq__(parseOperator(query))
+    assert output_array.__eq__(parse_operator(query))
 
 
 def test_parseAttr():

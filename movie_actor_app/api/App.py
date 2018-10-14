@@ -2,14 +2,12 @@ from movie_actor_app.graphs.Graph import *
 from movie_actor_app.graphs.Record import *
 from movie_actor_app.graphs.ParseData import parse_data
 
-from flask import Flask, jsonify
+from flask import Flask
 from flask import request
 from flask import abort
 
 
-
-
-def parseOperator(query_string):
+def parse_operator(query_string):
     """
     Split a query by the logical operator (if it exists) that exists in it.
     We assume that only one logical operator will exist in a query, and that the
@@ -24,6 +22,7 @@ def parseOperator(query_string):
         return query_string.split("|"), 1
     else:
         return [query_string], 2
+
 
 def parseAttr(definition_string, query_dict):
     """
@@ -44,6 +43,7 @@ def parseAttr(definition_string, query_dict):
     else:
         query_dict[tokens[0]] = [tokens[1]]
 
+
 def is_num(string):
     """
     Check if a string represents a number
@@ -56,6 +56,7 @@ def is_num(string):
     except ValueError:
         return False
 
+
 def create_app(graph_record=None):
     app = Flask(__name__)
     if graph_record is None:
@@ -67,30 +68,19 @@ def create_app(graph_record=None):
     def index():
         return "Hello, World!"
 
+    @app.route('/movies', methods=['POST'])
     @app.route('/actors', methods=['POST'])
     def add_record():
         if not request.is_json:
             abort(400)
         else:
-            rule = request.url_rule
-            # Determine whether we are posting an actor or a movie
-            if 'actors' in rule.rule:
-                query_type = Type.ACTOR
-                neighbor_string = "movies"
-            else:
-                query_type = Type.MOVIE
-                neighbor_string = "actors"
+            neighbor_string, query_type = get_identity_params()
 
-            # Get the data that accompanied the post request
-            bio_data = request.get_json()
-            # Get the list of neighbors to the entry to be posted if it exists
-            neighbor_names = bio_data.get(neighbor_string)
-            # Remove the list of neighbor names from the dictionary
-            if neighbor_names is not None:
-                del bio_data[neighbor_string]
+            bio_data, neighbor_names = get_bio_data(neighbor_string)
 
             # Create a suitable vertex for addition into the graph
-            record = ActorRecord(bio_data['name'], query_type) if query_type == Type.ACTOR else MovieRecord(bio_data['name'], query_type)
+            record = ActorRecord(bio_data['name'], query_type) if query_type == Type.ACTOR else MovieRecord(
+                bio_data['name'], query_type)
 
             # Add the record and any data that accompanied it
             graph.add(record)
@@ -110,6 +100,22 @@ def create_app(graph_record=None):
 
             return "Created", 201
 
+    def get_identity_params():
+        """
+        Get parameters indicating what type of record is being accessed (a movie or actor) and a string
+        describing the category of nodes (actors or movies, respectively) that the record is connected to.
+        :return:
+        """
+        rule = request.url_rule
+        # Determine whether we are posting an actor or a movie
+        if 'actors' in rule.rule:
+            query_type = Type.ACTOR
+            neighbor_string = "movies"
+        else:
+            query_type = Type.MOVIE
+            neighbor_string = "actors"
+        return neighbor_string, query_type
+
     @app.route('/actors/<name>', methods=['GET'])
     def get_whole_actor(name):
         if graph.contains_by_name(name, Type.ACTOR):
@@ -127,13 +133,9 @@ def create_app(graph_record=None):
     @app.route('/actors', methods=['GET'])
     @app.route('/movies', methods=['GET'])
     def query_movie():
-        rule = request.url_rule
-        if 'actors' in rule.rule:
-            query_type = Type.ACTOR
-        else:
-            query_type = Type.MOVIE
+        neighbor_string, query_type = get_identity_params()
 
-        queries, the_type = parseOperator(request.query_string.decode('utf-8'))
+        queries, the_type = parse_operator(request.query_string.decode('utf-8'))
 
         and_type = 0
         or_type = 1
@@ -152,7 +154,36 @@ def create_app(graph_record=None):
         else:
             return graph.query(query_type, query_dict), 200
 
+    @app.route('/actors/a/<name>', methods=['PUT'])
+    @app.route('/movies/m/<name>', methods=['PUT'])
+    def edit_record(name):
+        if not request.is_json:
+            abort(400)
 
+        neighbor_string, query_type = get_identity_params()
+
+        bio_data, neighbor_names = get_bio_data(neighbor_string)
+
+        record = Record(name, query_type)
+
+        graph.update_bio(record, bio_data)
+
+        return "Updated", 200
+
+    def get_bio_data(neighbor_string):
+        """
+        Get the json that accompanies a post or put request with a Content-Type header set to application/json. :param
+        neighbor_string: The string of the category of records that the vertex from the calling function is connected
+        to :return: bio_data: The json as a dictionary, a list of neighbor names
+        """
+        # Get the data that accompanied the post request
+        bio_data = request.get_json()
+        # Get the list of neighbors to the entry to be posted if it exists
+        neighbor_names = bio_data.get(neighbor_string)
+        # Remove the list of neighbor names from the dictionary
+        if neighbor_names is not None:
+            del bio_data[neighbor_string]
+        return bio_data, neighbor_names
 
     return app
 
