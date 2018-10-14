@@ -1,7 +1,6 @@
 # from unittest import TestCase
 
 import pytest
-import json
 import sys
 from movie_actor_app.api.App import *
 
@@ -38,18 +37,157 @@ def test_get_whole_actor(loaded_client):
 
     with open("small_data.json", "r") as fd:
         small_data = json.load(fd)
-    print(actor_json)
-    print(small_data[0]['Bruce Willis'])
+    # print(actor_json)
+    # print(small_data[0]['Bruce Willis'])
     assert actor_json.__eq__(small_data[0]['Bruce Willis'])
 
 
 # Test getting all the attributes of a single movie
-def test_get_whole_actor(loaded_client):
+def test_get_whole_movie(loaded_client):
     movie_details = loaded_client.get('/movies/The First Deadly Sin')
     movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
 
     with open("small_data.json", "r") as fd:
         small_data = json.load(fd)
-    print(movie_json)
-    print(small_data[1]['The First Deadly Sin'])
+    # print(movie_json)
+    # print(small_data[1]['The First Deadly Sin'])
     assert movie_json.__eq__(small_data[1]['The First Deadly Sin'])
+
+
+def test_perform_simple_query(loaded_client):
+    movie_details = loaded_client.get('/movies?name=Deadly')
+    movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+
+    with open("small_data.json", "r") as fd:
+        small_data = json.load(fd)
+
+    assert (small_data[1]['The First Deadly Sin']).__eq__(movie_json['The First Deadly Sin'])
+
+
+def test_perform_complex_query(loaded_client):
+    # Test for orring that results in two matches
+    movie_details = loaded_client.get('/movies?name=Deadly|name=Verdict')
+    movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+
+    with open("small_data.json", "r") as fd:
+        small_data = json.load(fd)
+
+    assert (small_data[1]['The First Deadly Sin']).__eq__(movie_json['The First Deadly Sin'])
+
+    expected_dict = {'actors': ['Bruce Willis'], 'box_office': 53977250, 'json_class': 'Movie', 'name': 'The Verdict',
+                     'year': 1982, "wiki_page": "https://en.wikipedia.org/wiki/The_Verdict"}
+    assert expected_dict.__eq__(movie_json['The Verdict'])
+
+    # Test for orring that results in one match
+    movie_details = loaded_client.get('/movies?name=Deadly|name=Poop')
+    movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+    assert (small_data[1]['The First Deadly Sin']).__eq__(movie_json['The First Deadly Sin'])
+
+    # Test for anding that results in one match
+    movie_details = loaded_client.get('/movies?name=Deadly&name=The')
+    movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+    assert (small_data[1]['The First Deadly Sin']).__eq__(movie_json['The First Deadly Sin'])
+
+    # Test for redundant anding that results in two matches
+    movie_details = loaded_client.get('/movies?name=The&name=The')
+    movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+    assert (small_data[1]['The First Deadly Sin']).__eq__(movie_json['The First Deadly Sin'])
+
+    expected_dict = {'actors': ['Bruce Willis'], 'box_office': 53977250, 'json_class': 'Movie', 'name': 'The Verdict',
+                     'year': 1982, "wiki_page": "https://en.wikipedia.org/wiki/The_Verdict"}
+    assert expected_dict.__eq__(movie_json['The Verdict'])
+
+
+def test_perform_null_query(loaded_client):
+    # Test for anding that results in zero matches
+    movie_details = loaded_client.get('/movies?name=Deadly&name=Poop')
+    movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+    movie_json_is_not_empty = bool(movie_json)
+    assert movie_json_is_not_empty == False
+
+
+def test_perform_simple_query_actors(loaded_client):
+    actor_details = loaded_client.get('/actors?age=61')
+    actor_json = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {
+        'Bruce Willis': {'json_class': 'Actor', 'name': 'Bruce Willis', 'age': 61, 'total_gross': 562709189,
+                         'movies': ['The First Deadly Sin', 'The Verdict']}}
+    assert expected_dict.__eq__(actor_json)
+
+    actor_details = loaded_client.get('/actors?age=61&age=71')
+    actor_json = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    actor_json_is_not_empty = bool(actor_json)
+    assert actor_json_is_not_empty == False
+
+
+def test_perform_complex_query_actors(loaded_client):
+    actor_details = loaded_client.get('/actors?age=61|age=76')
+    actor_json = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {
+        'Bruce Willis': {'json_class': 'Actor', 'name': 'Bruce Willis', 'age': 61, 'total_gross': 562709189,
+                         'movies': ['The First Deadly Sin', 'The Verdict']},
+        'Faye Dunaway': {'json_class': 'Actor', 'name': 'Faye Dunaway', 'age': 76, 'total_gross': 515893034,
+                         'movies': ['The First Deadly Sin']}}
+    assert expected_dict.__eq__(actor_json)
+
+def test_post_actors_movies(sample_client):
+    sample_client.post('/actors', data=json.dumps({"name": "Bruce Wayne"}), headers={"Content-Type":"application/json"})
+    actor_details = sample_client.get('/actors/Bruce Wayne')
+    actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {'json_class': 'Actor', 'name': 'Bruce Wayne', 'age': 0, 'total_gross': 0, 'movies': []}
+    assert expected_dict.__eq__(actor_dict)
+
+    # actor_json = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    # print(actor_json)
+
+
+
+
+def test_parse_operator():
+    query = "name=Aahan&age=21"
+    output_array = ['name=Aahan', 'age=21']
+    assert output_array.__eq__(parseOperator(query))
+
+
+def test_parseAttr():
+    query = "name=Aahan"
+    output_dict = {'name': ['Aahan']}
+    query_dict = dict()
+    parseAttr(query, query_dict)
+    assert query_dict.__eq__(output_dict)
+
+    query = "name=Aahan"
+    query_dict = dict()
+    parseAttr(query, query_dict)
+    query = "name=Bob"
+    parseAttr(query, query_dict)
+    output_dict = {'name': ['Aahan', 'Bob']}
+    assert query_dict.__eq__(output_dict)
+
+
+def test_is_num():
+    true_string = "9"
+    false_string = "hi"
+
+    assert (is_num(true_string) == True)
+    assert (is_num(false_string) == False)
+
+# def test_perform_and_query(loaded_client):
+#     movie_details = loaded_client.get('/actors?name=Bruce&name=Faye')
+#     movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+#
+#     with open("small_data.json", "r") as fd:
+#         small_data = json.load(fd)
+#     # print(movie_json)
+#     # print(small_data[1]['The First Deadly Sin'])
+#     assert movie_json.__eq__(small_data[1]['The First Deadly Sin'])
+#
+# def test_perform_or_query(loaded_client):
+#     movie_details = loaded_client.get('/actors?name=Bruce&name=joe')
+#     movie_json = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+#
+#     with open("small_data.json", "r") as fd:
+#         small_data = json.load(fd)
+#     # print(movie_json)
+#     # print(small_data[1]['The First Deadly Sin'])
+#     assert movie_json.__eq__(small_data[1]['The First Deadly Sin'])

@@ -140,7 +140,7 @@ class TestGraph(TestCase):
         graph.add(ActorRecord("Bruce Wayne", Type.ACTOR))
         graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("Bruce Wayne", Type.ACTOR))
 
-        expected_string = "Batman:[['Bruce Wayne', <Type.ACTOR: 2>]]\n"\
+        expected_string = "Batman:[['Bruce Wayne', <Type.ACTOR: 2>]]\n" \
                           "Bruce Wayne:[['Batman', <Type.MOVIE: 1>]]"
 
         actual_string = repr(graph)
@@ -160,7 +160,7 @@ class TestGraph(TestCase):
 
     def test_apportion_contracts(self):
         graph = Graph()
-        graph.add(MovieRecord("Batman", Type.MOVIE,grossing_amt=1000), ActorRecord("1", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE, grossing_amt=1000), ActorRecord("1", Type.ACTOR))
         graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("8", Type.ACTOR))
         graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("4", Type.ACTOR))
         graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("3", Type.ACTOR))
@@ -236,19 +236,36 @@ class TestGraph(TestCase):
         graph.add(ActorRecord("Bruce Doggy", Type.ACTOR, 31, 0, 0, None))
         graph.add(ActorRecord("Bruce Yo", Type.ACTOR, 32, 0, 0, None))
         graph.add(ActorRecord("Bruce Ma", Type.ACTOR, 33, 0, 0, None))
-        graph.add(ActorRecord("Bruce dog", Type.ACTOR, 30, 0, 0, None))
+        graph.add(ActorRecord("Bruce dog", Type.ACTOR, 40, 0, 0, None))
         graph.add(ActorRecord("Bruce my", Type.ACTOR, 35, 0, 0, None))
 
         graph.add(ActorRecord("Bruce Wayne", Type.ACTOR), MovieRecord("Batman", Type.MOVIE, 0, 0, 0, None))
 
-        expected_str = "{\"json_class\": \"Actor\", \"name\": \"Bruce Wayne\", \"age\": 30, " \
-                       "\"total_gross\": 0, \"movies\": [\"Batman\"]}"
-        query_dict = {"age":30, "name": "Wayne"}
+        expected_str = "{\"Bruce Wayne\": {\"json_class\": \"Actor\", \"name\": \"Bruce Wayne\", \"age\": 30, " \
+                       "\"total_gross\": 0, \"movies\": [\"Batman\"]}}"
+        query_dict = {"age": {30}, "name": ["Wayne"]}
+        self.assertEquals(expected_str, graph.query(Type.ACTOR, query_dict))
+
+        expected_str = "{\"Batman\": {\"json_class\": \"Movie\", \"name\": \"Batman\", \"wiki_page\": null, " \
+                       "\"box_office\": 0, \"year\": 0, \"actors\": [\"Bruce Wayne\"]}}"
+        query_dict = {"year": [0], "name": ["Batman"]}
         self.assertEquals(expected_str, graph.query(Type.MOVIE, query_dict))
 
+        expected_str = "{}"
+        query_dict = {"year": [1], "name": ["Batman"]}
+        self.assertEquals(expected_str, graph.query(Type.MOVIE, query_dict))
+
+        graph.add(ActorRecord("Bruce Yo", Type.ACTOR), MovieRecord("Batman", Type.MOVIE, 0, 0, 0, None))
+        expected_str = "{\"Bruce Wayne\": {\"json_class\": \"Actor\", \"name\": \"Bruce Wayne\", \"age\": 30, " \
+                       "\"total_gross\": 0, \"movies\": [\"Batman\"]}, " \
+                       "\"Bruce Yo\": {\"json_class\": \"Actor\", \"name\": \"Bruce Yo\", \"age\": 32, " \
+                       "\"total_gross\": 0, \"movies\": [\"Batman\"]}}"
+        query_dict = {"age": [30, 32]}
+        actual_str = graph.query(Type.ACTOR, query_dict, and_operator=False)
+        self.assertEquals(expected_str, actual_str)
+
     def test_match(self):
-
-
-
-
-
+        self.assertTrue(Graph.match("hitmonlee", ["hi"]))
+        self.assertFalse(Graph.match("xitmonlee", ["hi"]))
+        self.assertTrue(Graph.match(20, [20]))
+        self.assertFalse(Graph.match(21, [20]))

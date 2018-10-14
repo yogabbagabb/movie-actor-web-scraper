@@ -330,13 +330,14 @@ class Graph(object):
         else:
             return record in self.__movie_records
 
-    def contains_by_name(self, name, type):
+    def contains_by_name(self, name, the_type):
         """
-        Checks whether the name of an actor or movie maps to record that exists in the graph
+        Checks whether the name of an actor or movie maps to record that exists in the graph.
+        :param the_type: The record type of the entry corresponding to name
         :param name: The name of the actor or movie to check
         :return: A boolean (true indicates that an actor or movie does exist in the graph; false otherwise)
         """
-        return self.__lookup_table.get((name, type)) is not None
+        return self.__lookup_table.get((name, the_type)) is not None
 
     def apportion_contracts(self, movie_record):
 
@@ -415,46 +416,99 @@ class Graph(object):
 
         return json.dumps(movie_dict)
 
-    def query(self, record_type, query_dict):
+    def query(self, record_type, query_dict, and_operator=True):
         """
-        Get all the records with attributes taht match those in query_dict
+        Get all the records with attributes that match those in query_dict.
+
+        :param and_operator: A boolean that indicates whether we and
+         (take the intersection of) the queries in query_dictionary. If false,
+         we or them
         :param record_type: The category of record (ActorRecord or MovieRecord) that we are trying to find matches in
         :param query_dict: The dictionary of attributes to match against.
         :return: A json satisfying the query
         """
         if record_type == Type.ACTOR:
-            return self.query_portion(self.__actor_records, Graph.get_actor_json, query_dict)
+            return self.query_portion(self.__actor_records, self.get_actor_json, query_dict, and_operator)
         else:
-            return self.query_portion(self.__movie_records, Graph.get_movie_json, query_dict)
+            return self.query_portion(self.__movie_records, self.get_movie_json, query_dict, and_operator)
 
-    def query_portion(self, record_list, lookup_function, query_dict):
+    @staticmethod
+    def query_portion(record_list, lookup_function, query_dict, and_operator=True):
         """
         Return a json object containing those entries in record-list whose attributes match those in query_dict.
         :param record_list: A list of actor records or movie records
         :param lookup_function: A function to obtain a json for any entry in record_list
         :param query_dict: The dictionary with attributes to match against
+        :param and_operator: A boolean that indicates whether we and
+         (take the intersection of) the queries in query_dictionary. If false,
+         we or them
         :return: A json satisfying the query
         """
 
         match_dict = dict()
 
-        for record in record_list:
-            for key in query_dict:
-                attr_match = Graph.match(getattr(record, key), query_dict[key])
-                if not attr_match:
-                    break
-            match_dict.update({record.name: lookup_function(record.name, record)})
+        # We are taking the intersection of all queries
+        if and_operator:
+            for record in record_list:
+                attr_match = True
+                for key in query_dict:
+                    attr_match = Graph.match(getattr(record, key), query_dict[key], and_operator=True)
+                    if not attr_match:
+                        break
+                if attr_match:
+                    # Add to the dictionary the matching actor or movie along with its attributes
+                    match_dict.update({record.name: json.loads(lookup_function(record.name, record))})
+
+        # We are taking the union of all queries
+        else:
+            for record in record_list:
+                for key in query_dict:
+                    attr_match = Graph.match(getattr(record, key), query_dict[key], and_operator=False)
+                    if attr_match:
+                        # Add to the dictionary the matching actor or movie along with its attributes
+                        match_dict.update({record.name: json.loads(lookup_function(record.name, record))})
+                        break
 
         return json.dumps(match_dict)
 
+    @staticmethod
+    def match(candidate, standards, and_operator=False):
+        """
+        Determine if an object (candidate) matches any object in standards,
+        or if it matches all objects in standards
+        Matching tests, in this function, for string containment of any
+        object in standards in candidate or for integer equality between
+        candidate and any member of standards.
+        :param and_operator: Whether we wish to match candidate against every element in standards or at least one.
+        :param candidate: An integer or string to match.
+        :param standards: Objects the candidate can match against.
+        :return: Whether candidate matches against any standard in standards.
+        """
+        if and_operator:
+            for standard in standards:
+                match = Graph.match_two_values(candidate, standard)
+
+                if not match:
+                    return False
+            return True
+
+        else:
+            for standard in standards:
+                match = Graph.match_two_values(candidate, standard)
+
+                if match:
+                    return True
+            return False
 
     @staticmethod
-    def match(candidate, standard):
+    def match_two_values(candidate, standard):
         if type(candidate) == str:
-            return candidate in standard
+            match = standard in candidate
         else:
-            return candidate == standard
-
+            # Make sure that standard is an integer
+            integer_standard = int(standard)
+            match = candidate == integer_standard
+        return match
 
     # def to_json(self, filename):
     #     """
