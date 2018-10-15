@@ -3683,3 +3683,211 @@ Starting
 
 
 2018-10-14 18:55:53,397 - INFO - 64 - Getting Soup From URL for Matt Damon
+2018-10-14 18:58:16,333 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-14 18:58:16,651 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 18:58:16,652 - INFO - 117 - Getting Actors that played in Invictus (film)
+2018-10-14 18:58:16,652 - INFO - 64 - Getting Soup From URL for Invictus (film)
+2018-10-14 18:58:17,123 - INFO - 86 - Getting Movies that Matt Damon played in
+2018-10-14 18:58:17,123 - INFO - 89 - Trying to get soup using the _filmography suffix for Matt Damon
+2018-10-14 18:58:17,123 - INFO - 64 - Getting Soup From URL for Matt Damon
+2018-10-14 18:58:17,641 - INFO - 204 - Invictus added Morgan Freeman to the queue
+2018-10-14 18:58:17,641 - INFO - 204 - Invictus added Matt Damon to the queue
+2018-10-14 18:58:17,641 - INFO - 204 - Matt Damon added The Martian (film) to the queue
+2018-10-14 18:58:17,641 - INFO - 204 - Matt Damon added Mystic Pizza to the queue
+2018-10-14 18:58:17,641 - INFO - 204 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-14 18:58:17,643 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 18:58:17,643 - INFO - 64 - Getting Soup From URL for Crouching Tiger, Hidden Dragon
+2018-10-14 18:58:18,218 - INFO - 159 - The movie was released on 2000
+2018-10-14 18:58:18,221 - INFO - 172 - The movie earned 213.5
+2018-10-14 18:58:18,221 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 18:58:18,221 - INFO - 64 - Getting Soup From URL for 300 (film)
+2018-10-14 18:58:18,726 - INFO - 159 - The movie was released on 2006
+2018-10-14 18:58:18,728 - INFO - 172 - The movie earned 456.1
+2018-10-14 18:58:18,728 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 18:58:18,728 - INFO - 64 - Getting Soup From URL for Matt Damon
+2018-10-14 19:03:19,844 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-14 19:03:20,120 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 19:03:20,121 - INFO - 117 - Getting Actors that played in Invictus (film)
+2018-10-14 19:03:20,122 - INFO - 64 - Getting Soup From URL for Invictus (film)
+2018-10-14 19:03:20,565 - INFO - 86 - Getting Movies that Matt Damon played in
+2018-10-14 19:03:20,565 - INFO - 89 - Trying to get soup using the _filmography suffix for Matt Damon
+2018-10-14 19:03:20,566 - INFO - 64 - Getting Soup From URL for Matt Damon
+2018-10-14 19:03:21,091 - INFO - 204 - Invictus added Morgan Freeman to the queue
+2018-10-14 19:03:21,091 - INFO - 204 - Invictus added Matt Damon to the queue
+2018-10-14 19:03:21,091 - INFO - 204 - Matt Damon added The Martian (film) to the queue
+2018-10-14 19:03:21,091 - INFO - 204 - Matt Damon added Mystic Pizza to the queue
+2018-10-14 19:03:21,091 - INFO - 204 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-14 19:03:21,093 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 19:03:21,093 - INFO - 64 - Getting Soup From URL for Crouching Tiger, Hidden Dragon
+2018-10-14 19:03:21,575 - INFO - 159 - The movie was released on 2000
+2018-10-14 19:03:21,579 - INFO - 172 - The movie earned 213.5
+2018-10-14 19:03:21,580 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 19:03:21,580 - INFO - 64 - Getting Soup From URL for 300 (film)
+2018-10-14 19:03:22,112 - INFO - 159 - The movie was released on 2006
+2018-10-14 19:03:22,115 - INFO - 172 - The movie earned 456.1
+2018-10-14 19:03:22,115 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 19:03:22,115 - INFO - 64 - Getting Soup From URL for Matt Damon
+2018-10-14 20:01:01,665 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-14 20:01:03,026 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 20:01:03,027 - INFO - 117 - Getting Actors that played in Invictus (film)
+2018-10-14 20:01:03,027 - INFO - 64 - Getting Soup From URL for Invictus (film)
+2018-10-14 20:01:03,503 - INFO - 86 - Getting Movies that Matt Damon played in
+2018-10-14 20:01:03,503 - INFO - 89 - Trying to get soup using the _filmography suffix for Matt Damon
+2018-10-14 20:01:03,503 - INFO - 64 - Getting Soup From URL for Matt Damon
+2018-10-14 20:01:04,031 - INFO - 204 - Invictus added Morgan Freeman to the queue
+2018-10-14 20:01:04,031 - INFO - 204 - Invictus added Matt Damon to the queue
+2018-10-14 20:01:04,031 - INFO - 204 - Matt Damon added The Martian (film) to the queue
+2018-10-14 20:01:04,031 - INFO - 204 - Matt Damon added Mystic Pizza to the queue
+2018-10-14 20:01:04,031 - INFO - 204 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-14 20:01:04,033 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 20:01:04,033 - INFO - 64 - Getting Soup From URL for Crouching Tiger, Hidden Dragon
+2018-10-14 20:01:04,561 - INFO - 159 - The movie was released on 2000
+2018-10-14 20:01:04,564 - INFO - 172 - The movie earned 213.5
+2018-10-14 20:01:04,564 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 20:01:04,564 - INFO - 64 - Getting Soup From URL for 300 (film)
+2018-10-14 20:01:05,169 - INFO - 159 - The movie was released on 2006
+2018-10-14 20:01:05,172 - INFO - 172 - The movie earned 456.1
+2018-10-14 20:01:05,172 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 20:01:05,172 - INFO - 64 - Getting Soup From URL for Matt Damon
+2018-10-14 20:03:20,423 - INFO - 16 - 
+
+
+Starting
+
+
+
+2018-10-14 20:03:20,673 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 20:03:20,674 - INFO - 117 - Getting Actors that played in Invictus (film)
+2018-10-14 20:03:20,674 - INFO - 64 - Getting Soup From URL for Invictus (film)
+2018-10-14 20:03:21,118 - INFO - 86 - Getting Movies that Matt Damon played in
+2018-10-14 20:03:21,118 - INFO - 89 - Trying to get soup using the _filmography suffix for Matt Damon
+2018-10-14 20:03:21,118 - INFO - 64 - Getting Soup From URL for Matt Damon
+2018-10-14 20:03:21,696 - INFO - 204 - Invictus added Morgan Freeman to the queue
+2018-10-14 20:03:21,697 - INFO - 204 - Invictus added Matt Damon to the queue
+2018-10-14 20:03:21,697 - INFO - 204 - Matt Damon added The Martian (film) to the queue
+2018-10-14 20:03:21,697 - INFO - 204 - Matt Damon added Mystic Pizza to the queue
+2018-10-14 20:03:21,697 - INFO - 204 - Matt Damon added The Rainmaker (1997 film) to the queue
+2018-10-14 20:03:21,699 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 20:03:21,699 - INFO - 64 - Getting Soup From URL for Crouching Tiger, Hidden Dragon
+2018-10-14 20:03:22,190 - INFO - 159 - The movie was released on 2000
+2018-10-14 20:03:22,192 - INFO - 172 - The movie earned 213.5
+2018-10-14 20:03:22,192 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 20:03:22,193 - INFO - 64 - Getting Soup From URL for 300 (film)
+2018-10-14 20:03:22,715 - INFO - 159 - The movie was released on 2006
+2018-10-14 20:03:22,719 - INFO - 172 - The movie earned 456.1
+2018-10-14 20:03:22,719 - INFO - 53 - 
+
+
+Starting
+
+
+
+2018-10-14 20:03:22,719 - INFO - 64 - Getting Soup From URL for Matt Damon

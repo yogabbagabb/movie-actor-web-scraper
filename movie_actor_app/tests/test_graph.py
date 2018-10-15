@@ -269,3 +269,17 @@ class TestGraph(TestCase):
         self.assertFalse(Graph.match("xitmonlee", ["hi"]))
         self.assertTrue(Graph.match(20, [20]))
         self.assertFalse(Graph.match(21, [20]))
+
+    def test_delete(self):
+        graph = Graph()
+        graph.add(MovieRecord("Batman", Type.MOVIE, grossing_amt=1000), ActorRecord("1", Type.ACTOR))
+        graph.add(MovieRecord("Batman", Type.MOVIE), ActorRecord("8", Type.ACTOR))
+        graph.apportion_contracts(MovieRecord("Batman"))
+        self.assertEquals(500, graph.get_contract("1","Batman"))
+        graph.delete("Batman", Type.MOVIE)
+        self.assertEquals(0, graph.get_contract("1","Batman"))
+        self.assertFalse(graph.contains_by_name("Batman", Type.MOVIE))
+        movies_of_actor = graph.get_movies_of_actor(ActorRecord("8"))
+        list_is_empty = not movies_of_actor
+        self.assertTrue(list_is_empty)
+

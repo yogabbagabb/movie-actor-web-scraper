@@ -33,14 +33,14 @@ class Type(Enum):
 
 
 class MovieRecord(Record):
-    def __init__(self, name, rec_type, year=0, grossing_amt=0, contract=0, wiki_page=None):
+    def __init__(self, name, rec_type=Type.MOVIE, year=0, grossing_amt=0, contract=0, wiki_page=None):
         super(MovieRecord, self).__init__(name, rec_type, contract, wiki_page)
         self.year = year
         self.grossing_amt = grossing_amt
 
 
 class ActorRecord(Record):
-    def __init__(self, name, rec_type, age=0, contract=0, total_earnings=0, wiki_page = None):
+    def __init__(self, name, rec_type=Type.ACTOR, age=0, contract=0, total_earnings=0, wiki_page = None):
         super(ActorRecord, self).__init__(name, rec_type, contract, wiki_page)
         self.age = age
         self.total_earnings = total_earnings

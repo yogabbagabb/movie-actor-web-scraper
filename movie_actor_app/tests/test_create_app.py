@@ -185,17 +185,30 @@ def test_simple_post_movie(sample_client):
                      'actors': []}
     assert expected_dict.__eq__(actor_dict)
 
-# def test_simple_put_movie(sample_client):
-#     sample_client.post('/movies', data=json.dumps({"name": "Batman"}), headers={"Content-Type": "application/json"})
-#     actor_details = sample_client.get('/movies/Batman')
+def test_simple_put_movie(sample_client):
+    sample_client.post('/movies', data=json.dumps({"name": "Batman"}), headers={"Content-Type": "application/json"})
+    actor_details = sample_client.get('/movies/Batman')
+    actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
+    expected_dict = {'json_class': 'Movie', 'name': 'Batman', 'wiki_page': None, 'box_office': 0, 'year': 0,
+                     'actors': []}
+    assert expected_dict.__eq__(actor_dict)
+
+    sample_client.post('/actors', data=json.dumps({"name": "Bruce Wayne"}), headers={"Content-Type": "application/json"})
+    sample_client.put('/movies/m/Batman', data=json.dumps({"actors": ["Bruce Wayne"]}),
+                      headers={"Content-Type": "application/json"})
+
+# def test_delete(loaded_client):
+#     loaded_client.delete('/actors/Bruce Willis', headers={"Content-Type": "application/json"})
+#     actor_details = loaded_client.get('/actors/Bruce Willis')
 #     actor_dict = json.loads(actor_details.get_data().decode(sys.getdefaultencoding()))
-#     expected_dict = {'json_class': 'Movie', 'name': 'Batman', 'wiki_page': None, 'box_office': 400, 'year': 0,
-#                      'actors': []}
-#     assert expected_dict.__eq__(actor_dict)
 #
-#     sample_client.post('/actors', data=json.dumps({"name": "Bruce Wayne"}), headers={"Content-Type": "application/json"})
-#     sample_client.put('/movies/m/Batman', data=json.dumps({"actors": ["Bruce Wayne"]}),
-#                       headers={"Content-Type": "application/json"})
+#     actor_dict_is_not_empty = bool(actor_dict)
+#     assert actor_dict_is_not_empty == False
+#
+#     movie_details = loaded_client.get('/movies/The First Deadly Sin')
+#     movie_dict = json.loads(movie_details.get_data().decode(sys.getdefaultencoding()))
+#
+#     print(movie_dict)
 
 
 def test_parse_operator():

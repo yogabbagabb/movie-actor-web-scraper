@@ -406,7 +406,7 @@ class Scraper(object):
         all_movies = self.graph.get_movies()
         actors_in_movie = all_movies[movie_record]
         for actor in actors_in_movie:
-            print(actor.name, actor.contract)
+            print(actor.name, self.graph.get_contract(actor.name, movie_name))
 
 
 if __name__ == "__main__":

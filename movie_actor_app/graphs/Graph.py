@@ -16,7 +16,7 @@ class Graph(object):
         # A dictionary that maps a Contract (an actor's name, a movie's name) to a float (the actual contract between
         #  the corresponding actor and movie)
         self.__contracts = dict()
-        # A dictionary that looks up an ActorRecord or MovieRecord using the name of the object
+        # A dictionary that looks up an ActorRecord or MovieRecord using the name of the object and its type
         self.__lookup_table = dict()
 
     def get_movies(self):
@@ -24,6 +24,19 @@ class Graph(object):
 
     def get_actors(self):
         return self.__actor_records
+
+    def get_contract(self, actor_name, movie_name):
+        """
+        Get the contract between actor_name and movie_name.
+        :param actor_name: The name of an actor.
+        :param movie_name: The name of a movie.
+        :return: The contract amount, a float.
+        """
+        contract_amt = self.__contracts.get(Contract(actor_name, movie_name))
+        if contract_amt is None:
+            return 0
+        else:
+            return contract_amt['contract']
 
     @staticmethod
     def get_name(some_record):
@@ -509,6 +522,47 @@ class Graph(object):
             integer_standard = int(standard)
             match = candidate == integer_standard
         return match
+
+    def delete(self, name, record_type):
+        """
+        Delete the vertex corresponding to name and record_type from the graph
+        This function first checks to see that the record does exist before deleting it; if it does not exist,
+        then this function does nothing.
+        :param name: The name of the entry.
+        :param record_type: The type of entry (actor or movie)
+        :return: Whether the record was deleted. If the record did not exist, then return False.
+        """
+
+        if not self.contains_by_name(name, record_type):
+            return False
+
+        record = self.__lookup_table[(name, record_type)]
+        # Remove the record from the look up table
+        del self.__lookup_table[(name, record_type)]
+
+        # Get the dictionary that maps record to its neighbors, among other records of the same type
+        our_group = self.__movie_records if record_type == Type.MOVIE else self.__actor_records
+
+        opposing_group = self.__actor_records if record_type == Type.MOVIE else self.__movie_records
+
+        neighbors_of_record = our_group[record]
+        # Remove the record from the appropriate neighbor dictionary
+        del our_group[record]
+
+        for neighbor in neighbors_of_record:
+            # Remove any contract between record and a neighbor
+            if record_type == Type.ACTOR:
+                contract = Contract(record.name, neighbor.name)
+            else:
+                contract = Contract(neighbor.name, record.name)
+
+            if contract in self.__contracts:
+                del self.__contracts[contract]
+
+            # Remove record from the list of neighbors that each of record's neighbors has
+            neighbors_of_neighbor = opposing_group[neighbor]
+            neighbors_of_neighbor.remove(record)
+        return True
 
     # def to_json(self, filename):
     #     """

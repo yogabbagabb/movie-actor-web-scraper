@@ -86,19 +86,31 @@ def create_app(graph_record=None):
             graph.add(record)
             graph.update_bio(record, bio_data)
 
-            # Determine what a neighbor's query type is
-            neighbor_query_type = Type.MOVIE if query_type == Type.ACTOR else Type.ACTOR
-            if neighbor_names is not None:
-                for name in neighbor_names:
-                    # Connect the posted node with nodes corresponding to its
-                    # passed in neighbors' names only if a neighbor node corresponding to the name exists
-                    if graph.contains_by_name(name, neighbor_query_type):
-                        if query_type == Type.ACTOR:
-                            graph.connect_by_name(bio_data['name'], name)
-                        else:
-                            graph.connect_by_name(name, bio_data['name'])
+            name_of_record = bio_data['name']
+            connect_to_neighbors(name_of_record, neighbor_names, query_type)
 
             return "Created", 201
+
+    def connect_to_neighbors(record_name, neighbor_names, query_type):
+        """
+        Connect the node corresponding to record_name with all its neighbors, whose names are in
+        neighbor_names.
+        :param record_name: The name (a string) of the record that we wish to connect to its neighbors.
+        :param neighbor_names: A list of strings of neighbor names
+        :param query_type: The type of record of the node corresponding to record_name
+        :return: None
+        """
+        # Determine what a neighbor's query type is
+        neighbor_query_type = Type.MOVIE if query_type == Type.ACTOR else Type.ACTOR
+        if neighbor_names is not None:
+            for name in neighbor_names:
+                # Connect the posted node with nodes corresponding to its
+                # passed in neighbors' names only if a neighbor node corresponding to the name exists
+                if graph.contains_by_name(name, neighbor_query_type):
+                    if query_type == Type.ACTOR:
+                        graph.connect_by_name(record_name, name)
+                    else:
+                        graph.connect_by_name(name, record_name)
 
     def get_identity_params():
         """
@@ -167,6 +179,7 @@ def create_app(graph_record=None):
         record = Record(name, query_type)
 
         graph.update_bio(record, bio_data)
+        connect_to_neighbors(name, neighbor_names, query_type)
 
         return "Updated", 200
 
