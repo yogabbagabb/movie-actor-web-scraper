@@ -116,7 +116,7 @@ def create_app(graph_record=None):
         """
         Get parameters indicating what type of record is being accessed (a movie or actor) and a string
         describing the category of nodes (actors or movies, respectively) that the record is connected to.
-        :return:
+        :return: neighbor_string, query_type
         """
         rule = request.url_rule
         # Determine whether we are posting an actor or a movie
@@ -165,6 +165,16 @@ def create_app(graph_record=None):
         # and we can parse it assuming that either the | or & operator was used -- it does not matter.
         else:
             return graph.query(query_type, query_dict), 200
+
+    @app.route('/actors/<name>', methods=['DELETE'])
+    @app.route('/movies/<name>', methods=['DELETE'])
+    def delete_record(name):
+        if not request.is_json:
+            abort(400)
+        _, record_type = get_identity_params()
+        graph.delete(name, record_type)
+
+        return "Deleted", 200
 
     @app.route('/actors/a/<name>', methods=['PUT'])
     @app.route('/movies/m/<name>', methods=['PUT'])
