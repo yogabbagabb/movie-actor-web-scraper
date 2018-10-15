@@ -89,7 +89,7 @@ def create_app(graph_record=None):
             name_of_record = bio_data['name']
             connect_to_neighbors(name_of_record, neighbor_names, query_type)
 
-            return "Created", 201
+        return json.dumps({"Message": "Created"}), 201
 
     def connect_to_neighbors(record_name, neighbor_names, query_type):
         """
@@ -174,7 +174,7 @@ def create_app(graph_record=None):
         _, record_type = get_identity_params()
         graph.delete(name, record_type)
 
-        return "Deleted", 200
+        return json.dumps({"Message": "Deleted"}), 200
 
     @app.route('/actors/a/<name>', methods=['PUT'])
     @app.route('/movies/m/<name>', methods=['PUT'])
@@ -191,7 +191,7 @@ def create_app(graph_record=None):
         graph.update_bio(record, bio_data)
         connect_to_neighbors(name, neighbor_names, query_type)
 
-        return "Updated", 200
+        return json.dumps({"Message": "Updated"}), 200
 
     def get_bio_data(neighbor_string):
         """
