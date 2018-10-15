@@ -8,7 +8,6 @@ from matplotlib import pyplot as plt
 import os
 
 
-
 def make_box_whisker(distribution):
     """
     Make a box and whisker plot using a distribution.
@@ -20,6 +19,7 @@ def make_box_whisker(distribution):
     plt.ylabel("Hub Degree")
     plt.title("Distribution of Hub Degrees in The Graph")
     plt.show()
+
 
 def make_scatter_plot(x_vals, y_vals):
     """
@@ -36,7 +36,6 @@ def make_scatter_plot(x_vals, y_vals):
 
 
 if __name__ == "__main__":
-
     file_path = os.path.join(os.getcwd(), "../api/data.json")
     graph = parse_data(file_path)
     hub_degree_dict = get_hub_degrees(graph)
