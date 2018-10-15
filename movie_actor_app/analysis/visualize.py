@@ -2,8 +2,8 @@
 Make plots
 """
 from movie_actor_app.analysis.actor_hubs import *
-from movie_actor_app.graphs.Graph import Graph
 from movie_actor_app.graphs.ParseData import parse_data
+from movie_actor_app.analysis.age_earnings import *
 from matplotlib import pyplot as plt
 import os
 
@@ -21,6 +21,18 @@ def make_box_whisker(distribution):
     plt.title("Distribution of Hub Degrees in The Graph")
     plt.show()
 
+def make_scatter_plot(x_vals, y_vals):
+    """
+    Make a scatter plot with dots (no lines)
+    :param x_vals: Some x coordinates.
+    :param y_vals: Some y coordinates
+    :return:
+    """
+    plt.plot(x_vals, y_vals, 'rx')
+    plt.xlabel("Age Bracket [x, x+10)")
+    plt.ylabel("Average Total Gross")
+    plt.title("Correlation Between Total Gross Amount and Age Bracket")
+    plt.show()
 
 
 if __name__ == "__main__":
@@ -35,3 +47,5 @@ if __name__ == "__main__":
     make_box_whisker(all_values)
     values_less_40 = list(filter(lambda x: x <= 40, all_values))
     make_box_whisker(values_less_40)
+    age_dict = get_age_distribution(graph)
+    make_scatter_plot(list(age_dict.keys()), list(age_dict.values()))

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16883730-baae-409c-a0ed-ddd6383da84a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie_actor_app/analysis/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_actor_app/analysis/actor_hubs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_actor_app/analysis/visualize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie_actor_app/tests/test_actor_hubs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_actor_app/analysis/age_earnings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie_actor_app/tests/test_age_earnings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie_actor_app/analysis/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie_actor_app/analysis/visualize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie_actor_app/tests/scraper.log" beforeDir="false" afterPath="$PROJECT_DIR$/movie_actor_app/tests/scraper.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +28,7 @@
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_simple_put_movie.coverage" NAME="pytest for test_create_app.test_simple_put_movie Coverage Results" MODIFIED="1539561792762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_graph_TestGraph_test_delete.coverage" NAME="pytest for test_graph.TestGraph.test_delete Coverage Results" MODIFIED="1539564837281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$UserInterface.coverage" NAME="UserInterface Coverage Results" MODIFIED="1539392459638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/scraper" />
-    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_in_tests.coverage" NAME="pytest in tests Coverage Results" MODIFIED="1539573526787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_in_tests.coverage" NAME="pytest in tests Coverage Results" MODIFIED="1539579359361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_get_whole.coverage" NAME="pytest for test_create_app.test_get_whole Coverage Results" MODIFIED="1539471042664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_hub_degrees.coverage" NAME="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_hub_degrees Coverage Results" MODIFIED="1539570645544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$Unittests_for_test_query_operations_TestGraph_test_update_contract.coverage" NAME="Unittests for test_query_operations.TestGraph.test_update_contract Coverage Results" MODIFIED="1539375464991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
@@ -50,18 +49,21 @@
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_simple_post.coverage" NAME="pytest for test_create_app.test_simple_post Coverage Results" MODIFIED="1539558878108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_parseAttr.coverage" NAME="pytest for test_create_app.test_parseAttr Coverage Results" MODIFIED="1539543496162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_top_hubs.coverage" NAME="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs Coverage Results" MODIFIED="1539571363045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$age_earnings.coverage" NAME="age_earnings Coverage Results" MODIFIED="1539578107529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/analysis" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$Unittests_for_test_graph_TestGraph_test_connect_by_name.coverage" NAME="Unittests for test_graph.TestGraph.test_connect_by_name Coverage Results" MODIFIED="1539391396624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_simple_post_movie.coverage" NAME="pytest for test_create_app.test_simple_post_movie Coverage Results" MODIFIED="1539558826444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_is_num.coverage" NAME="pytest for test_create_app.test_is_num Coverage Results" MODIFIED="1539540435496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_perform_query_actors.coverage" NAME="pytest for test_create_app.test_perform_query_actors Coverage Results" MODIFIED="1539549945071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_age_earnings_TestGet_age_distribution_test_get_age_distribution.coverage" NAME="pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution Coverage Results" MODIFIED="1539579347617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$Unittests_for_test_graph_TestGraph_test_apportion_contracts.coverage" NAME="Unittests for test_graph.TestGraph.test_apportion_contracts Coverage Results" MODIFIED="1538966569923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$API.coverage" NAME="API Coverage Results" MODIFIED="1539454037325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/graphs" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_perform_complex_query_actors.coverage" NAME="pytest for test_create_app.test_perform_complex_query_actors Coverage Results" MODIFIED="1539550375695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
     <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_for_test_create_app_test_parse_operator.coverage" NAME="pytest for test_create_app.test_parse_operator Coverage Results" MODIFIED="1539540299960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
-    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$visualize.coverage" NAME="visualize Coverage Results" MODIFIED="1539573011032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/analysis" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$visualize.coverage" NAME="visualize Coverage Results" MODIFIED="1539579847110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/analysis" />
+    <SUITE FILE_PATH="coverage/fa18_cs242_assignment2$pytest_in_test_age_earnings_py.coverage" NAME="pytest in test_age_earnings.py Coverage Results" MODIFIED="1539579286998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/movie_actor_app/tests" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="507" />
+    <option name="myElementSize" value="510" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="362286670">
@@ -80,20 +82,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="7" />
+          <entry key="json" value="9" />
           <entry key="log" value="21" />
           <entry key="md" value="1" />
-          <entry key="py" value="93" />
+          <entry key="py" value="97" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="7" />
+          <entry key="JSON" value="9" />
           <entry key="Log" value="13" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="93" />
+          <entry key="Python" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -102,7 +104,7 @@
           <entry key="json" value="851" />
           <entry key="log" value="187" />
           <entry key="md" value="685" />
-          <entry key="py" value="143376" />
+          <entry key="py" value="148275" />
           <entry key="txt" value="72" />
         </counts>
       </usages-collector>
@@ -112,7 +114,7 @@
           <entry key="Log" value="176" />
           <entry key="Markdown" value="685" />
           <entry key="PLAIN_TEXT" value="130" />
-          <entry key="Python" value="143376" />
+          <entry key="Python" value="148275" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -122,83 +124,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Graph.py">
+        <entry file="file://$PROJECT_DIR$/movie_actor_app/analysis/visualize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="163">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
-                <marker date="1539564846000" expanded="true" signature="1250:1446" ph="..." />
-                <marker date="1539564846000" expanded="true" signature="17224:17890" ph="..." />
-                <marker date="1539564846000" expanded="true" signature="17997:18002" ph="..." />
-                <marker date="1539564846000" expanded="true" signature="23165:23169" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_graph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="278" column="18" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/ParseData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1539558318000" expanded="true" signature="240:310" ph="..." />
-                <marker date="1539558318000" expanded="true" signature="336:341" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/api/App.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-294">
-              <caret line="176" column="21" lean-forward="true" selection-start-line="176" selection-start-column="21" selection-end-line="176" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-                <marker date="1539565881000" expanded="true" signature="1773:1774" ph="..." />
-                <marker date="1539565881000" expanded="true" signature="2083:2084" ph="..." />
-                <marker date="1539565881000" expanded="true" signature="2083:2092" ph="..." />
-                <marker date="1539565881000" expanded="true" signature="4755:4845" ph="..." />
-                <marker date="1539565881000" expanded="true" signature="7568:7572" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/analysis/actor_hubs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <marker date="1539571449000" expanded="true" signature="186:656" ph="..." />
-                <marker date="1539571449000" expanded="true" signature="703:2072" ph="..." />
-                <marker date="1539571449000" expanded="true" signature="1379:1381" ph="..." />
+                <element signature="e#19#68#0" expanded="true" />
+                <marker date="1539579690000" expanded="true" signature="570:924" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/movie_actor_app/analysis/visualize.py">
+        <entry file="file://$PROJECT_DIR$/movie_actor_app/api/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#19#68#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="20">
+              <caret line="251" column="21" selection-start-line="251" selection-start-column="21" selection-end-line="251" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -206,11 +148,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_actor_hubs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
                 <marker date="1539571363000" expanded="true" signature="222:847" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_actor_app/analysis/age_earnings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+                <marker date="1539579286000" expanded="true" signature="95:100" ph="..." />
+                <marker date="1539579286000" expanded="true" signature="801:886" ph="..." />
+                <marker date="1539579286000" expanded="true" signature="918:1815" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_age_earnings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1539579347000" expanded="true" signature="232:237" ph="..." />
+                <marker date="1539579347000" expanded="true" signature="232:1039" ph="..." />
               </folding>
             </state>
           </provider>
@@ -278,6 +249,8 @@
         <option value="$PROJECT_DIR$/movie_actor_app/tests/test_create_app.py" />
         <option value="$PROJECT_DIR$/movie_actor_app/tests/test_actor_hubs.py" />
         <option value="$PROJECT_DIR$/movie_actor_app/analysis/actor_hubs.py" />
+        <option value="$PROJECT_DIR$/movie_actor_app/analysis/age_earnings.py" />
+        <option value="$PROJECT_DIR$/movie_actor_app/tests/test_age_earnings.py" />
         <option value="$PROJECT_DIR$/movie_actor_app/analysis/visualize.py" />
       </list>
     </option>
@@ -392,7 +365,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in tests">
+  <component name="RunManager" selected="Python.visualize">
+    <configuration name="age_earnings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fa18-cs242-assignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/movie_actor_app/analysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/movie_actor_app/analysis/age_earnings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fa18-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -415,7 +410,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_hub_degrees" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="fa18-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -427,11 +422,11 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_actor_hubs.Test_Actor_Hubs.test_get_hub_degrees&quot;" />
+      <option name="_new_target" value="&quot;test_age_earnings.TestGet_age_distribution.test_get_age_distribution&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_age_earnings.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="fa18-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -443,23 +438,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_actor_hubs.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="fa18-cs242-assignment2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/movie_actor_app/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/movie_actor_app/tests/test_actor_hubs.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/movie_actor_app/tests/test_age_earnings.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -480,19 +459,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test_actor_hubs.Test_Actor_Hubs.test_get_hub_degrees" />
-      <item itemvalue="Python tests.pytest in test_actor_hubs.py" />
-      <item itemvalue="Python tests.pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" />
       <item itemvalue="Python.visualize" />
       <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python tests.pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution" />
+      <item itemvalue="Python.age_earnings" />
+      <item itemvalue="Python tests.pytest in test_age_earnings.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in tests" />
         <item itemvalue="Python.visualize" />
-        <item itemvalue="Python tests.pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" />
-        <item itemvalue="Python tests.pytest in test_actor_hubs.py" />
-        <item itemvalue="Python tests.pytest for test_actor_hubs.Test_Actor_Hubs.test_get_hub_degrees" />
+        <item itemvalue="Python tests.pytest in tests" />
+        <item itemvalue="Python tests.pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution" />
+        <item itemvalue="Python tests.pytest in test_age_earnings.py" />
+        <item itemvalue="Python.age_earnings" />
       </list>
     </recent_temporary>
   </component>
@@ -510,40 +489,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_top_hubs - 2018.10.14 at 21h 38m 38s.xml">
-      <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" configurationId="tests" />
+    <history-entry file="pytest_for_test_age_earnings_TestGet_age_distribution_test_get_age_distribution - 2018.10.14 at 23h 43m 11s.xml">
+      <configuration name="pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_top_hubs - 2018.10.14 at 21h 39m 51s.xml">
-      <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" configurationId="tests" />
+    <history-entry file="pytest_for_test_age_earnings_TestGet_age_distribution_test_get_age_distribution - 2018.10.14 at 23h 43m 54s.xml">
+      <configuration name="pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_top_hubs - 2018.10.14 at 21h 39m 58s.xml">
-      <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" configurationId="tests" />
+    <history-entry file="pytest_for_test_age_earnings_TestGet_age_distribution_test_get_age_distribution - 2018.10.14 at 23h 45m 31s.xml">
+      <configuration name="pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_top_hubs - 2018.10.14 at 21h 40m 09s.xml">
-      <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" configurationId="tests" />
+    <history-entry file="pytest_for_test_age_earnings_TestGet_age_distribution_test_get_age_distribution - 2018.10.14 at 23h 50m 40s.xml">
+      <configuration name="pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_top_hubs - 2018.10.14 at 21h 40m 35s.xml">
-      <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" configurationId="tests" />
+    <history-entry file="pytest_in_test_age_earnings_py - 2018.10.14 at 23h 51m 00s.xml">
+      <configuration name="pytest in test_age_earnings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_top_hubs - 2018.10.14 at 21h 42m 25s.xml">
-      <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" configurationId="tests" />
+    <history-entry file="pytest_in_test_age_earnings_py - 2018.10.14 at 23h 52m 15s.xml">
+      <configuration name="pytest in test_age_earnings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_actor_hubs_Test_Actor_Hubs_test_get_top_hubs - 2018.10.14 at 21h 42m 44s.xml">
-      <configuration name="pytest for test_actor_hubs.Test_Actor_Hubs.test_get_top_hubs" configurationId="tests" />
+    <history-entry file="pytest_in_test_age_earnings_py - 2018.10.14 at 23h 53m 48s.xml">
+      <configuration name="pytest in test_age_earnings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_create_app_test_perform_complex_query_actors - 2018.10.14 at 22h 02m 57s.xml">
-      <configuration name="pytest for test_create_app.test_perform_complex_query_actors" configurationId="tests" />
+    <history-entry file="pytest_in_test_age_earnings_py - 2018.10.14 at 23h 54m 48s.xml">
+      <configuration name="pytest in test_age_earnings.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_tests - 2018.10.14 at 22h 11m 32s.xml">
-      <configuration name="pytest in tests" configurationId="tests" />
+    <history-entry file="pytest_for_test_age_earnings_TestGet_age_distribution_test_get_age_distribution - 2018.10.14 at 23h 55m 49s.xml">
+      <configuration name="pytest for test_age_earnings.TestGet_age_distribution.test_get_age_distribution" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_tests - 2018.10.14 at 22h 18m 55s.xml">
+    <history-entry file="pytest_in_tests - 2018.10.14 at 23h 56m 07s.xml">
       <configuration name="pytest in tests" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2539342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -553,7 +531,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32742155" />
       <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.30517712" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.3983629" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39782017" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
@@ -562,7 +540,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32876712" />
       <window_info anchor="bottom" id="REST Client" order="13" weight="0.4103261" />
-      <window_info anchor="right" id="SciView" order="0" weight="0.6309013" />
+      <window_info active="true" anchor="right" id="SciView" order="0" visible="true" weight="0.6309013" />
       <window_info anchor="right" id="Coverage" order="1" side_tool="true" weight="0.4427754" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
@@ -575,6 +553,20 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/movie_actor_app/analysis/age_earnings.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/anaconda/lib/python3.6/queue.py">
@@ -664,13 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="600" selection-start-line="600" selection-end-line="600" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/werkzeug/local.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -685,13 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/api/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-943">
-          <caret line="280" column="16" selection-start-line="280" selection-start-column="16" selection-end-line="280" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -727,13 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="408" column="77" selection-start-line="408" selection-start-column="77" selection-end-line="408" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Record.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -773,45 +744,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="278" column="18" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/api/App.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="176" column="21" lean-forward="true" selection-start-line="176" selection-start-column="21" selection-end-line="176" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1539565881000" expanded="true" signature="1773:1774" ph="..." />
-            <marker date="1539565881000" expanded="true" signature="2083:2084" ph="..." />
-            <marker date="1539565881000" expanded="true" signature="2083:2092" ph="..." />
-            <marker date="1539565881000" expanded="true" signature="4755:4845" ph="..." />
-            <marker date="1539565881000" expanded="true" signature="7568:7572" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_actor_hubs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1539571363000" expanded="true" signature="222:847" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movie_actor_app/analysis/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="-763">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -820,6 +758,20 @@
             <marker date="1539564846000" expanded="true" signature="17997:18002" ph="..." />
             <marker date="1539564846000" expanded="true" signature="23165:23169" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/graphs/Record.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="278" column="18" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -835,9 +787,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/api/App.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="176" column="21" lean-forward="true" selection-start-line="176" selection-start-column="21" selection-end-line="176" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <marker date="1539565881000" expanded="true" signature="1773:1774" ph="..." />
+            <marker date="1539565881000" expanded="true" signature="2083:2084" ph="..." />
+            <marker date="1539565881000" expanded="true" signature="2083:2092" ph="..." />
+            <marker date="1539565881000" expanded="true" signature="4755:4845" ph="..." />
+            <marker date="1539565881000" expanded="true" signature="7568:7572" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/movie_actor_app/analysis/actor_hubs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
+        <state relative-caret-position="73">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <marker date="1539571449000" expanded="true" signature="186:656" ph="..." />
@@ -847,13 +814,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="600" selection-start-line="600" selection-end-line="600" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_age_earnings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1539579347000" expanded="true" signature="232:237" ph="..." />
+            <marker date="1539579347000" expanded="true" signature="232:1039" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/analysis/age_earnings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1539579286000" expanded="true" signature="95:100" ph="..." />
+            <marker date="1539579286000" expanded="true" signature="801:886" ph="..." />
+            <marker date="1539579286000" expanded="true" signature="918:1815" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/tests/test_actor_hubs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1539571363000" expanded="true" signature="222:847" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/movie_actor_app/analysis/visualize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="163">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="e#19#68#0" expanded="true" />
+            <marker date="1539579690000" expanded="true" signature="570:924" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie_actor_app/api/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="251" column="21" selection-start-line="251" selection-start-column="21" selection-end-line="251" selection-end-column="21" />
         </state>
       </provider>
     </entry>
