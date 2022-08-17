@@ -42,6 +42,10 @@ class Utilities(object):
 
 class Scraper(object):
 
+    """
+    movie_degree: not None, specifies how many movies to parse given each actor
+    actor_degree: not None, specifies how many actors to parse given each movie
+    """
     def __init__(self, movie_degree=3, actor_degree=3):
         self.graph = Graph()
         self.movie_num = 0
