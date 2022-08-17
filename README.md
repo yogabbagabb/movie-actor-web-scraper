@@ -91,7 +91,8 @@ def get_billing_distribution(self, movie_name):
 
 ## Roadmap
 
-The scraper requires up to 20 minutes to finish scraping 250 movies and 125 actors. Some optimizations are needed to speed this up.
+- The scraper requires up to 20 minutes to finish scraping 250 movies and 125 actors. Some optimizations are needed to speed this up.
+- The `analysis` and `api` modules need to be bug-patched. The former produces charts to show relationships in parsed data; the latter opened a web server to perform queries.
 
 ## License
 
